@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c578ced9-fa7d-4095-885f-544be977a9ea" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/lesson3.css" afterPath="$PROJECT_DIR$/html/lesson3/lesson3.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/sesson3.html" afterPath="$PROJECT_DIR$/html/lesson3/sesson3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/lesson3/lesson3.css" afterPath="$PROJECT_DIR$/html/lesson3/lesson3.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -85,8 +83,8 @@
       <file leaf-file-name="lesson3.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/lesson3/lesson3.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+            <state relative-caret-position="516">
+              <caret line="43" column="15" lean-forward="false" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -214,12 +212,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551583949321</updated>
-      <workItem from="1551583953258" duration="11415000" />
+      <workItem from="1551583953258" duration="11952000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11415000" />
+    <option name="totallyTimeSpent" value="11952000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="172" y="25" width="1280" height="749" extended-state="0" />
@@ -310,8 +308,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/lesson3/lesson3.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        <state relative-caret-position="516">
+          <caret line="43" column="15" lean-forward="false" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="15" />
           <folding />
         </state>
       </provider>
