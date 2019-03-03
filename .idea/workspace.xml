@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c578ced9-fa7d-4095-885f-544be977a9ea" name="Default" comment="" />
+    <list default="true" id="c578ced9-fa7d-4095-885f-544be977a9ea" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/lesson3.css" afterPath="$PROJECT_DIR$/html/lesson3/lesson3.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/sesson3.html" afterPath="$PROJECT_DIR$/html/lesson3/sesson3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -58,21 +62,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sesson3.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/sesson3.html">
+      <file leaf-file-name="sesson3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/lesson3/sesson3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="12" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+            <state relative-caret-position="418">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lesson3.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/lesson3.css">
+      <file leaf-file-name="selector.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/lesson3/selector.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+            <state relative-caret-position="399">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lesson3.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/lesson3/lesson3.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -83,8 +97,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -101,6 +115,10 @@
         <option value="$PROJECT_DIR$/html/lession3.html" />
         <option value="$PROJECT_DIR$/html/lesson3.css" />
         <option value="$PROJECT_DIR$/html/sesson3.html" />
+        <option value="$PROJECT_DIR$/html/lesson3/xuanzeqi.html" />
+        <option value="$PROJECT_DIR$/html/lesson3/id_selector.html" />
+        <option value="$PROJECT_DIR$/html/lesson3/selector.html" />
+        <option value="$PROJECT_DIR$/html/lesson3/lesson3.css" />
       </list>
     </option>
   </component>
@@ -111,8 +129,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="635" />
-    <option name="y" value="51" />
+    <option name="x" value="172" />
+    <option name="y" value="25" />
     <option name="width" value="1280" />
     <option name="height" value="749" />
   </component>
@@ -148,6 +166,12 @@
               <item name="learn-front" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn-front" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson3" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -164,6 +188,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/html/lesson3" />
       <recent name="$PROJECT_DIR$/html" />
     </key>
   </component>
@@ -189,15 +214,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551583949321</updated>
-      <workItem from="1551583953258" duration="9691000" />
+      <workItem from="1551583953258" duration="11415000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9691000" />
+    <option name="totallyTimeSpent" value="11415000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="635" y="51" width="1280" height="749" extended-state="0" />
+    <frame x="172" y="25" width="1280" height="749" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -267,18 +292,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/lesson3.css">
+    <entry file="file://$PROJECT_DIR$/html/lesson3/sesson3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        <state relative-caret-position="418">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/sesson3.html">
+    <entry file="file://$PROJECT_DIR$/html/lesson3/selector.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="12" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        <state relative-caret-position="399">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/lesson3/lesson3.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
           <folding />
         </state>
       </provider>

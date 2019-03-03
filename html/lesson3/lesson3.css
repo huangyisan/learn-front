@@ -1,0 +1,47 @@
+/*div{*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*border-radius: 50%;*/
+    /*background-color: yellow;*/
+/*}*/
+
+#only{
+    background-color:red;
+}
+
+#myid{
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    background-color: indigo;
+}
+
+.demo{
+    background-color:yellow;
+}
+
+.demon1{
+    color: #f40;
+}
+
+p{
+    color:#ff4400;
+}
+
+span{
+    color: #000;
+    font-weight: bold;
+}
+
+/*通配符选择器*/
+*{
+    background-color: green!important;
+}
+
+/*css权重*/
+/*!important  Infinity*/
+/*行间样式   1000*/
+/*id        100*/
+/*class | 属性 | 伪类   10*/
+/*标签|伪元素  1*/
+/*通配符 0*/
