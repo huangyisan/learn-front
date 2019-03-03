@@ -1,0 +1,47 @@
+span{
+    width: 100px;
+    height: 100px;
+    background-color: #ff4400;
+    font-weight: bold;
+}
+
+
+/*父子选择器，可以跨级*/
+
+div span{
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+}
+
+.demon .son{
+    background-color: yellow;
+}
+
+/*直接子元素选择器，下一级*/
+
+div > span{
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+}
+
+/*都是自右向左顺序*/
+
+
+/*并列选择器*/
+
+div.binlie{
+    color:blue;
+}
+
+/*分组选择器，公用属性*/
+
+em,
+strong,
+span#test.test{
+    color:darkgreen;
+    background-color:transparent;
+}
+
+
