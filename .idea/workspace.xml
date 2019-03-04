@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c578ced9-fa7d-4095-885f-544be977a9ea" name="Default" comment="" />
+    <list default="true" id="c578ced9-fa7d-4095-885f-544be977a9ea" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/lesson3/lesson4/lesson4-1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/lesson3/lesson4/lesson4-1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/lesson3/lesson4/lesson4.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/lesson3/lesson4/lesson4.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,21 +20,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="lesson4-1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/lesson3/lesson4/lesson4-1.html">
+      <file leaf-file-name="lesson4.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/lesson4/lesson4.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="15" lean-forward="true" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+            <state relative-caret-position="19">
+              <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lesson4-1.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/lesson3/lesson4/lesson4-1.css">
+      <file leaf-file-name="lesson5.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/lesson5/lesson5.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            <state relative-caret-position="399">
+              <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lesson5.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/lesson5/lesson5.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -65,6 +81,8 @@
         <option value="$PROJECT_DIR$/html/lesson3/lesson4/lesson4.css" />
         <option value="$PROJECT_DIR$/html/lesson3/lesson4/lesson4-1.html" />
         <option value="$PROJECT_DIR$/html/lesson3/lesson4/lesson4-1.css" />
+        <option value="$PROJECT_DIR$/html/lesson5/lesson5.css" />
+        <option value="$PROJECT_DIR$/html/lesson5/lesson5.html" />
       </list>
     </option>
   </component>
@@ -116,14 +134,7 @@
               <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
               <item name="learn-front" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-front" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson3" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson4" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson5" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -140,6 +151,9 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/html/lesson4" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/html/lesson3" />
       <recent name="$PROJECT_DIR$/html" />
@@ -167,12 +181,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551583949321</updated>
-      <workItem from="1551583953258" duration="18492000" />
+      <workItem from="1551583953258" duration="21016000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18492000" />
+    <option name="totallyTimeSpent" value="21016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="89" y="102" width="1280" height="749" extended-state="0" />
@@ -285,6 +299,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/html/lesson3/lesson4/lesson4-1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/lesson3/lesson4/lesson4-1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -293,10 +315,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/lesson3/lesson4/lesson4-1.css">
+    <entry file="file://$PROJECT_DIR$/html/lesson4/lesson4.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        <state relative-caret-position="19">
+          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/lesson5/lesson5.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/lesson5/lesson5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
           <folding />
         </state>
       </provider>
