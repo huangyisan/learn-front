@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.first{
+    position:absolute;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color:pink;
+}
+
+.second{
+    margin-right:50px;
+    height: 50px;
+    background-color:skyblue;
+}
