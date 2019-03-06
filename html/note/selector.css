@@ -1,0 +1,21 @@
+div,
+span,
+p{
+    color:yellow;
+}
+
+[class=myclass]{
+     color: #ff4400;
+ }
+
+div p{
+    color:#ff4400;
+}
+
+div>p{
+    color:green;
+}
+
+a:hover{
+    background-color: #f40;
+}
