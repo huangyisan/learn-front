@@ -12,12 +12,33 @@
         <button @click="handleClick">提交</button>
     </div>
     <ul>
-        <li v-for="(item, index) of list" :key="index">{{item}}</li>
+        <todo-item v-for="(item,index) of list"
+                   :key="item"
+                   :content="item"
+        >
+
+        </todo-item>
+        <!--<li v-for="(item, index) of list" :key="index">{{item}}</li>-->
     </ul>
 </div>
 <script>
+
+//    全局定义
+//    Vue.component('todo-item',{
+//       template: '<li>item</li>'
+//    });
+
+//    局部定义
+    var TodoItem = {
+        props:['content'],
+        template: '<li>{{content}}</li>'
+    };
+
     new Vue({
         el: "#root",
+        components:{
+          'todo-item': TodoItem
+        },
         data: {
             inputValue: "",
             list: []
