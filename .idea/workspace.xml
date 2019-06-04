@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c578ced9-fa7d-4095-885f-544be977a9ea" name="Default" comment="" />
+    <list default="true" id="c578ced9-fa7d-4095-885f-544be977a9ea" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -34,11 +36,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calc-listen.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="calc-listen.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue/calc-listen.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+            <state relative-caret-position="76">
+              <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="if-show-for.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vue/if-show-for.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -110,6 +122,7 @@
         <option value="$PROJECT_DIR$/vue/index.html" />
         <option value="$PROJECT_DIR$/vue/bind.html" />
         <option value="$PROJECT_DIR$/vue/calc-listen.html" />
+        <option value="$PROJECT_DIR$/vue/if-show-for.html" />
       </list>
     </option>
   </component>
@@ -120,8 +133,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="488" />
-    <option name="y" value="38" />
+    <option name="x" value="152" />
+    <option name="y" value="80" />
     <option name="width" value="1280" />
     <option name="height" value="745" />
   </component>
@@ -213,15 +226,15 @@
       <updated>1551583949321</updated>
       <workItem from="1551583953258" duration="21016000" />
       <workItem from="1551777180697" duration="5826000" />
-      <workItem from="1559614718522" duration="4155000" />
+      <workItem from="1559614718522" duration="5369000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42110000" />
+    <option name="totallyTimeSpent" value="43324000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="488" y="38" width="1280" height="745" extended-state="0" />
+    <frame x="152" y="80" width="1280" height="745" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.196875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -253,14 +266,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/object/ob.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/object/ob.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -573,8 +578,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/calc-listen.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+        <state relative-caret-position="76">
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/if-show-for.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
           <folding />
         </state>
       </provider>

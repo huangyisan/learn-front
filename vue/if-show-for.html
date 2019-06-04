@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-if v-show v-for</title>
+    <script src="./vue.js"></script>
+</head>
+<body>
+    <div id="root">
+        <div v-if="vif">hello world</div>
+        <button @click="viffunc">vif</button>
+        <div v-show="vshow">hello world</div>
+        <button @click="vshowfunc">vshow</button>
+        <ul>
+            <li v-for="(item, index) of list" :key="index">{{item}}</li>
+        </ul>
+    </div>
+    <script>
+        new Vue({
+            el: "#root",
+            data: {
+                vif: true,
+                vshow: true,
+                list:[1,2,3]
+            },
+            methods:{
+                viffunc: function () {
+                    this.vif = !this.vif;
+                },
+                vshowfunc: function () {
+                    this.vshow = !this.vshow;
+                }
+            }
+        })
+    </script>
+</body>
+</html>
+
+<!--v-show比v-if性能好 如果div隐藏频率低只是一次，则v-if更加合适-->
