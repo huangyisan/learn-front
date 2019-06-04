@@ -24,11 +24,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bind-model.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bind-model.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue/bind-model.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
               <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calc-listen.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vue/calc-listen.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="436">
+              <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -99,6 +109,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/vue/index.html" />
         <option value="$PROJECT_DIR$/vue/bind.html" />
+        <option value="$PROJECT_DIR$/vue/calc-listen.html" />
       </list>
     </option>
   </component>
@@ -109,8 +120,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="553" />
-    <option name="y" value="187" />
+    <option name="x" value="488" />
+    <option name="y" value="38" />
     <option name="width" value="1280" />
     <option name="height" value="745" />
   </component>
@@ -202,15 +213,15 @@
       <updated>1551583949321</updated>
       <workItem from="1551583953258" duration="21016000" />
       <workItem from="1551777180697" duration="5826000" />
-      <workItem from="1559614718522" duration="3105000" />
+      <workItem from="1559614718522" duration="4155000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41060000" />
+    <option name="totallyTimeSpent" value="42110000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="553" y="187" width="1280" height="745" extended-state="0" />
+    <frame x="488" y="38" width="1280" height="745" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.196875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -242,14 +253,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/lesson7/t.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/object/ob.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -564,6 +567,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/calc-listen.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
           <folding />
         </state>
       </provider>
