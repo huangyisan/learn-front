@@ -59,8 +59,8 @@
       <file leaf-file-name="todolist.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vue/todolist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="40" column="8" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="10" />
+            <state relative-caret-position="333">
+              <caret line="38" column="102" lean-forward="false" selection-start-line="38" selection-start-column="102" selection-end-line="38" selection-end-column="102" />
               <folding />
             </state>
           </provider>
@@ -144,8 +144,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="657" />
-    <option name="y" value="119" />
+    <option name="x" value="-167" />
+    <option name="y" value="134" />
     <option name="width" value="1280" />
     <option name="height" value="745" />
   </component>
@@ -237,15 +237,15 @@
       <updated>1551583949321</updated>
       <workItem from="1551583953258" duration="21016000" />
       <workItem from="1551777180697" duration="5826000" />
-      <workItem from="1559614718522" duration="7734000" />
+      <workItem from="1559614718522" duration="8742000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45689000" />
+    <option name="totallyTimeSpent" value="46697000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="657" y="119" width="1280" height="745" extended-state="0" />
+    <frame x="-167" y="134" width="1280" height="745" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.196875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -597,8 +597,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/todolist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="40" column="8" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="10" />
+        <state relative-caret-position="333">
+          <caret line="38" column="102" lean-forward="false" selection-start-line="38" selection-start-column="102" selection-end-line="38" selection-end-column="102" />
           <folding />
         </state>
       </provider>
