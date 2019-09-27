@@ -1,6 +1,7 @@
 from pyecharts.charts import Line
 from pyecharts import options as opts
 
+
 l = []
 def calc(day, per,fa):
 
