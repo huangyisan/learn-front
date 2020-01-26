@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    .box1 {
+        color: red;
+        /* 删除线也变成了红色,所以这个color不能说是设置文字颜色 */
+        text-decoration: line-through;
+        /* color也会导致边框颜色的改变,所以叫做前景色,不单单是设置文字颜色 */
+        border: solid 10px;
+    }
+    
+    .box2 {
+        font-size: 20px;
+    }
+
+    .box3 {
+        background-color: red;
+    }
+
+    .box4 {
+        background-color: orange;
+        width: 300px;
+        height: 300px;
+    }
+
+    .test {
+        width: 300px;
+        height: 300px;
+        background-color: orange;
+    }
+
+    </style>
+</head>
+<body>
+    <!-- color 前景色 -->
+    <p class="box1">哈哈哈</p>
+
+    <!-- font-size 文字大小 -->
+    <p class="box2">呵呵呵</p>
+
+    <!-- background-color 背景颜色 -->
+    <p class="box3">嘻嘻嘻</p>
+
+    <!-- width/height: 宽度高度 -->
+    <p class="box4">嘿嘿嘿</p>
+    <!-- 行内元素设置width和height无效 -->
+    <span class="test">ddd</span>
+
+</body>
+</html>
