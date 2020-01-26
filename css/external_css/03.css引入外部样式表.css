@@ -1,0 +1,19 @@
+/* 指定css编码 */
+@charset "utf-8";
+
+h1 {
+    color: red;
+}
+
+p {
+    color:rosybrown;
+}
+
+.color {
+    color:red;
+}
+
+/* 多个选择器 */
+h1, p, a {
+    font-size: 20px;
+}
