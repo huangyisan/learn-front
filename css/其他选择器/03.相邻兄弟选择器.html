@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 使用+连接兄弟选择器,兄弟选择器必须是紧挨着的.,不能跳跃,往后生效 */
+        /* 生效的是兄弟选择器,自己是不生效的.比如下面div是不生效的. */
+    div+p {
+        color:red
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <p>我是div里面的p元素</p>
+    </div>
+    <p>我是独立的p元素</p>
+    <p>我是倒数第一个p元素</p>
+</body>
+</html>

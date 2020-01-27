@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /* 选中div下所有span的子元素或者间接子元素 */
+    div span {
+        color: red;
+    }
+
+    /* 子选择器使用>  只会选择di下面的span元素,不包含间接的子元素*/
+
+    div > span {
+        color: red;
+    }
+
+    .box > span {
+        color: red;
+    }
+
+
+    
+    </style>
+</head>
+<body>
+    <span></span>
+</body>
+</html>

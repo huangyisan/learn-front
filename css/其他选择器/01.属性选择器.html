@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 使用[]包裹属性,比如title这个属性 */
+        [title] {
+            color: #ff00ff
+        }
+
+        /* 选择属性内的关键字进行修改,比如选择title内为"div元素"修改成20px */
+        [title="div元素"] {
+            font-size: 20px;
+        }
+
+        /* 选择属性内的关键字进行修改,比如选择title内有"one"两个关键字,修改橘黄色背景 */
+        [title*="one"] {
+            background-color: #ff8800;
+        }
+
+        /* 选择属性内的关键字进行修改,比如选择title内以"i"关键字开头,修改红色背景 */
+        [title^="i"] {
+            background-color: red;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div title="div元素">我是div元素</div>
+    <p>我是p元素</p>
+    <p title="pone">我也是p元素</p>
+    <span>我是span元素</span>
+    <span title="ip">我也是span元素</span>
+</body>
+
+</html>

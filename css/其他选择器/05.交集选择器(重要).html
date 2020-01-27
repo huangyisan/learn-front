@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 交集选择器 */
+        /* 同时符合div元素,且类为one的内容 注意和后台选择器进行区分 */
+        div.one {
+            color: red;
+        }
+
+        /* 同时符合div元素,且class存在one,并且存在title="test"的内容 */
+        div.one[title="test"] {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">我是div class为one</div>
+    <div>我是div,不带class</div>
+</body>
+
+</html>
