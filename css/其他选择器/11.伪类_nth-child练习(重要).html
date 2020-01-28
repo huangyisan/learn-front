@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 子元素为第1个 第5个 且标签为p, 那么第1个不符合,因为第一个子元素是div,第五个符合是p */
+        p:nth-child(4n+1) {background-color: red;}
+
+        p:nth-child(4n+2) {background-color: blue;}
+        p:nth-child(4n+3) {background-color: green;}
+        p:nth-child(4n+4) {background-color: orange;}
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <div>我是div</div>
+        <p>文字内容1</p>
+        <p>文字内容2</p>
+        <p>文字内容3</p>
+        <p>文字内容4</p>
+        <span>我是span</span>
+        <p>文字内容5</p>
+        <p>文字内容6</p>
+    </div>
+</body>
+
+</html>

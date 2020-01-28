@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 建议编写顺序 link visited focus hover active */
+        /* 未访问状态 */
+        a:link {
+            color: red;
+        }
+
+        /* 已经访问过的状态 */
+        a:visited {
+            color: #ff8800;
+        }
+
+        /* 鼠标放上去的状态   hover必须放在link和visited后面才能生效!*/
+        a:hover {
+            color: royalblue;
+        }
+
+        /* 鼠标点击但未松手  active必须放在hover后面*/
+        a:active {
+            color: saddlebrown
+        }
+
+        /* 2.hover/active 用在其他元素上 */
+        span:hover{
+            background-color: #f80;
+        }
+
+        span:active {
+            background-color: red;
+        }
+
+        /* focus 被选定状态 */
+        /* 因为链接a可以被键盘的tab聚焦选定,所以focus也适用于a */
+
+        input:focus {
+            background-color: red;
+        }
+
+        /* 去掉a元素焦点状态 */
+        a:focus {
+            outline: none;
+        }
+        /* 或者给a标签添加tabindex="-1" */
+        /* <a tabindex="-1" href="#">google一下</a> */
+
+    </style>
+</head>
+
+<body>
+    <!-- link visited用在a元素上 -->
+    <a href="#">google一下</a>
+
+    <span>我是span元素</span>
+    <input type="text">
+
+</body>
+
+</html>

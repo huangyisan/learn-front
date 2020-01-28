@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 第三个子元素选定,不论父元素是谁,只要符合第三个子元素就会被选定 */
+        :nth-child(3) {
+            color: salmon;
+        }
+
+        /* 第三个子元素元素,且为p元素 */
+        p:nth-child(3) {
+            color: seagreen
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>这是p元素1</p>
+        <p>这是p元素2</p>
+        <p>这是p元素3</p>
+        <p>这是p元素4</p>
+        <p>这是p元素5</p>
+        <p>这是p元素6</p>
+        <p>这是p元素7</p>
+        <p>这是p元素8</p>
+    </div>
+
+    <p>
+        <span>我是span元素1</span>
+        <span>我是span元素2</span>
+        <span>我是span元素3</span>
+        <span>我是span元素4</span>
+        <span>我是span元素5</span>
+        <span>我是span元素6</span>
+        <span>我是span元素7</span>
+        <span>我是span元素8</span>
+    </p>
+</body>
+
+</html>
