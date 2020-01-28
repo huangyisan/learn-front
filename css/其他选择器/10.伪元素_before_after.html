@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 在指定元素前面添加内容或更变样式 */
+        span::before {
+            /* 需要添加的内容写成 content: 内容 */
+            /* content不能省略,可以为空 */
+            /* 伪元素属于行内元素 */
+            content: "123";
+            color: red;
+            margin-right: 20px;
+        }
+
+        /* 指定元素后面添加内容 */
+        span::after {
+            content: "abc";
+            /* 可以引入图片 */
+            /* content:url(***) */
+            color: green;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <span>我是span元素</span>
+</body>
+
+</html>
