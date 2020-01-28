@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 除去div其他color为红色, 因为html和body也是标签,所以需要将这两个一起not掉 */
+        /* 一般不会这么写 */
+        :not(html):not(body):not(div) {
+            color: red;
+        }
+
+        /* 选定body, 子元素除了span之外的  设定20px */
+        body :not(span) {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>文字内容1</div>
+    <p>文字内容2</p>
+    <span>文字内容3</span>
+    <div>文字内容4</div>
+
+</body>
+
+</html>

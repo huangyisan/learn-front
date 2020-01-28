@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* :only-child会以<html>作为第一个父级元素 */
+        /* 唯一一个子元素,且标签为span */
+        span:only-child {
+            color: red;
+        }
+
+        /* 子元素里面只有一个元素,且标签为span */
+        span:only-of-type{
+            background-color: #f80;;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>
+            <span>文字内容1</span>
+        </p>
+        <div>文字内容2</div>
+    </div>
+    <div>
+        <strong>文字内容3</strong>
+        <a href="#">
+            <i>文字内容5</i>
+            <span>文字内容4</span>
+            <!-- <span>文字内容4</span> -->
+        </a>
+    </div>
+</body>
+
+</html>

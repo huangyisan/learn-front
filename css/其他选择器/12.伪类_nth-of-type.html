@@ -7,13 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+        /* :first-of-type等同:nth-of-type(1) */
         /* 第三个(对p而言,而不是对子元素摆列而言)标签为p的子元素, 即便中间穿插了其他元素,他就找第三个p的子元素*/
         p:nth-of-type(3) {
             color: red;
         }
+
         /* 只找p的2n倍数个子元素 */
         p:nth-of-type(2n) {
             background-color: #f80;
+        }
+
+        /* 逆向查询最后一个标签为p的子元素 */
+        /* :last-of-type等同:nth-last-of-type(1) */
+        p:nth-last-of-type(1) {
+            background-color: green;
         }
     </style>
 </head>
