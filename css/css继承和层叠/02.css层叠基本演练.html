@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* <!-- 当选择器相同时,则相同的属性,下面的会把上面的层叠覆盖 --> */
+        .box1 {
+            color: red;
+        }
+
+        .box3 {
+            color: yellow;
+        }
+
+        .box2 {
+            color: green;
+        }
+
+        /* 如果是不同选择器,则看选择器的权重 
+            权重
+            !important: 10000
+            内联样式: 1000
+            id: 100
+            class/属性/伪类: 10
+            标签/伪元素: 1
+            通配选择器: 0
+        
+        */
+
+        /* 比较优先级的严谨方法
+            1. 从权重值最大的开始比较,每一种权重值的数量是多少,多的优先级高
+            2. 如果数量相同,则比较较小的,以此类推
+            3. 如果还是全部相同,则采取就近原则.
+        */
+
+
+        #main {
+            color: yellow;
+        }
+
+        .box {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="box1 box2 box3">我是p元素</p>
+    <div id="main" class="box">我是div元素</div>
+</body>
+
+</html>
