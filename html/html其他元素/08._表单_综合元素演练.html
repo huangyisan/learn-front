@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        fieldset {
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div>
+            <!-- 外边框 -->
+            <fieldset>
+                <!-- 外边框上的内容 -->
+                <legend>必填信息</legend>
+                <!-- 手机输入框 -->
+                <div>
+                    <span>手机:</span>
+                    <!-- maxlength 最大长度 -->
+                    <!-- autofocus 默认聚焦 -->
+                    <input type="" maxlength="11" autofocus>
+                </div>
+
+                <div>
+                    <!-- 密码输入框 -->
+                    <span>密码:</span>
+                    <!-- 密文形式输入 -->
+                    <!-- placeholder  disabled禁用-->
+                    <input type="password" placeholder="请输入密码" disabled>
+                </div>
+                <div>
+                    <span>验证码:</span>
+                    <!-- readonly 只读属性 -->
+                    <input type="text" readonly>
+                    <!-- button实现方式1 -->
+                    <button>获取验证码</button>
+                    <!-- button实现方式2 -->
+                    <input type="button" value="获取验证码">
+                </div>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>选填信息</legend>
+                <div>
+                    <span>照片:</span>
+                    <!-- 文件选择类型 -->
+                    <input type="file">
+                </div>
+                <div>
+                    <!-- 性别选择 -->
+                    <span>性别:</span>
+                    <!-- radio单选框，如果name一致，则表示这些个input为关联，只能选择其中一个 -->
+                    <!-- checked默认选中 -->
+                    男<input type="radio" name="sex" checked>
+                    女<input type="radio" name="sex">
+                </div>
+                <div>
+                    <!-- 爱好选择 -->
+                    <!-- 相同的name为同一个关联 -->
+                    <span>爱好:</span>
+                    唱<input type="checkbox" name="hobby">
+                    跳<input type="checkbox" name="hobby">
+                    rap<input type="checkbox" name="hobby">
+                    🏀<input type="checkbox" name="hobby">
+                </div>
+                <div>
+                    <span>学历:</span>
+                    <!-- 选择框 -->
+                    <select name="" id="">
+                        <option value="xiaoxue">小学</option>
+                        <option value="gaozhong">高中</option>
+                        <option value="daxue">大学</option>
+                    </select>
+                </div>
+                <div>
+                    <span>简介:</span>
+                    <textarea name="" id="" cols="20" rows="5"></textarea>
+                </div>
+            </fieldset>
+            <!-- 重置按钮的实现 -->
+            <!-- 重置前提: 1. 类型必须是reset类型 2. 如果是reset类型，可以不填写value 3. 所有内容都在同一个表单中，都在form里面-->
+            <input type="reset">
+            <input type="button" value="提交">
+        </div>
+    </form>
+</body>
+
+</html>
