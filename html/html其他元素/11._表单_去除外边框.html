@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    input {
+        /* 使用outline: none 去除外边框 */
+        outline: none;
+    }
+    /* 选中的时候出现蓝色边框，使用:focus伪类 */
+    input:focus {
+        /* 取消边框凹陷效果 */
+        border-style: solid;
+        border-color:#4791ff;
+    }
+    </style>
+</head>
+<body>
+    <span>手机号</span>
+    <!-- tableindex="-1" 取消tab按钮选定 -->
+    <input type="text" tabindex="-1">
+</body>
+</html>
