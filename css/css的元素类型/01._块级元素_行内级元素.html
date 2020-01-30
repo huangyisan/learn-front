@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: blue;
+            height: 400px;
+            width: 400px;
+        }
+        .inner {
+            background-color:   red;
+            height: 30px;
+        }
+        p {
+            background-color: green;
+        }
+        span {
+            background-color: #f80;
+        }
+        strong {
+            background-color: #ff0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 块级元素独占父元素整行 -->
+    <!-- 行内级元素可以和其他元素共存一行 -->
+
+
+    <!-- 1. 块级元素 -->
+    <div class="box">
+        <div class="inner"></div>
+        <p>我是p元素</p>
+    </div>
+    <span>我是span元素</span>
+    <strong>我是strong元素</strong>
+    <input type="text">
+</body>
+
+<!-- 根据内容是否会被浏览器替换也分为替换元素和非替换元素 -->
+<!-- 1. 块级元素不存在替换元素 -->
+<!-- 行内元素的非替换元素不可以设置宽高，其宽高有内容决定 -->
+<!-- 行内元素的替换元素可以设置宽高 -->
+
+<!-- 块级元素的替换元素: 无 -->
+<!-- 块级元素的非替换元素: div p pre ul li dl等 -->
+<!-- 行级元素的替换元素: img input iframe video embed等 -->
+<!-- 行级元素的非替换元素: a strong span code等 -->
+</html>

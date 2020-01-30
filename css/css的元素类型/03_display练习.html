@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+/* 样式重置 */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+/* 整体样式 */
+.mail {
+    width: 100px;
+    border: 2px solid #999;
+    text-align: center;
+}
+
+
+
+li:hover {
+    background-color: skyblue;
+}
+
+/* 局部header */
+.header {
+    background-color: #999;
+    color:#fff;
+}
+
+/* 调整a元素 */
+.mail .mail-ul a{
+    display: block;
+}
+
+/* 局部 mail-ul */
+.mail .mail-ul {
+    display: none;   
+} 
+
+/* 鼠标放上去变动 */
+/* 当鼠标点到.header的时候，进行修改ul的样式 */
+/* .header:hover+ul li {
+    display: block;
+    
+}  */
+
+.mail:hover ul {
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+    <div class="mail">
+        <div class="header">邮箱</div>
+        <ul class="mail-ul">
+            <li><a href="#">qq邮箱</a></li>
+            <li><a href="#">126邮箱</a></li>
+            <li><a href="#">139邮箱</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
