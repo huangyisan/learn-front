@@ -7,20 +7,18 @@
     <title>Document</title>
     <style>
     div {
-        width: 500px;
+        width: 500px;    
         height: 500px;
         background-color: #f00;
 
-        /* 背景图片会盖住背景色 */
-        /* img可以设置多个,当设置多个的时候默认显示第一张,当第一张不可用的时候用第二张 */
-        /* 背景图不会撑开box的宽高 */
         background-image: url("../../html/img/1e26c8c4f3e23ae7660bcf5ec5a6e458.jpg@1100w_484h_1c_100q.jpg");
-        
-        /* 平铺效果 */
-        /* repeat-x 仅水平方向平铺 */
-        /* repeat-y 仅垂直方向平铺 */
-        /* no-repeat 不平铺 */
-        background-repeat:repeat-x;
+        background-repeat: no-repeat;
+
+        /* background-position 对背景图片进行位移 */
+        /* 1. 数值  水平,垂直 */
+        /* 2. 方向 可以设置多个*/
+        /* background-position: 100px 100px; */
+        background-position: left top;
     }
     </style>
 </head>

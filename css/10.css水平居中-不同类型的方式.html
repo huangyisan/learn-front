@@ -31,8 +31,8 @@
             /* 1.首先text-align:center 居中  */
             /* 2. 然后自身居中 margin: 0 auto */
 
-            /* margin 0 auto居中的原理 */
-
+            /* margin 0 auto居中的原理 margin-left和right如果是auto,则是等分左右距离,则会居中. 但top和bottom不行,如果top和bottom为auto,则他们的值为0,而不是等分高度距离*/
+            /* https://www.w3.org/TR/CSS21/visudet.html#blockwidth */
             /* ############################ */
             
 
