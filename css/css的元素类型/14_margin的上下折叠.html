@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 折叠后的最终值计算,根据最大的值来决定,比如下面,折叠则为40px */
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .box1 {
+            margin-bottom: 20px;
+        }
+
+        .box {
+            margin-bottom: 40px;
+        }
+
+        /* 防止margin折叠 */
+        /* 只设置一个元素的margin */
+        
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box"></div>
+</body>
+
+</html>

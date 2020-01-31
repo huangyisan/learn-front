@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: #f00;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #f80;
+
+            /* 给父元素设置border-top */
+            /* border-top: 1px solid; */
+            
+            /* 触发bfc */
+            overflow: hidden;
+        }
+
+        .inner {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+
+            /* 左右不会传递margin */
+            /* margin-left */
+            /* margin-left: 20px; */
+
+            /* 上下会传递margin */
+            /* 如果子元素的顶部跟父元素的顶部重合,则如果设定子元素的margin-top,父元素的margin会被传递,也会受到子元素的影响 */
+            /* 底部线如果重叠也会传递margin-bottom */
+            margin-top: 20px;
+
+            /* 如何防止传递? */
+            /* 1. 给父元素设置padding-top/padding-bottom 这种情况让顶部线或者底部线不重叠,则不会传递了 */
+            /* 2. 给父元素设置border */
+            /* 3. 触发BFC(浮动可以触发,或者设置一个元素的overflow为非visible) */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box">
+        <div class="inner"></div>
+    </div>
+</body>
+
+</html>

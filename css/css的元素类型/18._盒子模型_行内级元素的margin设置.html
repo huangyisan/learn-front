@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    span {
+        /* margin left和rigth 对行内元素有效果 */
+        margin-left: 20px;
+        background-color: #f00;
+        margin-right: 30px;
+
+        /* width height margin-top margin-bottom 对行内级元素不起作用*/
+        
+        /* 一些作用于行内级元素的样式 */
+        /* 1. padding的上下会多出区域,但这个区域不占据空间 */
+        /* 2. border的上下会多出区域,但这个区域不占据空间 */
+
+        /* 解决方法: 改成 inline-block */
+        border-bottom: 10px solid yellowgreen;
+        display: inline-block;
+
+    }
+    </style>
+</head>
+<body>
+    <span>span1</span>
+    <span>span2</span>
+    <div>我是div</div>
+
+</body>
+</html>

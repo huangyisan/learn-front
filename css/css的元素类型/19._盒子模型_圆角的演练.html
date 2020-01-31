@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        /* 第一个值表示水平方向,第二个值表示垂直方向 */
+        border-top-left-radius: 20px 50px;
+    }
+
+    .box1 {
+        margin-top: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        /* 当值为宽度的一般的时候,则为圆形 */
+        /* border-radius: 50px; */
+
+        /* 使用百分比参考的是当前元素的border + padding + width */
+        border-radius: 50%;
+    }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+</body>
+</html>
