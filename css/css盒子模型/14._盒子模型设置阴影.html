@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        background-color: #f00;
+
+        /* 15px为左右阴影,正数往右,负数往左. 
+            5px为上下阴影 负数为上,正数为下  
+            2px 为模糊程度
+            3px 原有基础上向外延伸
+            orange 阴影颜色
+            insert 阴影向内
+            */
+
+        /* box-shadow: 15px 5px 2px 3px orange insert;  */
+        /* 阴影可以设置多个 */
+        box-shadow: -15px 0px, 15px 2px 2px 3px orange; 
+
+    }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
