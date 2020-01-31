@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .box {
+        background-color: #f00;
+        width: 200px;
+        height: 200px;
+
+        /* overflow控制内容溢出时候的行为 */
+        /* 1. visiable 溢出超出部分依然可见 */
+        /* 2. hidden 超出部分隐藏 */
+        /* 3. scroll 超出部分可以滚动查看  如果没有溢出 也会存在滚动条*/
+        /* 4 auto 根据内容自动判断是否需要滚动 不溢出的时候不会有滚动条 */
+        overflow: auto;
+
+        /* 对x轴y轴进行单独设定，但因为目前还没成为标准，不建议使用 */
+        overflow-x: scroll;
+        overflow-y: auto;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+        <img src="../../html/img/1e26c8c4f3e23ae7660bcf5ec5a6e458.jpg@1100w_484h_1c_100q.jpg" alt="">
+    </div>
+</body>
+</html>

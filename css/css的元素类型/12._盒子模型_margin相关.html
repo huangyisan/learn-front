@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            display: inline-block;
+        }
+        /* margin的值 */
+        /* 上右下左 */
+
+        /* margin上下 */
+        /* 设置box1和box2的间距，可以box1设置下边距，或者box2设置上边距，但如果都设置则会被折叠 只要写一个就行*/
+        /* .box1 {
+        margin-bottom: 20px;
+    }
+    .box2 {
+        margin-top: 20px;
+    } */
+
+        /* margin左右 */
+        /* 同时设置box2左边的margin间距和box1右边的margin间距。并不会折叠 */
+        .box1 {
+            margin-right: 20px;
+        }
+
+        .box2 {
+            margin-left: 20px;
+        }
+
+
+        /* 折叠只会存在上下的情况 */
+
+    </style>
+</head>
+
+<body>
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+
+</html>

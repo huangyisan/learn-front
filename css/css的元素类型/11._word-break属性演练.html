@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .box {
+        width:300px;
+        background-color: #f80;
+
+        /* 添加word-break后 浏览器会对长单词进行换行处理 */
+        word-break: break-all;
+    }
+    </style>
+</head>
+<body>
+    <!-- s字符突破300px长度而没有换行是因为 s都是连续的，被浏览器当成一个单词 -->
+    <div class="box">sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+</body>
+</html>
