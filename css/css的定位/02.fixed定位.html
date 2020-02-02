@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /* 元素脱离normal flow */
+    /* 可以通过left right top bottom进行调整 */
+    /* 定位参照对象是视口 */
+    /* 当画布滚动的时候, 固定不动 */
+
+    /* 视口:浏览器窗口,你所能看到的区域 */
+    /* 画布:浏览器通过滚动条能展现的所有区域 */
+
+    div {
+        background-color: #f00;
+    }
+    a {
+        /* 根据视口定位,即便滚动条滚动,也固定不变 */
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+    </style>
+</head>
+<body>
+    <span>span元素</span>
+    <strong>strong元素</strong>
+    <img src="../../html/img/1e26c8c4f3e23ae7660bcf5ec5a6e458.jpg@1100w_484h_1c_100q.jpg" alt="">
+    <div>div元素</div>
+    <a href="#">a元素</a>
+    <i>i元素</i>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>

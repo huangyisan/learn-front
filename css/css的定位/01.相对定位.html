@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: #f00;
+        }
+
+        a {
+            /* relative定位基于原先normal flow的位置进行调整定位 */
+            /* 调整后周围的元素不会因此位移 */
+            /* 原来占据多少位置,就是多少位置,不会改变 */
+            position: relative;
+            left: 20px;
+            top: 50px;
+        }
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <span>span元素</span>
+    <strong>strong元素</strong>
+    <div>div元素</div>
+    <a href="#">a元素</a>
+    <i>i元素</i>
+</body>
+
+</html>
