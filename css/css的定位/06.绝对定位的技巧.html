@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 什么是绝对定位元素? */
+        /* position的值为absolute或者fixed的元素 */
+
+        /* 公式1  定位参照对象的宽度 = left + right + margin-left + margin-right + 绝对定位元素的实际占用宽度 */
+        /* 公式2  定位参照元素的高度 = top + bottom + margin-top +margin-bottom + 绝对定位元素的实际占用高度*/
+
+        .box {
+            position: relative;
+            height: 300px;
+            width: 300px;
+            background-color: #f00;
+        }
+        
+        .inner {
+            /* 1. 完全占据父元素 */
+            /* 根据上面两个公式,即便inner不设定内容(一般都是由内容撑开),当所有都为0的时候,其宽高等于定位参照对象的高度,也就是父元素(因父元素是position:relative,所以作为了最近参照元素) */
+            
+            /* position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: #f80; 
+            ######################*/
+
+            /* 2. 让内容居中 */
+            /* 根据公式1 定位参照对象的宽度是300px, margin-left是0 margin-right是0  绝对定位元素的实际占用宽度是200*/
+            /* 浏览器无法对left right因为设置auto而平分宽度,但可以对margin-left和margin-right设置auto平分宽度 */
+            /* 所以如果要平分,则设定left和rigth的值,让两个值相等,然后把margin-left和margin-right设为auto */
+            width: 200px;
+            height: 200px;
+            background-color: #f80;
+            /* 不要漏掉position: absolute */
+            position: absolute;
+
+            /* 让内容水平居中 */
+            /* 先设定left和right的值,然后让left的值等于right的值 */
+            /* left: 0; */
+            /* right: 0; */
+            /* margin: 0 auto; */
+
+            /* 让内容水平居中 */
+            /* 一样的原理, 设定top和bottom的值,且让其两个相等,然后设定margin:auto 0; */
+            /* top: 0; */
+            /* bottom: 0; */
+            /* margin: auto 0; */
+
+            /* 让内容水平且垂直居中 */
+            /* 则结合上面两者 */
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            /* 可以缩写为 margin:auto */
+            margin: auto auto;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="inner"></div>
+    </div>
+</body>
+
+</html>

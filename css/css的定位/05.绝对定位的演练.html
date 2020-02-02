@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /* 元素脱离normal flow */
+    /* 参照对象为最邻近的定位(非position:static)父级元素 */
+    /* 如果都找不到最邻近的定位父级元素,则根据视口定位,此时等同fixed定位 */
+
+    /* 生产一般技巧: 子绝父相 */
+    /* 保证让让子元素进行绝对定位,父元素进行相对定位 */
+
+    .box1 {
+        width: 300px;
+        height: 300px;
+        background-color: #f00;
+    }
+
+    .box2 {
+        width: 100px;
+        height: 100px;
+        background-color: #f80;
+        position: relative;
+    }
+
+    /* 对a元素进行绝对定位 */
+    a {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+            <a href="#">a元素</a>
+        </div>
+    </div>
+    
+</body>
+</html>
