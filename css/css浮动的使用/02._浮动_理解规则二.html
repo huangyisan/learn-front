@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 浮动后脱离标准流,会触发BFC*/
+        /* 浮动元素不能与行内级内容层叠,行内级内容会被浮动元素推出去 */
+        /* 行内级元素,inline-block,块级元素的文字内容(比如div元素内写的文字) */
+
+        /* 块级元素的文字内容(比如div元素内写的文字)也会被推出去,利用此特特性,可以轻松实现文字环绕功能 */
+        .box {
+            height: 200px;
+            background-color: #f00;
+            /* width:300px; */
+        }
+
+        .inner {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: #f80;
+        }
+
+        strong{
+            
+            float: left;
+            background-color: #0f0;
+        }
+
+        a{
+            /* float:left; */
+            background-color: #00f;
+            color: #fff
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        div元素的文字,属于块级元素的文字内容,被推出去了
+        <div class="inner"></div>
+        <span>span元素</span>
+        <strong>strong元素 我把其他行内级元素推出去了</strong>
+        <a href="#">a元素</a>
+    </div>
+</body>
+
+</html>
