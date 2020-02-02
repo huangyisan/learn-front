@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .box1 {
+        width: 200px;
+        height: 200px;
+        background-color: #f00;
+    }
+    .inner {
+        width: 100px;
+        height: 100px;
+        background-color: #f80;
+    }
+    .box2 {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        background-color: #0f0;
+    }
+    span {
+        position: relative;
+        left:50px;
+        background-color: orange;
+        /* 只能设定给定位元素*/
+        /* 比较方式,如果是兄弟元素,数字越大,层叠越放上;如果相等,则后面的兄弟元素层叠在前面的兄弟元素上;
+                   如果不是兄弟元素,则各自从元素自己以及祖先元素中,找出最邻近2个定位元素进行比较 */
+        z-index: 1;
+    }
+
+    strong {
+        position: relative;
+        background-color: pink;
+        
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="inner"></div>
+    </div>
+    <!-- span为定位元素 会覆盖在非定位元素上(position:static)-->
+    <span>哈哈哈</span>
+    <strong>呵呵呵</strong>
+    <!-- .box2因为没有设定position,所以默认为position:static -->
+    <div class="box2"></div>
+</body>
+</html>
