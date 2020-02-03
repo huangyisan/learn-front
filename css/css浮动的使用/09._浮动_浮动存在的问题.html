@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            /* 因为子元素脱离了浮动,所以当去掉父元素的width和height的时候,父元素"消失"了 */
+            /* width: 300px; */
+            /* height: 300px; */
+            background-color: #f00;
+        }
+
+        .box1 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: #f80;
+            border: 1px solid #333;
+            margin-right: -1px;
+        }
+
+        .box2 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: #00f;
+            border: 1px solid #333;
+        }
+
+        .container::after {
+            /* 伪元素不要忘记content */
+            content:"";
+            clear: both;
+            /* 因为伪元素默认是行内级元素,所以要把他变成块级元素 */
+            display: block;
+
+            /* 下面两条 为了兼容部分老旧内核浏览器 */
+            height: 0;
+            visibility: hidden;
+        }
+        .container {
+            /* 兼容ie6-7浏览器 */
+            *zoom: 1; 
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 浮动存在的问题 -->
+    <!-- 由于浮动元素脱离标准流,变成了脱标元素,所以不再向父元素汇报高度 -->
+    <!-- 父元素计算高度总和的时候,就不会计算浮动元素的总高度,从而导致高度坍塌 -->
+    <!-- 解决的该坍塌的问题的过程,一般叫做浮动清理 -->
+    <!-- 清除浮动的目的是,让父元素计算总高度的时候,把浮动的子元素考虑进去 -->
+
+    <!-- 清除浮动有多种方法,最好的方法是给父元素添加::after伪元素,里面写入clear: both-->
+
+    <!-- clear的取值: -->
+    <!-- 1. left 要求元素的顶部低于之前生成的所有左浮动元素的底部 -->
+    <!-- 1. right 要求元素的顶部低于之前生成的所有右浮动元素的底部 -->
+    <!-- 1. both 要求元素的顶部低于之前生成的所有浮动元素的底部(一般用这个) -->
+
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+
+    <p>p1</p>
+    <p>p2</p>
+    <p>p3</p>
+    <p>p4</p>
+    <p>p5</p>
+</body>
+
+</html>

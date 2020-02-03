@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* skew(x,y) */
+        /* deg:旋转角度 */
+        /* 正数:顺时针旋转 */
+        /* 负数:逆时针选装 */
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #f00;
+            margin: 100px auto 0;
+
+            /* 从什么地方进行缩放,默认为重点缩放 */
+            transform-origin: left top;
+
+        }
+
+        .box:hover {
+            transform:skew(10deg,10deg)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">哈啊哈</div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* transition是transition-propety, transition-duration, transition-timing-function和transition-delay的缩写 */
+        /* transition-propety 指需要应用过度动画的属性名称,不是每种属性都支持,如果写all则表示所有 */
+        /* transition-duration 指过度动画需要的时间,单位可以是s或者ms */
+        /* transition-timing-function 指过度动画的变化,从快到慢,从慢到快 
+        https://developer.mozilla.org/zh-TW/docs/Web/CSS/transition-timing-function */
+        /* transition-delay指定过度动画执行之前的等待时间 */
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #f00;
+            margin: 100px auto 0;
+            transition: width 1s linear 2s ;
+        }
+
+        .box:hover {
+            width: 200px;
+            
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="box">哈啊哈</div>
+</body>
+
+</html>

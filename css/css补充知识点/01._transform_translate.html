@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style>
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: #f00;
+        
+    }
+
+    .box:hover {
+        /* 支持数值和百分比的方式 */
+        /* 第一个数值为x轴,第二个数值为y轴 */
+        /* 如果是百分比,是参照元素本身 */
+        transform: translate(10px,0px);
+    }
+    </style>
+</head>
+<body>
+    <!-- 用transform的情况,比如指针放上去进行位移,之后会复原的情况.margin之类的一般用来布局 -->
+    <div class="box"></div>
+</body>
+</html>

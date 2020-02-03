@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: #f00;
+        margin: 100px auto 0;
+
+        /* 从什么地方进行缩放,默认为重点缩放 */
+        transform-origin: left top;
+        
+    }
+
+    .box:hover {
+        /* 支持数字.表示倍数,不支持百分比 */
+        /* x轴 y轴 */
+        transform: scale(2,2);
+    }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
