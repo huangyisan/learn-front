@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /* 浮动元素之间不能层叠 */
+    /* 如果一个元素浮动,另外一个浮动元素已经在那个位置了,后浮动的元素将紧贴着前一个浮动元素(左浮找左浮,右浮找右浮) */
+    /* 如果浮动空间不够,则会往下移,直到找到足够的浮动空间 */
+    .box {
+        width: 300px;
+        height: 300px;
+        background-color: #f00;
+    }
+
+    .inner {
+        width: 100px;
+        height: 100px;;
+        /* display: inline-block; */
+        background-color: #f90;
+        float: right;
+        
+    }
+
+    .inner1 {
+        width: 100px;
+        height: 100px;;
+        background-color: #0f0;
+        float:right
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+        <span class="inner">qqq</span>
+        <span class="inner1">qqq</span>
+    </div>
+</body>
+</html>
