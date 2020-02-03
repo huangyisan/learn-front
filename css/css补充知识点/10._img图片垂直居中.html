@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            background-color: #f80;
+            /* line-height: 200px; */
+            /* font-size: 0; */
+        }
+        img{
+            /* 以下四条设定图片居中 */
+            position: relative;
+            /* 设定相对父元素高度的50% */
+            top: 50%;
+            /* margin-top: 50%; 这个是相对父元素宽度 */
+            vertical-align: middle;
+            /* 根据自身元素高度,往y轴调整百分之50 */
+            transform: translate(0,-50%);
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <!-- 存在基线对齐的情况, 因为vertical-align的默认值是baseline -->
+        <img src="../../img/google.png" alt="">
+        <span>asdf</span>
+        <span>哈哈啊哈</span>
+    </div>
+</body>
+
+</html>

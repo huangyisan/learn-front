@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: #f80;
+        }
+        img{
+            /* 顶部对齐 */
+            /* vertical-align: top; */
+
+            /* 中心点对齐 */
+            /* 对于图片.如果兄弟元素存在文字则,vertical-align:middle不能用来居中,因为vertical-align:middle是跟文字的中线对齐,但文字自身默认下沉,所以不是居中 */
+            /* 如果兄弟元素不存在文字,则可以使用这个进行居中,但需要在父元素加一条规则font-size:0 并且设定height等于line-height*/
+            /* vertical-align: middle; */
+
+            /* 底部对齐 */
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <!-- 存在基线对齐的情况, 因为vertical-align的默认值是baseline -->
+        <img src="../../img/google.png" alt="">
+        <span>asdf</span>
+    </div>
+</body>
+
+</html>
