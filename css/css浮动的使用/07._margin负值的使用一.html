@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .container {
+        width: 990px;
+        height: 200px;
+        background-color: #f00;
+    }
+
+    .section {
+        margin-right: 10px;
+        float:left;
+        width:190px;
+        height: 100px;
+        background-color: #0f0;
+    }
+    /* 为什么要用margin-right负值? */
+    /* 在进行布局时,同一行多个元素摆放后设置margin-right,让他们产生间距,那么最后的一个元素设置的margin-right总是多余的 */
+    /* 解决方法1. 单独给最后一个元素添加一个class,然后单独对这个元素去掉margin-right(比较笨)*/
+    /* 解决方法2. 使用伪类选择器,比如每行第四个有问题,则使用nth-child(4n)来选择,但有些浏览器(ie8内核)可能不支持伪类选择器 */
+    /* 解决办法3. .container->.warrp->多个item 对warrp设置margin-right的负值 */
+
+    /* 方法3的实现 */
+    .warrp {
+        margin-right: -10px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="warrp">
+            <div class="section"></div>
+            <div class="section"></div>
+            <div class="section"></div>
+            <div class="section"></div>
+            <div class="section"></div>
+        </div>
+
+    </div>
+</body>
+</html>
