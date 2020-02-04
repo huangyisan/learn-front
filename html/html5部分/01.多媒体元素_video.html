@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        video {
+            width: 500px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <video src="http://vfx.mtime.cn/Video/2019/02/04/mp4/190204084208765161.mp4"
+     controls autoplay muted loop></video>
+
+     <!-- 如果存在兼容性,可以将多个视频放到source里面 从上往下,播放第一个可以播放的视频 -->
+     <video controls>
+         <source src="http://vfx.mtime.cn/Video/2019/02/04/mp4/190204084208765161.mp4">
+         <source src="http://vfx.mtime.cn/Video/2019/02/04/mp4/190204084208765161.avi">
+         <source src="http://vfx.mtime.cn/Video/2019/02/04/mp4/190204084208765161.webm">
+     </video>
+</body>
+
+</html>
