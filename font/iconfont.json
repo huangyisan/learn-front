@@ -1,0 +1,16 @@
+{
+  "id": "1628643",
+  "name": "测试",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "551966",
+      "name": "箭头",
+      "font_class": "arrow-right-copy-copy-copy",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    }
+  ]
+}
