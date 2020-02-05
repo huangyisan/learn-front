@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* rem在任何地方使用都是参考根元素的倍数,也就是html */
+
+        /* 适配手机端的两件事: 1. 将不同分辨率的手机设定不同的html {font-size}, 然后来给所有需要适配的元素使用rem单位 */
+
+        /* 问题一: 如何动态的设置移动端html的font-size? */
+
+       
+        /* 解决方法: 1. 使用媒体查询*/
+
+        /* 如果获取到的屏幕为320px, 则设定html为9px */
+        @media screen and (max-width: 320px) {
+            html {
+                font-size: 9px;
+            }
+        }
+
+        @media screen and (max-width: 375px) {
+            html {
+                font-size: 10px;
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            html {
+                font-size: 11px;
+            }
+        }
+        /* 解决方法2. 使用js计算(这里不做介绍) */
+
+        /* 问题二: 如何动态计算rem值 */
+        /* 方法1. vscode的插件来计算 px to rem | 安装好后快捷键alt+z 这种方法太依赖编辑器的第三方插件*/
+        /* 方法2. node打包的时候用postcss-pxtorem插件(最优方案) */
+        /* 方法3. 利用less, sass, stylus的计算能力(三选一,用less比较多)*/
+        html {
+            font-size: 10px;
+        }
+
+        .box {
+            color: #fff;
+            background-color: #f00;
+            height: 100px;
+            width: 100px;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">我是div元素</div>
+</body>
+
+</html>

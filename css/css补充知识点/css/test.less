@@ -1,0 +1,20 @@
+// 定义变量fontcolor, 这样如果以后要修改的话可以一次性修改
+@fontcolor: yellow;
+
+.container {
+    p {
+        color: @fontcolor;
+    }
+
+    .box {
+        a {
+            color:@fontcolor;
+            // 可以使用运算
+            font-size: 20px * 2;
+        }
+    }
+}
+
+// 安装完viscode的easy less插件,然后保存就能生成对应的css了
+
+// 还有一种方法生成css是用node

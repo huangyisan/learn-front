@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .box {
+        /* width设置em的情况,先看自己是否设置font-size,如果有则大小为em*font-size,没有则看父元素的font-size,大小为em*父元素的font-size */
+        width: 100px;
+        height: 100px;
+        background-color: #f00;
+        color: #fff;
+
+        /* 设置文字大小
+            1.px: 像素
+            2.em: 相对于父元素字体的大小
+                2em: 父元素(字体默认为16像素,所以为16px * 2 = 32px)
+            3. %: 用在不同场景,相对的是不一样.
+                3.1 字体中,相对于父元素的字体
+            */
+
+        /* 百分比的使用请直接查阅文档,因为参考物变化比较多 */
+        /* margin-top的百分比 相对于父元素的宽度,非父元素的高度 */
+        font-size: 2em;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">box的内容</div>
+</body>
+</html>
