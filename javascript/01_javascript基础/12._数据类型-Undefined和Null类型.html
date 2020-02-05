@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name;
+        // 1. undefined 声明了变量,但没有赋值.这个时候打印出来会是undefined
+        // undefined类型只有一个值, undefined
+        console.log(name)
+
+        // 2. null(空)
+        // null 类型也只有一个值:null
+        // 通常当一个对象(Object类型)不再使用时, 可以赋值为null
+        var info = {name:"yisan"}
+        // 回收info,可以进行垃圾回收
+        info = null
+
+        // null和undefined关系:
+        // undefined值实际上是有null衍生出来的,所以比较undefined和null,返回true
+        console.log(undefined == null)
+        // 如果转换成数字时,undefined为NaN, null为0
+        
+    </script>
+</body>
+</html>

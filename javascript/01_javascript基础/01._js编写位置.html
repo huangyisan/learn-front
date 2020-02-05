@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+    <!-- 1.在html元素中直接执行JavaScript代码(不推荐) -->
+    <a href="" onclick="alert('我是一个弹窗')">弹窗</a>
+
+    <!-- 2.书写到script的标签中(学习阶段) -->
+    <script>
+        alert('我是直接弹出的弹窗')
+    </script>
+
+    <!-- 从外部引入js文件(生产环境) -->
+    <script src="./js/test.js"></script>
+
+    <!-- 作为html文档内容的一部分.javascript遵循加载顺序.推荐将js代码编写到body子元素的最后一行 -->
+</body>
+</html>
