@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /* flex-basis用来设置flex items在main axis方向上的base size */
+    /* auto(默认值),具体的宽度数值(100px) */
+
+    /* 决定flex items最终base size的因素,从优先级高到低 */
+    /* max-width\max-height\min-width\min-height */
+    /* flex-basis */
+    /* width\height */
+    /* 内容本身的size */
+
+        .box {
+            width: 550px;
+            height: 500px;
+            background-color: #ff8800; 
+            display: flex;
+        }
+
+        .boxall {
+            width: 100px;
+            height: 100px;
+        }
+
+        .box .boxall:nth-child(2n) {
+            background-color: #0f0;
+            /* 打破.boxall中的width,优先级比width高,所以覆盖 */
+            flex-basis: 200px;
+
+
+        }
+
+        .box .boxall:nth-child(2n-1) {
+            background-color: #f00;
+            
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+
+    <div class="box">
+        <div class="boxall box1">div1</div>
+        <div class="boxall box2">div2</div>
+        <div class="boxall box3">div3</div>
+    </div>
+</body>
+
+</html>

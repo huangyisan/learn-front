@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* flex-shrink 当父元素小于子元素总宽度,需要子元素收缩后填满父元素 */
+        /* 该属性设置在flex-items上 */
+        /* 可以设置任意非负数字,默认值是0 */
+        /* 当flex items在main axis方向上超过了flex container的size, flex-shrink属性才能生效 */
+
+        /* 如果所有flex items的flex-shrink总和sum超过1, 每个flex item收缩的size为 flex container的剩余size * flex-shrink/sum */
+        /* 如果不超过,则收缩比例=flex-shrink * flex item的原有size */
+
+
+        .box {
+            width: 550px;
+            height: 500px;
+            background-color: #ff8800; 
+            display: flex;
+        }
+
+        .boxall {
+            width: 200px;
+            height: 100px;
+        }
+
+        .box .boxall:nth-child(2n) {
+            background-color: #0f0;
+            flex-shrink: 1;
+
+
+        }
+
+        .box .boxall:nth-child(2n-1) {
+            background-color: #f00;
+            
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+
+    <div class="box">
+        <div class="boxall box1">div1</div>
+        <div class="boxall box2">div2</div>
+        <div class="boxall box3">div3</div>
+    </div>
+</body>
+
+</html>

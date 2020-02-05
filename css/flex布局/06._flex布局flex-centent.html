@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* align-content决定了多行情况下flex items在cross axis上的对齐方式, 用法与justify-content类似 */
+        /* stretch(默认值): 与align-items的stretch类似
+            flex-start: 与cross start对齐
+            flex-edn: 与cross end对齐
+            center: 居中对齐
+            space-btween: flex itmes之间的距离相等; 与cross start, cross end两端对齐
+            space-around: flex items之间的距离相等; flex items与cross start, cross end之间的距离是flex items之间距离的一半
+            space-evenly: flex itmes之间的距离相等;flex itmes与cross start, cross end之间的距离等于flex items之间的距离 */
+        .box {
+            width: 550px;
+            height: 500px;
+            background-color: #ff8800;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+
+        .boxall {
+            width: 100px;
+            height: 100px;
+        }
+
+        .box .boxall:nth-child(2n) {
+            background-color: #0f0;
+        }
+
+        .box .boxall:nth-child(2n-1) {
+            background-color: #f00;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="box">
+        <div class="boxall box1">div1</div>
+        <div class="boxall box2">div2</div>
+        <div class="boxall box3">div2</div>
+        <div class="boxall box4">div2</div>
+        <div class="boxall box5">div2</div>
+        <div class="boxall box6">div2</div>
+        <div class="boxall box7">div2</div>
+    </div>
+</body>
+
+</html>
