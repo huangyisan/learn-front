@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /* 3D动画实现的两种方式,1.css实现3D, 2.JS实现3D(库:three.js) */
+    body {
+        
+            /* 设定初始化视距 */
+            perspective: 1000px;
+        }
+    
+    .box {
+        width: 200px;
+        height: 200px;
+        margin:0 auto;
+        background-color: #f00;
+        /* transform: translate() */
+        /* 最后一个为z轴,类似眼睛观看屏幕的垂直方向,200px,表示拉近了800px(初始化视距1000px-200px)的距离,所以图形比之前的变大 */
+        transform: translate3d(0,0,200px)
+    }
+
+    .container {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+
+        /* 开启3d */
+        transform-style: preserve-3d;
+
+        transform: rotateY(45deg);
+    }
+
+    .container .item{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 200px;
+        
+    }
+    .container .item1 {
+        background-color: #f00;
+        transform: translateZ(-60px);
+    }
+
+    .container .item2 {
+        background-color: #f80;
+        transform: translateZ(-120px);
+    }
+
+    .container .item3 {
+        background-color: #0f0;
+        transform: translateZ(-180px);
+    }
+
+    .container .item4 {
+        background-color: #00f;
+        transform: translateZ(-240px);
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <div class="container">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item4"></div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .box {
+        width: 150px;
+        height: 150px;
+        background-color: #f00;
+
+    }
+    .box:hover {
+        /* 主要三个参数,执行哪个keyframe,多久执行完,执行动画速率 .如果有多个动画效果,则用逗号分开*/
+        /*  animation: test1 2s ease-in, animation: test2 2s ease-in; */
+        /* 其他参数参考手册 */
+        animation: test1 2s ease-in;
+    }
+
+    @keyframes test1 {
+        /* 将整个状态分成若干等分 */
+        0% {
+            transform: translate(0,0)
+        }
+
+        25% {
+            transform: translate(200px,0)
+        }
+
+        75% {
+            transform: translate(200px,200px)
+        }
+        100%{
+            transform: translate(0,200px)
+        }
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>
