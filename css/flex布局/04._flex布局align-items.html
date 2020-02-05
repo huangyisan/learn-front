@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            background-color: #f00;
+            display: flex;
+            align-items: baseline;
+            
+        }
+
+    .box1, .box2 {
+        width:100px;
+        height: 100px;
+        text-align: center;
+        
+        background-color:orange;
+    }
+    </style>
+</head>
+<body>
+    <!-- align-items决定了flex itmes在cross axis上的对齐方式 -->
+    <!-- normal: 在弹性布局中,效果和stretch一样 -->
+    <!-- stretch: 当flex itmes在cross axis方向的size为auto时,会自动拉伸至填充flex container -->
+    <!-- flex-start: 与cross start对齐-->
+    <!-- flex-end: 与cross end对齐 -->
+    <!-- center: 居中对齐 -->
+    <!-- baseline:与基准线对齐 -->
+
+    <div class="box">
+        <div class="box1">div1</div>
+        <div class="box2">div2</div>
+    </div>
+</body>
+
+</html>
