@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    var message = "123";
+    
+    // 1. 字符串转换成number类型
+    var num = Number(message)
+    console.log(num)
+
+    var message1 = "abc"
+    num = Number(message1)
+    console.log(num) //输出为NaN
+
+    // 2. 布尔类型转换成数字类型
+    console.log(Number(true)) // 1
+    console.log(Number(false)) // 0
+
+    // 3. undefined转数字
+    console.log(Number(undefined)) // NaN
+
+    // 4. null转换成数字
+    console.log(Number(null)) // 0
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // parseInt(string, radix) 只能将字符串转换成整数, radix表示基数,可以理解为进制
+        // 如果第一个字符是数字或者运算符号,那么句开始解析,直到遇到非数字字符,停止并且得到结果
+        // 如果第一个字符是非数字且非运算符号,则不解析并得到结果NaN
+        var str = "123";
+        console.log(parseInt(str)) // 123
+
+        var str = "123.222"
+        console.log(parseInt(str)) // 123 转成了整数
+
+        // 使用radix
+        var str = "123";
+        console.log(parseInt(str,2)) // 1  作为二进制转换,而二进制123 符合的只有1,则只有1进行转换,得到了1
+
+        // parseFloat没有基数(radix)
+        var s1 = "123.22"
+        var n1 = parseFloat(s1)
+        console.log(n1) // 123.22
+
+        var s1 = "123"
+        var n1 = parseFloat(s1)
+        console.log(n1) // 123
+
+        var s1 = "123.23.23"
+        var n1 = parseFloat(s1)
+        console.log(n1) // 123.23
+        
+    </script>
+    
+</body>
+</html>

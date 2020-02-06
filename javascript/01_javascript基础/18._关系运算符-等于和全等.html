@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1 = 123;
+        var num2 = "123";
+        // == 判断会做隐式转换
+        console.log(num1 == num2); //true
+        // 隐式转换对应表 
+        // https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Equality_comparisons_and_sameness
+        console.log("true" == true);
+
+        // === 全等: 数据类型相等,且数据相等
+        console.log(num1 === num2); //false
+        console.log(num1 !== num2); //false
+        
+        </script>
+</body>
+</html>

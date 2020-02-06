@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = 123;
+        var obj = null; 
+        var message = undefined; 
+        var flag = true;
+
+        // 1. 转换方式1, 变量.toString() 该方法只能转换数值类型和布尔类型;
+        console.log(num.toString())
+        console.log(obj.toString()) //无法转换成string
+        console.log(message.toString()) //无法转换成string
+        console.log(flag.toString())
+
+        // 2. 转换方式2, String(变量)
+        console.log(String(num)) 
+
+        // 3. 转换方式3 字符串进行拼接
+        // 隐式转换, 其他的数据类型再和字符串通过+运算拼接时,会自动转换成字符串类型
+        console.log(num + "")
+        console.log(obj + "")
+        console.log(message + "")
+        </script>
+</body>
+</html>
