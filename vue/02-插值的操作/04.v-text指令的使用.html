@@ -10,8 +10,8 @@
 
 <div id="app">
   <h2>{{message}}</h2>
-  <!--v-once指令,初次渲染数据后,变不会再被修改-->
-  <h2 v-once>{{message}}</h2>
+  <!--用法跟{{message}}类似,但如果标签内有内容的话,会全部覆盖,不够灵活,建议使用上面一种方式-->
+  <h2 v-text="message"></h2>
 </div>
 
 

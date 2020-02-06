@@ -7,11 +7,8 @@
 <body>
 <script src="../js/vue.js"></script>
 
-
 <div id="app">
-  <h2>{{message}}</h2>
-  <!--v-once指令,初次渲染数据后,变不会再被修改-->
-  <h2 v-once>{{message}}</h2>
+  <h2 :style="[baseStyle, baseStyle1]">{{message}}</h2>
 </div>
 
 
@@ -19,11 +16,15 @@
   const app = new Vue({
     el: "#app",
     data: {
-      message: "你好啊"
+      message: "你好啊",
+      baseStyle: {backgroundColor: 'red'},
+      //font-size使用驼峰式
+      baseStyle1: {fontSize: '90px'}
     }
   })
 
 </script>
+
 
 </body>
 </html>
