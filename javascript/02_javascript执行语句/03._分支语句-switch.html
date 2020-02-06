@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // switch与case一起使用
+        // 只能判断是否相等,不能判断范围
+        // 与if语句不同的是,switch语句只能做值的相等判断(使用全等运算符===)
+
+        // case穿透问题
+        // 一条case语句结束后,会自动执行下一条case语句
+
+        // break关键字
+        // 通过在每个case的代码块后面添加break关键字来解决case穿透这个问题
+        /*
+        swtich(值) {
+            case "比较值1":
+                执行语句1
+            case "比较值2":
+                执行语句2
+                break
+            
+            没有任何匹配则执行default
+            default:
+                执行语句2
+        }
+        */
+
+        var holidayname = prompt("请输入今天的日子")
+        switch (holidayname) {
+            // 输入情人节则会穿透到生日
+            case "情人节":
+                console.log("买玫瑰")
+            case "生日":
+                console.log("吃蛋糕")
+                // 跳出
+                break
+            default:
+                console.log("工作")
+        }
+
+
+
+        
+        
+    </script>
+</body>
+</html>

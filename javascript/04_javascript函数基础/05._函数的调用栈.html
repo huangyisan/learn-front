@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function test1() {
+            console.log("这是test1函数");
+            test2()
+        }
+
+        function test2() {
+            console.log("这是test2函数");
+            test3()
+        }
+
+        function test3() {
+            console.log("这是test3函数");
+        }
+
+        // 当调用test1的时候,将其压入栈中;在test1里面因为会调用test2, 则将test2再压入栈,同理,test3被压入到栈中,执行test3的时候,就开始出栈,出栈顺序是test3-->test2-->test1
+        // 开发中尽量少用递归,递归如果没有写好,则会无限调用;递归调用非常占用栈空间内存(空间复杂度)和效率时间比(时间复杂度)
+        test1()
+    </script>
+</body>
+
+</html>

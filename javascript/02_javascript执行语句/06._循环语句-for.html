@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* for循环是开发中使用最多的循环语句:
+        for (初始化表达式1; 表达式2; 自增/自减表达式3) {
+            循环体
+        }
+        */
+
+
+        // 三个表达式全写
+        /*
+        for (var i = 10; i > 0; i--) {
+            console.log(i)
+        }
+        */
+
+        // 写两个表达式
+        /*
+        var i = 10;
+        for (;i > 0; i--) {
+            console.log(i)
+        }
+        */
+
+        // 等价while的循环,单个表达式,可以将判断式写入for的执行语句中
+        var i = 10;
+        for (;i>0;) {
+            console.log(i)
+            i--
+
+        }
+    </script>
+</body>
+</html>
