@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1. 值传递
+        function test(name) {
+            name = "kobe";
+        }
+        // temp存放的数据在栈空间
+        var temp = "why";
+        test(temp)
+        console.log(temp); //打印出的是why
+
+
+        // 2. 引用传递
+        
+        function test1(arr) {
+            arr[0] = "abc"
+        }
+        // 数组存放在堆空间,数据对应的内存地址存放在栈空间
+        // 函数里面的arr其实指向了temp的同一个内存空间,那么指向的堆空间数据也是同一个,则arr修改了数据,就会修改掉堆空间的数据
+        var temp = [10, 20, 30]
+        test1(temp)
+        console.log(temp) // 打印出来的是["abc", 20, 30]
+
+    </script>
+</body>
+
+</html>

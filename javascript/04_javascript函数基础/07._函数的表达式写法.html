@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 函数表达式: 匿名函数表达式和命名函数表达式
+        // 命名函数表达式如下,将函数赋值给一个变量
+        var foo = function test() {
+            console.log("函数被调用");
+        }
+
+        foo();
+
+        // 匿名表达式如下
+        var cba = function () {
+            console.log("cba被调用");
+        }
+        cba();
+
+        // 3. 函数都有一个属性: name 函数的名字,如果是匿名表达式,则赋值给变量的变量名
+        console.log(foo.name)
+    </script>
+</body>
+
+</html>

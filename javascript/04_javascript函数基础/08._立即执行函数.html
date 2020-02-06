@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. js不允许直接在一个函数声明后面跟()
+    function test(){
+        console.log("test函数")
+    };
+    
+    // 2. 匿名函数可以直接函数后面跟()调用
+    var demo = function() {
+        console.log("demo匿名函数")
+    }();
+
+    // 对test1的改进, 执行完后会理解销毁,无法被调用
+    // 因为执行后被销毁,所以函数名称没有意义
+    // 上面改进后如下
+    (function() {
+        console.log("test去掉函数名后的函数")
+    })();
+
+    // 如果非要弄一个函数名字,但这test名称也用不到了,因为执行后会被销毁
+    (function test() {
+        console.log("带名字的函数")
+    }());
+
+    // 理解执行的函数返回值是undefined
+
+    // 立即执行函数有什么用?
+    /*
+    会创建一个独立的执行上下文环境,可以避免外接访问或者修改内部变量,也避免了对内部变量的修改
+    */
+        
+    </script>
+</body>
+</html>
