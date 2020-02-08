@@ -25,6 +25,12 @@
   </label>
 
 <h2>您的爱好是: {{sports}}</h2>
+
+  <!--从data里面获取数据渲染到前端,服务器提供可选项,然后前端渲染-->
+  <label v-for="item in originHobbies" :for="item">
+    <input type="checkbox" :value="item" v-model="sports" :id="item"> {{item}}
+  </label>
+  <h2>您的爱好是: {{sports}}</h2>
 </div>
 
 
@@ -35,7 +41,8 @@
       message: "你好啊",
       isAgree: false,
       //使用数组类型
-      sports: []
+      sports: [],
+      originHobbies: ['乒乓球','高尔夫球']
     }
   })
 
