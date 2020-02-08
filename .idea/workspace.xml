@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c578ced9-fa7d-4095-885f-544be977a9ea" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/07.循环遍历/02.v-for遍历对象.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue/07.循环遍历/02.v-for遍历对象.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,24 +24,34 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="19" />
+          <entry key="css" value="2" />
+          <entry key="html" value="27" />
+          <entry key="js" value="2" />
+          <entry key="ts" value="1" />
           <entry key="vue" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="19" />
+          <entry key="CSS" value="2" />
+          <entry key="HTML" value="27" />
+          <entry key="JavaScript" value="2" />
+          <entry key="TypeScript" value="1" />
           <entry key="Vue.js" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="3583" />
+          <entry key="css" value="237" />
+          <entry key="html" value="5256" />
+          <entry key="js" value="1671" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="3583" />
+          <entry key="CSS" value="237" />
+          <entry key="HTML" value="5256" />
+          <entry key="JavaScript" value="1671" />
         </counts>
       </usages-collector>
     </session>
@@ -78,46 +89,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/06.条件判断/04.用户登录切换的小案例.html">
+        <entry file="file://$PROJECT_DIR$/vue/08.数据购物车案例/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+            <state relative-caret-position="356">
+              <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/06.条件判断/05.用户登录切换的小案例(小问题).html">
+        <entry file="file://$PROJECT_DIR$/vue/08.数据购物车案例/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/06.条件判断/06.v-show的使用以及和v-show的区别.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+            <state relative-caret-position="60">
+              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vue/07.循环遍历/01.v-for遍历数组.html">
+        <entry file="file://$PROJECT_DIR$/vue/08.数据购物车案例/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/07.循环遍历/02.v-for遍历对象.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="14" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="14" />
+            <state relative-caret-position="646">
+              <caret line="86" column="3" lean-forward="true" selection-start-line="86" selection-start-column="3" selection-end-line="86" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -127,10 +120,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -145,11 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/html/lesson6/bug.html" />
-        <option value="$PROJECT_DIR$/html/lesson6/bug.css" />
-        <option value="$PROJECT_DIR$/html/lesson7/1.js" />
-        <option value="$PROJECT_DIR$/html/lesson7/t.html" />
-        <option value="$PROJECT_DIR$/html/lesson7/t.css" />
         <option value="$PROJECT_DIR$/html/object/ob.html" />
         <option value="$PROJECT_DIR$/html/object/ob.js" />
         <option value="$PROJECT_DIR$/vue/vue.js" />
@@ -196,6 +184,11 @@
         <option value="$PROJECT_DIR$/vue/06.条件判断/06.v-show的使用.html" />
         <option value="$PROJECT_DIR$/vue/07.循环遍历/01.v-for遍历对象.html" />
         <option value="$PROJECT_DIR$/vue/07.循环遍历/02.v-for遍历对象.html" />
+        <option value="$PROJECT_DIR$/vue/07.循环遍历/03.v-key使用过程添加key.html" />
+        <option value="$PROJECT_DIR$/vue/07.循环遍历/04.哪些数组的方法是响应式的.html" />
+        <option value="$PROJECT_DIR$/vue/08.数据购物车案例/style.css" />
+        <option value="$PROJECT_DIR$/vue/08.数据购物车案例/index.html" />
+        <option value="$PROJECT_DIR$/vue/08.数据购物车案例/main.js" />
       </list>
     </option>
   </component>
@@ -205,10 +198,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1057" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="638" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -235,7 +227,7 @@
               <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
               <item name="learn-front" type="462c0819:PsiDirectoryNode" />
               <item name="vue" type="462c0819:PsiDirectoryNode" />
-              <item name="07.循环遍历" type="462c0819:PsiDirectoryNode" />
+              <item name="08.数据购物车案例" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -253,14 +245,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/html/lesson3" />
+      <recent name="$PROJECT_DIR$/html" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\huangyisan\Desktop\github\learn-front\vue\06.条件判断" />
       <recent name="$PROJECT_DIR$/vue/03-动态绑定属性" />
       <recent name="$PROJECT_DIR$/html/lesson4" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/html/lesson3" />
-      <recent name="$PROJECT_DIR$/html" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -303,12 +295,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78120000" />
+    <option name="totallyTimeSpent" value="91978000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1057" extended-state="0" />
+    <frame x="0" y="0" width="638" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2542735" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.30307943" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -337,12 +330,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/note/position.css" />
-    <entry file="file://$PROJECT_DIR$/html/lesson6/lianglanbuju.css" />
-    <entry file="file://$PROJECT_DIR$/html/lesson6/bug.html" />
-    <entry file="file://$PROJECT_DIR$/html/lesson6/bug.css" />
-    <entry file="file://$PROJECT_DIR$/html/lesson7/1.js" />
-    <entry file="file://$PROJECT_DIR$/html/lesson7/t.html" />
     <entry file="file://$PROJECT_DIR$/html/lesson7/t.css" />
     <entry file="file://$PROJECT_DIR$/html/lesson6/lianglanbuju.html" />
     <entry file="file://$PROJECT_DIR$/html/object/ob.js" />
@@ -418,51 +405,37 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/03-动态绑定属性/04.v-bind动态绑定style(对象语法1).html" />
-    <entry file="file://$PROJECT_DIR$/vue/03-动态绑定属性/02.v-bind动态绑定class属性(对象语法).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="21" column="23" selection-start-line="21" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue/04-计算属性/02.计算属性的复杂操作.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="285">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/04-计算属性/01.计算属性的基本使用.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
+        <state relative-caret-position="166">
           <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/03-动态绑定属性/03.v-bind动态绑定class属性(数组语法).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/03-动态绑定属性/04.v-bind动态绑定style(对象语法).html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
+        <state relative-caret-position="55">
           <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/03-动态绑定属性/05.v-bind动态绑定style(数组语法).html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="25" column="9" selection-start-line="7" selection-end-line="25" selection-end-column="9" />
+        <state relative-caret-position="256">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/03-动态绑定属性/01.v-bind的基本使用.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
+        <state relative-caret-position="-7">
           <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
@@ -516,9 +489,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/06.条件判断/01-v-if的使用">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/06.条件判断/01-v-if的使用" />
     <entry file="file://$PROJECT_DIR$/vue/05.事件监听/03.v-on的修饰符.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="498">
@@ -568,17 +539,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/07.循环遍历/02.v-for遍历对象.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue/07.循环遍历/01.v-for遍历数组.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/07.循环遍历/02.v-for遍历对象.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/07.循环遍历/03.v-key使用过程添加key.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/07.循环遍历/04.哪些数组的方法是响应式的.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/03-动态绑定属性/03.v-bind动态绑定class属性(数组语法).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/03-动态绑定属性/02.v-bind动态绑定class属性(对象语法).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="3335" column="13" selection-start-line="3335" selection-start-column="13" selection-end-line="3335" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/08.数据购物车案例/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/08.数据购物车案例/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/08.数据购物车案例/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="86" column="3" lean-forward="true" selection-start-line="86" selection-start-column="3" selection-end-line="86" selection-end-column="3" />
         </state>
       </provider>
     </entry>

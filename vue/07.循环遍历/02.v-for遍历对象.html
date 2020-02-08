@@ -9,14 +9,23 @@
 <script src="../js/vue.js"></script>
 
 <div id="app">
-  <h2>{{message}}</h2>
+  <ul>
+    <!--获取对象的key和value-->
+    <li v-for="v,k in info">key为{{k}}, value为{{v}}</li>
+    <!--获取对象的key vaule index-->
+    <li v-for="v,k,i in info">key为{{k}}, value为{{v}} index为{{i}}</li>
+  </ul>
 </div>
 
 <script>
   const app = new Vue({
     el: "#app",
     data: {
-      message: "你好啊"
+      info: {
+        name: 'why',
+        age: 18,
+        height: 1.88
+      }
     }
   })
 
