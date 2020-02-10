@@ -1,0 +1,16 @@
+//若要将npm run build映射为webpack,让终端输入npm run build就能等同于执行webpack编译
+则需要在package.json里面定义build命令执行的内容,如下,执行build就是等同webpack
+
+{
+  "name": "meetwebpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
