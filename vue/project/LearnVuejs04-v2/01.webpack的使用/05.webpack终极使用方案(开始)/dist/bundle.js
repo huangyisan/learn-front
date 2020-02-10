@@ -700,7 +700,9 @@ document.writeln('<h2>你好</h2>');
 // 使用webpack安装的vue,则直接可以导入了
 
 
-// 将实例里面的内容抽取出来
+// 将实例里面的内容抽取出来, 这些内容放这边也别扭,都抽出来,放vue/app.js下面,然后export出来(看06继续文档)
+// 这边进行import
+// import app from './vue/app.js'
 var App = {
   template: '\n  <div>\n  <h2>{{message}}</h2>\n  <button @click="btnClick">\u6309\u94AE</button>\n  <h2>{{name}}</h2>\n</div>\n  ',
   data: function data() {

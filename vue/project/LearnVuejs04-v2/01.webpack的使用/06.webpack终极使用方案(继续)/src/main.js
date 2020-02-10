@@ -37,38 +37,51 @@ require('./css/special.less');
 
 document.writeln('<h2>你好</h2>')
 
+
+
+/**
 // 5. 使用vue进行开发
 // 使用webpack安装的vue,则直接可以导入了
+ */
 import Vue from 'vue'
+import App from './vue/app.js'
 
+/**
+ // 将实例里面的内容抽取出来, 这些内容放这边也别扭,都抽出来,放vue/app.js下面,然后export出来(看06继续文档)
+ // 这边进行import
+ // import app from './vue/app.js'
 // 将实例里面的内容抽取出来
-const App = {
-  template: `
-  <div>
-  <h2>{{message}}</h2>
-  <button @click="btnClick">按钮</button>
-  <h2>{{name}}</h2>
-</div>
-  `,
-  data: {
-    message: 'hello world',
-    name: 'yisan'
-  },
-  methods: {
-    btnClick() {
-      console.log('点击了')
-    }
-  }
-};
+// const App = {
+//   template: `
+//   <div>
+//   <h2>{{message}}</h2>
+//   <button @click="btnClick">按钮</button>
+//   <h2>{{name}}</h2>
+// </div>
+//   `,
+//   data: {
+//     message: 'hello world',
+//     name: 'yisan'
+//   },
+//   methods: {
+//     btnClick() {
+//       console.log('点击了')
+//     }
+//   }
+// };
+
+ */
 
 const app = new Vue({
+  /**
   // 开发中,不会往index.html中写入template,但会写一个<div id='app'></div>的块.
   // 解析的时候,template的内容,会替换掉el对应的块的内容
+   */
   el: '#app',
   // <APP/> 替换#app, 单标签/在后面
-  template: '<APP/>',
+  template: '<App/>',
   components: {
     //组件里面注册APP
-    APP
+    App
   }
 });

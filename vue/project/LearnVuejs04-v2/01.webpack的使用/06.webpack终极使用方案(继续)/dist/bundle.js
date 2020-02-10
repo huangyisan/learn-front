@@ -659,6 +659,10 @@ var _vue = __webpack_require__(6);
 
 var _vue2 = _interopRequireDefault(_vue);
 
+var _app = __webpack_require__(9);
+
+var _app2 = _interopRequireDefault(_app);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 console.log((0, _mathUtil.add)(1, 2));
@@ -670,7 +674,7 @@ console.log((0, _mathUtil.mul)(1, 2));
 
 // 依赖css文件,也写入main.js
 
-__webpack_require__(9);
+__webpack_require__(10);
 
 // css文件需要用loader才能处理
 //1. 安装loader  开发时依赖模式 --save-dev
@@ -687,7 +691,7 @@ __webpack_require__(9);
 
 
 // 将less文件引入
-__webpack_require__(11);
+__webpack_require__(12);
 
 // 安装less的loader
 // npm install -save-dev less-loader less
@@ -696,33 +700,49 @@ __webpack_require__(11);
 
 document.writeln('<h2>你好</h2>');
 
+/**
 // 5. 使用vue进行开发
 // 使用webpack安装的vue,则直接可以导入了
+ */
 
 
+/**
+ // 将实例里面的内容抽取出来, 这些内容放这边也别扭,都抽出来,放vue/app.js下面,然后export出来(看06继续文档)
+ // 这边进行import
+ // import app from './vue/app.js'
 // 将实例里面的内容抽取出来
-var App = {
-  template: '\n  <div>\n  <h2>{{message}}</h2>\n  <button @click="btnClick">\u6309\u94AE</button>\n  <h2>{{name}}</h2>\n</div>\n  ',
-  data: {
-    message: 'hello world',
-    name: 'yisan'
-  },
-  methods: {
-    btnClick: function btnClick() {
-      console.log('点击了');
-    }
-  }
-};
+// const App = {
+//   template: `
+//   <div>
+//   <h2>{{message}}</h2>
+//   <button @click="btnClick">按钮</button>
+//   <h2>{{name}}</h2>
+// </div>
+//   `,
+//   data: {
+//     message: 'hello world',
+//     name: 'yisan'
+//   },
+//   methods: {
+//     btnClick() {
+//       console.log('点击了')
+//     }
+//   }
+// };
+
+ */
 
 var app = new _vue2.default({
+  /**
   // 开发中,不会往index.html中写入template,但会写一个<div id='app'></div>的块.
   // 解析的时候,template的内容,会替换掉el对应的块的内容
+   */
   el: '#app',
   // <APP/> 替换#app, 单标签/在后面
-  template: '<APP/>',
+  template: '<App/>',
   components: {
     //组件里面注册APP
-    APP: APP
+    App: _app2.default
   }
 });
 
@@ -13016,8 +13036,36 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+// 将抽出来的内容放里面
+
+exports.default = {
+  template: '\n  <div>\n  <h2>{{message}}</h2>\n  <button @click="btnClick">\u6309\u94AE</button>\n  <h2>{{name}}</h2>\n</div>\n  ',
+  data: function data() {
+    return {
+      message: 'hello world',
+      name: 'yisan'
+    };
+  },
+
+  methods: {
+    btnClick: function btnClick() {
+      console.log('点击了');
+    }
+  }
+};
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
 var api = __webpack_require__(2);
-            var content = __webpack_require__(10);
+            var content = __webpack_require__(11);
 
             content = content.__esModule ? content.default : content;
 
@@ -13039,7 +13087,7 @@ var exported = content.locals ? content.locals : {};
 module.exports = exported;
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(false);
@@ -13049,11 +13097,11 @@ exports.push([module.i, "body {\n  /*background-color: red;*/\n  /*background: u
 
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var api = __webpack_require__(2);
-            var content = __webpack_require__(12);
+            var content = __webpack_require__(13);
 
             content = content.__esModule ? content.default : content;
 
@@ -13075,7 +13123,7 @@ var exported = content.locals ? content.locals : {};
 module.exports = exported;
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(false);

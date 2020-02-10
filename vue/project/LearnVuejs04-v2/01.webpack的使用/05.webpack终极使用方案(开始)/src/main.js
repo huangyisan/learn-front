@@ -41,29 +41,27 @@ document.writeln('<h2>你好</h2>')
 // 使用webpack安装的vue,则直接可以导入了
 import Vue from 'vue'
 
-// 将实例里面的内容抽取出来, 这些内容放这边也别扭,都抽出来,放vue/app.js下面,然后export出来
-// 这边进行import
-import app from './vue/app.js'
-// const App = {
-//   template: `
-//   <div>
-//   <h2>{{message}}</h2>
-//   <button @click="btnClick">按钮</button>
-//   <h2>{{name}}</h2>
-// </div>
-//   `,
-//   data(){
-//     return {
-//       message: 'hello world',
-//       name: 'yisan'
-//     }
-//   },
-//   methods: {
-//     btnClick() {
-//       console.log('点击了')
-//     }
-//   },
-// };
+
+const App = {
+  template: `
+  <div>
+  <h2>{{message}}</h2>
+  <button @click="btnClick">按钮</button>
+  <h2>{{name}}</h2>
+</div>
+  `,
+  data(){
+    return {
+      message: 'hello world',
+      name: 'yisan'
+    }
+  },
+  methods: {
+    btnClick() {
+      console.log('点击了')
+    }
+  },
+};
 
 const app = new Vue({
   // 开发中,不会往index.html中写入template,但会写一个<div id='app'></div>的块.
