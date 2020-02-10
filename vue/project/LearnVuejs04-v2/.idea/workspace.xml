@@ -4,12 +4,6 @@
     <list default="true" id="a5070c29-9a40-4902-9afc-141a6b124edd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01.webpack的使用/05.webpack终极使用方案(开始)/dist/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/01.webpack的使用/05.webpack终极使用方案(开始)/dist/bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01.webpack的使用/05.webpack终极使用方案(开始)/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/01.webpack的使用/05.webpack终极使用方案(开始)/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01.webpack的使用/05.webpack终极使用方案(开始)/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/01.webpack的使用/05.webpack终极使用方案(开始)/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01.webpack的使用/06.webpack终极使用方案(继续)/dist/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/01.webpack的使用/06.webpack终极使用方案(继续)/dist/bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01.webpack的使用/06.webpack终极使用方案(继续)/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/01.webpack的使用/06.webpack终极使用方案(继续)/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01.webpack的使用/06.webpack终极使用方案(继续)/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/01.webpack的使用/06.webpack终极使用方案(继续)/src/main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,6 +18,7 @@
     <session id="1839707971">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -80,99 +75,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01.webpack的使用/07.webpack终极使用方案(完结+插件安装使用)/readme.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01.webpack的使用/08.webpack-node服务器安装/webpack.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="105" column="40" selection-start-line="105" selection-start-column="40" selection-end-line="105" selection-end-column="40" />
-              <folding>
-                <element signature="e#397#613#0" />
-                <element signature="e#643#2196#0" />
-                <element signature="e#2243#2303#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01.webpack的使用/09.webpack配置文件分离/src/js/mathUtil.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01.webpack的使用/09.webpack配置文件分离/readme.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01.webpack的使用/09.webpack配置文件分离/package-lock.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/01.webpack的使用/09.webpack配置文件分离/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01.webpack的使用/09.webpack配置文件分离/build/base.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5">
-              <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01.webpack的使用/09.webpack配置文件分离/build/prod.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="29" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01.webpack的使用/09.webpack配置文件分离/build/dev.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01.webpack的使用/09.webpack配置文件分离/webpack.config.js_bak">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="21" column="19" selection-end-line="115" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -293,17 +196,6 @@
               <item name="LearnVuejs04-v2" type="b2602c69:ProjectViewProjectNode" />
               <item name="LearnVuejs04-v2" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="LearnVuejs04-v2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LearnVuejs04-v2" type="462c0819:PsiDirectoryNode" />
-              <item name="01.webpack的使用" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LearnVuejs04-v2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LearnVuejs04-v2" type="462c0819:PsiDirectoryNode" />
-              <item name="01.webpack的使用" type="462c0819:PsiDirectoryNode" />
-              <item name="09.webpack配置文件分离" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -353,16 +245,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581252266539</updated>
-      <workItem from="1581252267825" duration="27575000" />
+      <workItem from="1581252267825" duration="29056000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27575000" />
+    <option name="totallyTimeSpent" value="29056000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="617" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2852349" />
@@ -736,9 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01.webpack的使用/09.webpack配置文件分离/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/01.webpack的使用/09.webpack配置文件分离/webpack.config.js_bak">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
@@ -746,17 +634,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01.webpack的使用/09.webpack配置文件分离/build/base.config.js">
+    <entry file="file://$PROJECT_DIR$/01.webpack的使用/09.webpack配置文件分离/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        <state relative-caret-position="450">
+          <caret line="30" column="4" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01.webpack的使用/09.webpack配置文件分离/package.json">
+    <entry file="file://$PROJECT_DIR$/01.webpack的使用/09.webpack配置文件分离/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01.webpack的使用/09.webpack配置文件分离/build/base.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        <state relative-caret-position="285">
+          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
