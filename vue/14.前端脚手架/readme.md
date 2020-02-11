@@ -41,3 +41,6 @@ $ vue init webpack vuecli2test
 
    vue-cli · Generated "vuecli2test".
 ```
+
+### 创建项目(cl3的方式)
+1. vue create 项目名称
