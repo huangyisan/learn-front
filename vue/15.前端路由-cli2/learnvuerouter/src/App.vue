@@ -9,6 +9,15 @@
     <button @click="homeClick">首页</button>
     <!--服务器动态生成user后面的内容,作为变量给userId, 使用字符串拼接-->
     <router-link v-bind:to='"/user/"+userId' replace>用户</router-link>
+
+    <!--使用button函数的方式处理userId跳转-->
+    <button @click="userClick">用户</button>
+
+    <!--传递数据,则需要作为对象,v-bind:to的方式, 这种传参为?name=yisan-->
+    <router-link v-bind:to="{path: '/profile', query: {name:'yisan'}}">档案</router-link>
+    <!--使用button函数的方式来传递query-->
+    <button @click="profileClick">档案</button>
+
     <!--占位组件, 表示点击url后,往router-view组件里面渲染-->
     <router-view></router-view>
     <h2>不动</h2>
@@ -31,6 +40,21 @@ export default {
     // this.$router.history.push('/home')
     //  使用replace的方式
     this.$router.history.replace('/home')
+    },
+    userClick () {
+      this.$router.push('/user/' + this.userId).catch(err => {})
+    },
+    // 使用函数的方式进行数据传递
+    profileClick() {
+      this.$router.push({
+        path: '/profile',
+        // query为一个对象类型
+        query: {
+          name: 'kobe',
+          age: 19,
+          height: 1.87
+        }
+      }).catch(err => {})
     }
   }
 }
