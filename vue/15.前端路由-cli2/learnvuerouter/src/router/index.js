@@ -43,10 +43,10 @@ const routes = [
     //编写子组件,子组件不需要加/
     children: [
       // 添加重定向,作为默认展示news
-      {
-        path: '',
-        redirect: 'news'
-      },
+      // {
+        // path: '',
+        // redirect: 'news'
+      // },
       {
         path: 'news',
         component: HomeNews

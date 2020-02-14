@@ -69,7 +69,63 @@ npm run build进行打包
 ## 路由的嵌套
 1. 在home页面中,希望可以访问home/news和home/message的一些内容
 
-## 实现嵌套路由的两个步骤
+### 实现嵌套路由的两个步骤
 1. 创建对应的子组件, 并且在路由映射中配置对应的子路由
 2. 在父组件内部使用<router-view>标签
 3. 在父组件内使用<router-link>标签
+
+## vue-router传递参数
+1. 有些时候,页面跳转的时候需要携带一些参数到新页面
+
+### 传递参数的方式
+
+* params方式
+
+* query方式
+
+#### params方式
+1. 配置路由格式: /router/:id
+2. 传递的方式: 在path后面跟上对应的值
+3. 传递后形成的路径: /router/123, /router/abc
+
+#### query的类型
+1. 配置路由格式: /router,也就是普通配置
+2. 传递的方式: 对象中使用query的key作为传递方式
+3. 床底后形成的路径:/router?id=123,/router?id=abc
+
+## $route和$router的区别
+1. $router为VueRouter实例, 想要导航到不同URL, 则使用$router.push方法
+2. $route为当前router跳转对象里面可以获取name,path,query,params等
+
+## 全局导航守卫
+1. 监听路由跳转的过程,当发生跳转,则执行一些函数,实现一些功能.
+
+```
+router.beforeEach(to, from, next) => {
+ document.title = to.matched[0].meta.title
+ next()
+}
+
+to: 即将要进入的目标的路由对象
+from: 当前导航即将要离开的路由对象
+next: 调用该方法后,才能进入下一个钩子
+```
+
+### 常用的3个生命周期函数
+1. created() 创建组件的时期回调
+2. mounted() 将template模板挂载的时候回调
+3. update() 发现数据存在更新的时候回调
+ap
+### 导航守卫补充--全局守卫
+1. 路由独享的守卫
+2. 组件内的守卫
+
+## keepalive
+1. 默认情况下,页面点击切换,会重新获取数据,这些数据是没有被保留下来的
+2. keep-alive是Vue内置的一个组件,可以使得被包含的组件的组件保留状态,避免重新被渲染.destroyed生命周期函数将不会被执行
+3. destroyed和activated两个函数只有在被keep-alive标签包裹的时候才有效
+3. <router-view>也是一个组件,如果直接被包在keep-alive里面,所有路径匹配到的视图组件都会被缓存.
+
+### keepalive排除项
+1. include 字符串或者正则表达式,只有匹配的会被缓存 <keep-alive include=""></keep-alive>
+2. exclude 字符串后者正则比倒是,任何匹配的都不会被缓存 <keep-alive exclude=""></keep-alive>

@@ -18,46 +18,52 @@
     <!--使用button函数的方式来传递query-->
     <button @click="profileClick">档案</button>
 
-    <!--占位组件, 表示点击url后,往router-view组件里面渲染-->
-    <router-view></router-view>
+    <!--实现keepalive 对Profile User进行排除, Profile,User是组件name的属性, User前面不要加空格-->
+    <keep-alive exclude="Profile,User">
+      <!--占位组件, 表示点击url后,往router-view组件里面渲染-->
+      <router-view></router-view>
+    </keep-alive>
+
     <h2>不动</h2>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App',
-  data () {
-    return {
-      userId:'zhangsan'
-    }
-  },
-  //绑定homeClick事件,然后用代码的方式修改vue-router
-  methods: {
-    //只要是router相关的组件都在组件里面加了$router这个属性
-    homeClick() {
-    //  使用push的方式
-    // this.$router.history.push('/home')
-    //  使用replace的方式
-    this.$router.history.replace('/home')
+  export default {
+    name: 'App',
+    data() {
+      return {
+        userId: 'zhangsan'
+      }
     },
-    userClick () {
-      this.$router.push('/user/' + this.userId).catch(err => {})
-    },
-    // 使用函数的方式进行数据传递
-    profileClick() {
-      this.$router.push({
-        path: '/profile',
-        // query为一个对象类型
-        query: {
-          name: 'kobe',
-          age: 19,
-          height: 1.87
-        }
-      }).catch(err => {})
+    //绑定homeClick事件,然后用代码的方式修改vue-router
+    methods: {
+      //只要是router相关的组件都在组件里面加了$router这个属性
+      homeClick() {
+        //  使用push的方式
+        // this.$router.history.push('/home')
+        //  使用replace的方式
+        this.$router.history.replace('/home')
+      },
+      userClick() {
+        this.$router.push('/user/' + this.userId).catch(err => {
+        })
+      },
+      // 使用函数的方式进行数据传递
+      profileClick() {
+        this.$router.push({
+          path: '/profile',
+          // query为一个对象类型
+          query: {
+            name: 'kobe',
+            age: 19,
+            height: 1.87
+          }
+        }).catch(err => {
+        })
+      }
     }
   }
-}
 </script>
 
 <style>
@@ -71,11 +77,11 @@ export default {
 
 <!--<style>-->
 <!--#app {-->
-  <!--font-family: 'Avenir', Helvetica, Arial, sans-serif;-->
-  <!-- -webkit-font-smoothing: antialiased;-->
-  <!-- -moz-osx-font-smoothing: grayscale;-->
-  <!--text-align: center;-->
-  <!--color: #2c3e50;-->
-  <!--margin-top: 60px;-->
+<!--font-family: 'Avenir', Helvetica, Arial, sans-serif;-->
+<!-- -webkit-font-smoothing: antialiased;-->
+<!-- -moz-osx-font-smoothing: grayscale;-->
+<!--text-align: center;-->
+<!--color: #2c3e50;-->
+<!--margin-top: 60px;-->
 <!--}-->
 <!--</style>-->
