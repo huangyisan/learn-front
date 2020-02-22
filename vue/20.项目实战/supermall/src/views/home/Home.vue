@@ -1,16 +1,28 @@
 <template>
-    <div><h2>首页1</h2></div>
+    <div id="home">
+      <nav-bar class="home-nav">
+        <div slot="center">购物街</div>
+      </nav-bar>
+    </div>
 
 </template>
 
 <script>
+  import NavBar from 'components/common/navbar/NavBar.vue'
+
   export default {
-    name: "Home"
+    name: "Home",
+    components: {
+      NavBar
+    }
   }
 </script>
 
 <style scoped>
-  div {
-    background-color: #f00;
+  .home-nav {
+    /* --color-tint 为变量的方式, 该值被定义在base.css中*/
+    background-color: var(--color-tint);
+    color: #ffffff;
   }
+
 </style>

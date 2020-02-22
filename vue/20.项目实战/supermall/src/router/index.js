@@ -11,7 +11,7 @@ const Profile = () => import('views/profile/Profile.vue')
 
 Vue.use(VueRouter)
 
-// 抽出routers
+// 抽出routes
 const routes = [
   {
     path: '',
