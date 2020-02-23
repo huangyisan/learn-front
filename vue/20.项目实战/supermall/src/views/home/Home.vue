@@ -16,6 +16,9 @@
     <!--tabbar-->
     <tab-control class="tab-control" :titles="['流行','新款','精选']"></tab-control>
 
+    <!--商品图-->
+    <goods-list :goods="goods['pop'].list"></goods-list>
+
     <ul>
       <li>1</li>
       <li>2</li>
@@ -64,7 +67,9 @@
   import RecommendView from './childComps/RecommendView'
   import FeatureView from './childComps/FeatureView'
 
+
   import TabControl from 'components/content/tabControl/TabControl'
+  import GoodsList from 'components/content/goods/GoodsList'
 
   import {getHomeMultidata, getHomeGoods} from "network/home"
 
@@ -76,7 +81,8 @@
       HomeSwiper,
       RecommendView,
       FeatureView,
-      TabControl
+      TabControl,
+      GoodsList
     },
     data() {
       return {
