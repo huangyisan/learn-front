@@ -5,58 +5,24 @@
       <div slot="center">购物街</div>
     </nav-bar>
 
-    <!--轮播图-->
-    <home-swiper :banners="banners"></home-swiper>
-    <!-- 推荐图-->
-    <recommend-view :recommends="recommends"></recommend-view>
-    <!-- feature图-->
-    <feature-view></feature-view>
+    <!-- 使用better-scroll封装-->
+    <scroll class="content" ref="scroll">
+      <!--轮播图-->
+      <home-swiper :banners="banners"></home-swiper>
+      <!-- 推荐图-->
+      <recommend-view :recommends="recommends"></recommend-view>
+      <!-- feature图-->
+      <feature-view></feature-view>
 
+      <!--tabbar @tabClick 该方法为子组件emit出来的内容, 此时不需要写入传递来的参数-->
+      <tab-control class="tab-control" :titles="['流行','新款','精选']" @tabClick="tabClick"></tab-control>
 
-    <!--tabbar-->
-    <tab-control class="tab-control" :titles="['流行','新款','精选']"></tab-control>
+      <!--商品图-->
+      <goods-list :goods="showGoods"></goods-list>
+    </scroll>
 
-    <!--商品图-->
-    <goods-list :goods="goods['pop'].list"></goods-list>
-
-    <ul>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>4</li>
-      <li>5</li>
-      <li>6</li>
-      <li>7</li>
-      <li>8</li>
-      <li>9</li>
-      <li>0</li>
-      <li>3</li>
-      <li>4</li>
-      <li>5</li>
-      <li>6</li>
-      <li>7</li>
-      <li>8</li>
-      <li>9</li>
-      <li>0</li>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>4</li>
-      <li>5</li>
-      <li>6</li>
-      <li>7</li>
-      <li>8</li>
-      <li>9</li>
-      <li>0</li>
-      <li>3</li>
-      <li>4</li>
-      <li>5</li>
-      <li>6</li>
-      <li>7</li>
-      <li>8</li>
-      <li>9</li>
-      <li>0</li>
-    </ul>
+    <!-- 如果想要监听组件的点击,则需要添加.native 这个原生修饰符-->
+    <back-top @click.native="backClick"></back-top>
   </div>
 
 </template>
@@ -67,9 +33,11 @@
   import RecommendView from './childComps/RecommendView'
   import FeatureView from './childComps/FeatureView'
 
+  import Scroll from 'components/common/scroll/Scroll'
 
   import TabControl from 'components/content/tabControl/TabControl'
   import GoodsList from 'components/content/goods/GoodsList'
+  import BackTop from 'components/content/backTop/BackTop'
 
   import {getHomeMultidata, getHomeGoods} from "network/home"
 
@@ -82,7 +50,9 @@
       RecommendView,
       FeatureView,
       TabControl,
-      GoodsList
+      GoodsList,
+      Scroll,
+      BackTop
     },
     data() {
       return {
@@ -94,7 +64,13 @@
           'pop': {page: 0, list: []},
           'new': {page: 0, list: []},
           'sell': {page: 0, list: []}
-        }
+        },
+        currentType: 'pop'
+      }
+    },
+    computed: {
+      showGoods() {
+        return this.goods[this.currentType].list
       }
     },
     created() {
@@ -108,7 +84,37 @@
 
     },
     methods: {
-      getHomeMultidata(){
+
+      //事件监听相关
+
+
+      tabClick(index) {
+        switch (index) {
+          case 0:
+            this.currentType = 'pop'
+            break
+
+          case 1:
+            this.currentType = 'new'
+            break
+
+          case 2:
+            this.currentType = 'sell'
+            break
+        }
+        console.log(this.currentType)
+      },
+
+      // 回到顶部按钮
+      backClick() {
+        // 通过ref的scroll对象,直接访问scroll.vue里面的内容
+        // 500表示500ms内返回0,0坐标,也就是顶部
+        this.$refs.scroll.scrollTo(0,0,500)
+      },
+
+      //网络请求相关
+
+      getHomeMultidata() {
         // 当组件创建完后 开始发送网络请求
         getHomeMultidata().then(res => {
           // console.log(res)
@@ -117,7 +123,7 @@
         })
       },
 
-      getHomeGoods(type){
+      getHomeGoods(type) {
         // 每次获取的页码为当前页码+1
         const page = this.goods[type].page + 1
         console.log(page)
@@ -126,7 +132,9 @@
           this.goods[type].list.push(...res.data.list)
           this.goods[type].page += 1
         })
-      }
+      },
+
+
     }
   }
 </script>
@@ -145,11 +153,31 @@
 
   /* 因为脱离标准流, 轮播图跟nav bar重合了, 给#home 一个nav bar的margin-top高度*/
   #home {
-    margin-top: 44px;
+    /*margin-top: 44px;*/
+    /*设定home的高度为100个视口, 因为存在内容会把home的高度撑大*/
+    height: 100vh;
+    position: relative;
   }
 
   .tab-control {
     position: sticky;
     top: 44px;
+  }
+
+  /* better-scroll*/
+  /*.content {*/
+  /*height: calc(100% - 93px);*/
+  /*overflow: hidden;*/
+  /*!*margin-top: 44px;*!*/
+  /*}*/
+
+  .content {
+    overflow: hidden;
+    position: absolute;
+    /* 将顶部和底部撑开*/
+    top: 44px;
+    bottom: 49px;
+    left: 0;
+    right: 0;
   }
 </style>
