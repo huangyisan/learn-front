@@ -5,18 +5,23 @@
       <div slot="center">购物街</div>
     </nav-bar>
 
+    <!--tab-control副本, 用来做吸顶效果, 通过v-show来控制是否显示-->
+    <tab-control class="tab-control" :titles="['流行','新款','精选']" @tabClick="tabClick" ref="tabControlFake" v-show="isTabFixed"></tab-control>
+
+
     <!-- 使用better-scroll封装-->
-    <!--<scroll class="content" ref="scroll" :probe-type="3" @scroll="contentScroll" :pull-up-load="true" @pullingUp="loadMore">-->
-    <scroll class="content" ref="scroll" :probe-type="3" @scroll="contentScroll" :pull-up-load="true">
+    <scroll class="content" ref="scroll" :probe-type="3" @scroll="contentScroll" :pull-up-load="true"
+            @pullingUp="loadMore">
+      <!--<scroll class="content" ref="scroll" :probe-type="3" @scroll="contentScroll" :pull-up-load="true">-->
       <!--轮播图-->
-      <home-swiper :banners="banners"></home-swiper>
+      <home-swiper :banners="banners" @swiperImageLoad="swiperImageLoad"></home-swiper>
       <!-- 推荐图-->
       <recommend-view :recommends="recommends"></recommend-view>
       <!-- feature图-->
       <feature-view></feature-view>
 
       <!--tabbar @tabClick 该方法为子组件emit出来的内容, 此时不需要写入传递来的参数-->
-      <tab-control class="tab-control" :titles="['流行','新款','精选']" @tabClick="tabClick"></tab-control>
+      <tab-control :titles="['流行','新款','精选']" @tabClick="tabClick" ref="tabControl"></tab-control>
 
       <!--商品图-->
       <goods-list :goods="showGoods"></goods-list>
@@ -41,6 +46,8 @@
   import BackTop from 'components/content/backTop/BackTop'
 
   import {getHomeMultidata, getHomeGoods} from "network/home"
+
+  import {debounce} from 'common/utils'
 
 
   export default {
@@ -67,7 +74,11 @@
           'sell': {page: 0, list: []}
         },
         currentType: 'pop',
-        isShowBackTop: false
+        isShowBackTop: false,
+        // tabControl组件offSetTop的值
+        tabOffsetTop: 0,
+        // tabControl组件是否要吸顶fixed
+        isTabFixed: false
       }
     },
     computed: {
@@ -85,32 +96,22 @@
       this.getHomeGoods('sell')
 
     },
-    mounted(){
+    mounted() {
+
       // 如果放在created里面,有可能组件还没渲染出来,则得不到$refs.scroll
       //  监听item中图片加载完成
-      const refresh = this.debounce(this.$refs.scroll.refresh, 200)
+      const refresh = debounce(this.$refs.scroll.refresh, 200)
       this.$bus.$on('itemImageLoad', () => {
         refresh()
       })
+
+
     },
 
     methods: {
 
       //事件监听相关
 
-      // 防抖函数
-      // 在delay时间后,执行传入的func函数, 如果再次出发, 则因为存在timer, 被clearTimeout函数给取消, 前一次等待执行的func函数, 依次类推, 直到最后一次, 等待delay中, 没有新的触发, 则执行func.
-      debounce(func, delay) {
-        let timer = null
-        return function (...args) {
-          if (timer) {
-            clearTimeout(timer)
-          }
-          timer = setTimeout(() => {
-            func.apply(this, args)
-          }, delay)
-        }
-      },
 
       tabClick(index) {
         switch (index) {
@@ -125,7 +126,12 @@
           case 2:
             this.currentType = 'sell'
             break
+            break
         }
+        // ref不可以相同,如果存在相同,则只会有一个生效,所以将tabControl的副本进行另外命名ref
+        // 需要将当前的index赋给两个tabControl, 保证点击后, 滚动, 每个tabControl的展现一致
+        this.$refs.tabControlFake.currentIndex = index
+        this.$refs.tabControl.currentIndex = index
         // console.log(this.currentType)
       },
 
@@ -133,22 +139,33 @@
       backClick() {
         // 通过ref的scroll对象,直接访问scroll.vue里面的内容
         // 500表示500ms内返回0,0坐标,也就是顶部
-        this.$refs.scroll.scrollTo(0,0,500)
+        this.$refs.scroll.scrollTo(0, 0, 500)
       },
 
       contentScroll(position) {
+        // 1. 判断backtop是否需要加载
         // console.log(position)
         // 判断y是否小于-1000 然后true或者false赋值给this.isShowBackTop
         this.isShowBackTop = position.y < -1000;
+
+        //  2. 判断tabControl是否需要停留吸顶(position: fixed)
+        this.isTabFixed = position.y < - this.tabOffsetTop
+
       },
 
-      // loadMore(){
-      //   console.log('上阿里加载更多')
-      //   this.getHomeGoods(this.currentType)
-      //
-      //   // 当加载完后,重新刷新,获取新的高度
-      //   this.$refs.scroll.scroll.refresh()
-      // },
+      loadMore() {
+        this.getHomeGoods(this.currentType)
+
+        // 当加载完后,重新刷新,获取新的高度
+        this.$refs.scroll.scroll.refresh()
+      },
+
+      swiperImageLoad() {
+        //  获取tabControl的offsetTop
+        //  offsetTop从元素中获取, 所有组件都有一个属性 $el
+        this.tabOffsetTop = this.$refs.tabControl.$el.offsetTop
+
+      },
 
       //网络请求相关
 
@@ -164,7 +181,6 @@
       getHomeGoods(type) {
         // 每次获取的页码为当前页码+1
         const page = this.goods[type].page + 1
-        console.log(page)
         getHomeGoods(type, page).then(res => {
           // ... 表示结构list, 将list的元素一个个拆出来
           this.goods[type].list.push(...res.data.list)
@@ -184,11 +200,12 @@
     /* --color-tint 为变量的方式, 该值被定义在base.css中*/
     background-color: var(--color-tint);
     color: #ffffff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9;
+    /*已经使用better-scroll 所以没必要使用fixed*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*z-index: 9;*/
   }
 
   /* 因为脱离标准流, 轮播图跟nav bar重合了, 给#home 一个nav bar的margin-top高度*/
@@ -200,8 +217,10 @@
   }
 
   .tab-control {
-    position: sticky;
-    top: 44px;
+    /*position: sticky;*/
+    /*top: 44px;*/
+    position: relative;
+    z-index: 9;
   }
 
   /* better-scroll*/
@@ -220,4 +239,11 @@
     left: 0;
     right: 0;
   }
+
+  /*.fixed {*/
+    /*position: fixed;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*top: 44px;*/
+  /*}*/
 </style>

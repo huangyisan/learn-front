@@ -41,7 +41,6 @@
     font-size: 15px;
     line-height: 40px;
     background-color: #fff;
-    z-index: 9;
   }
 
   .tab-control-item {

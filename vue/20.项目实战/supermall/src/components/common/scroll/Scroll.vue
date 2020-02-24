@@ -45,7 +45,6 @@
 
       //  监听上拉事件
       this.scroll.on('pullingUp', () => {
-        // console.log('上拉加载更多')
         this.$emit('pullingUp')
 
       })
@@ -61,7 +60,6 @@
         this.scroll.finishPullUp()
       },
       refresh(){
-        console.log('1111')
         this.scroll.refresh()
       }
     }
