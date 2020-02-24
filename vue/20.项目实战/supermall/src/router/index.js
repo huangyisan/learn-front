@@ -6,6 +6,7 @@ const Home = () => import('views/home/Home.vue')
 const Category = () => import('views/category/Category.vue')
 const Cart = () => import('views/cart/Cart.vue')
 const Profile = () => import('views/profile/Profile.vue')
+const Detail = () => import('views/detail/Detail.vue')
 
 // 1. 安装插件
 
@@ -32,6 +33,11 @@ const routes = [
   {
     path: '/profile',
     component:Profile,
+  },
+  {
+    // 使用动态路由的方式
+    path: '/detail/:iid',
+    component:Detail,
   },
 ]
 

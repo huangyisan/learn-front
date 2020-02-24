@@ -1,6 +1,6 @@
 <template>
   <div class="goods-item">
-    <img :src="goodsitem.show.img" alt="" @load="imageLoad">
+    <img :src="goodsitem.show.img" alt="" @load="imageLoad" @click="itemClick">
     <div class="goods-info">
       <p>{{goodsitem.title}}</p>
       <span class="price">{{goodsitem.price}}</span>
@@ -24,6 +24,10 @@
       imageLoad() {
         // 将事件发送到数据总线里面
         this.$bus.$emit('itemImageLoad')
+      },
+      itemClick() {
+        // detail拼接iid
+        this.$router.push('/detail/' + this.goodsitem.iid)
       }
     }
   }
