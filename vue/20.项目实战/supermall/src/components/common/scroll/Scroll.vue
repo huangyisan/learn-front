@@ -61,6 +61,9 @@
       },
       refresh(){
         this.scroll.refresh()
+      },
+      getPositionY() {
+        return this.scroll.y
       }
     }
   }

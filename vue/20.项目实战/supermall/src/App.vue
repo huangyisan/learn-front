@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-  <router-view></router-view>
+    <!-- 使用keepalive, 这样切换回来的时候能保证为切换出去的位置. destroy生命函数不会被触发-->
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
+
     <main-tab-bar></main-tab-bar>
   </div>
 </template>

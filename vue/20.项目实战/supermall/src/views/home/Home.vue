@@ -78,7 +78,8 @@
         // tabControl组件offSetTop的值
         tabOffsetTop: 0,
         // tabControl组件是否要吸顶fixed
-        isTabFixed: false
+        isTabFixed: false,
+        saveY: 0
       }
     },
     computed: {
@@ -187,10 +188,19 @@
           this.goods[type].page += 1
           this.$refs.scroll.finishPullUp()
         })
-
       },
+    },
+    // 页面激活的时候
+    activated (){
+      // 最后一个0 为多少时间内执行滚动到指定的x,y位置
+      this.$refs.scroll.scroll.scrollTo(0, this.saveY, 0)
+      // 防止出现一些奇怪的问题, 刷新下. 不添加的话, 可能性会出现回弹到顶部的奇怪情况
+      this.$refs.scroll.refresh()
+    },
 
-
+    // 离开页面的时候
+    deactivated() {
+      this.saveY = this.$refs.scroll.getPositionY()
     }
   }
 </script>
