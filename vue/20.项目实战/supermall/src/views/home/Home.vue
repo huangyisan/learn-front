@@ -6,7 +6,8 @@
     </nav-bar>
 
     <!-- 使用better-scroll封装-->
-    <scroll class="content" ref="scroll">
+    <!--<scroll class="content" ref="scroll" :probe-type="3" @scroll="contentScroll" :pull-up-load="true" @pullingUp="loadMore">-->
+    <scroll class="content" ref="scroll" :probe-type="3" @scroll="contentScroll" :pull-up-load="true">
       <!--轮播图-->
       <home-swiper :banners="banners"></home-swiper>
       <!-- 推荐图-->
@@ -22,7 +23,7 @@
     </scroll>
 
     <!-- 如果想要监听组件的点击,则需要添加.native 这个原生修饰符-->
-    <back-top @click.native="backClick"></back-top>
+    <back-top @click.native="backClick" v-show="isShowBackTop"></back-top>
   </div>
 
 </template>
@@ -65,7 +66,8 @@
           'new': {page: 0, list: []},
           'sell': {page: 0, list: []}
         },
-        currentType: 'pop'
+        currentType: 'pop',
+        isShowBackTop: false
       }
     },
     computed: {
@@ -83,10 +85,32 @@
       this.getHomeGoods('sell')
 
     },
+    mounted(){
+      // 如果放在created里面,有可能组件还没渲染出来,则得不到$refs.scroll
+      //  监听item中图片加载完成
+      const refresh = this.debounce(this.$refs.scroll.refresh, 200)
+      this.$bus.$on('itemImageLoad', () => {
+        refresh()
+      })
+    },
+
     methods: {
 
       //事件监听相关
 
+      // 防抖函数
+      // 在delay时间后,执行传入的func函数, 如果再次出发, 则因为存在timer, 被clearTimeout函数给取消, 前一次等待执行的func函数, 依次类推, 直到最后一次, 等待delay中, 没有新的触发, 则执行func.
+      debounce(func, delay) {
+        let timer = null
+        return function (...args) {
+          if (timer) {
+            clearTimeout(timer)
+          }
+          timer = setTimeout(() => {
+            func.apply(this, args)
+          }, delay)
+        }
+      },
 
       tabClick(index) {
         switch (index) {
@@ -102,7 +126,7 @@
             this.currentType = 'sell'
             break
         }
-        console.log(this.currentType)
+        // console.log(this.currentType)
       },
 
       // 回到顶部按钮
@@ -111,6 +135,20 @@
         // 500表示500ms内返回0,0坐标,也就是顶部
         this.$refs.scroll.scrollTo(0,0,500)
       },
+
+      contentScroll(position) {
+        // console.log(position)
+        // 判断y是否小于-1000 然后true或者false赋值给this.isShowBackTop
+        this.isShowBackTop = position.y < -1000;
+      },
+
+      // loadMore(){
+      //   console.log('上阿里加载更多')
+      //   this.getHomeGoods(this.currentType)
+      //
+      //   // 当加载完后,重新刷新,获取新的高度
+      //   this.$refs.scroll.scroll.refresh()
+      // },
 
       //网络请求相关
 
@@ -127,11 +165,13 @@
         // 每次获取的页码为当前页码+1
         const page = this.goods[type].page + 1
         console.log(page)
-        getHomeGoods(type, 1).then(res => {
+        getHomeGoods(type, page).then(res => {
           // ... 表示结构list, 将list的元素一个个拆出来
           this.goods[type].list.push(...res.data.list)
           this.goods[type].page += 1
+          this.$refs.scroll.finishPullUp()
         })
+
       },
 
 
