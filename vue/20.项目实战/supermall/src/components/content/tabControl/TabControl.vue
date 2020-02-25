@@ -48,12 +48,10 @@
 
   }
 
-  .active{
-    color: var(--color-tint);
-  }
 
   .active span {
-    border-bottom: 3px solid var(--color-tint)
+    border-bottom: 3px solid var(--color-tint);
+    padding-left: 5px;
   }
 
   .tab-control-item span {
