@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav-bar>
+    <nav-bar class="nav-bar">
       <div slot="left" class="back" @click="backClick">
         <img src="~assets/img/common/back.svg" alt="">
       </div>
@@ -34,7 +34,7 @@
         this.currentIndex = index
       },
       backClick() {
-        this.$router.go(-1)
+        this.$router.back()
       }
     }
   }
@@ -67,4 +67,5 @@
     margin-top: 13px;
     margin-left: 8px;
   }
+
 </style>

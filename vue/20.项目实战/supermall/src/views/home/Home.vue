@@ -6,7 +6,8 @@
     </nav-bar>
 
     <!--tab-control副本, 用来做吸顶效果, 通过v-show来控制是否显示-->
-    <tab-control class="tab-control" :titles="['流行','新款','精选']" @tabClick="tabClick" ref="tabControlFake" v-show="isTabFixed"></tab-control>
+    <tab-control class="tab-control" :titles="['流行','新款','精选']" @tabClick="tabClick" ref="tabControlFake"
+                 v-show="isTabFixed"></tab-control>
 
 
     <!-- 使用better-scroll封装-->
@@ -49,6 +50,8 @@
 
   import {debounce} from 'common/utils'
 
+  import {itemListenerMixin} from 'common/mixin'
+
 
   export default {
     name: "Home",
@@ -62,6 +65,7 @@
       Scroll,
       BackTop
     },
+    mixins: [itemListenerMixin],
     data() {
       return {
         //  将请求到的数据, 拆分后存起来
@@ -79,7 +83,8 @@
         tabOffsetTop: 0,
         // tabControl组件是否要吸顶fixed
         isTabFixed: false,
-        saveY: 0
+        saveY: 0,
+        itemImgListener: null
       }
     },
     computed: {
@@ -98,14 +103,7 @@
 
     },
     mounted() {
-
-      // 如果放在created里面,有可能组件还没渲染出来,则得不到$refs.scroll
-      //  监听item中图片加载完成
-      const refresh = debounce(this.$refs.scroll.refresh, 200)
-      this.$bus.$on('itemImageLoad', () => {
-        refresh()
-      })
-
+      console.log('我不是混入')
 
     },
 
@@ -150,7 +148,7 @@
         this.isShowBackTop = position.y < -1000;
 
         //  2. 判断tabControl是否需要停留吸顶(position: fixed)
-        this.isTabFixed = position.y < - this.tabOffsetTop
+        this.isTabFixed = position.y < -this.tabOffsetTop
 
       },
 
@@ -191,7 +189,7 @@
       },
     },
     // 页面激活的时候
-    activated (){
+    activated() {
       // 最后一个0 为多少时间内执行滚动到指定的x,y位置
       this.$refs.scroll.scroll.scrollTo(0, this.saveY, 0)
       // 防止出现一些奇怪的问题, 刷新下. 不添加的话, 可能性会出现回弹到顶部的奇怪情况
@@ -200,7 +198,11 @@
 
     // 离开页面的时候
     deactivated() {
+      // 1. 保存y值
       this.saveY = this.$refs.scroll.getPositionY()
+
+    //   2. 退出时取消全局监听
+      this.$bus.$off('itemImgLoad', this.itemImgListener)
     }
   }
 </script>
@@ -251,9 +253,9 @@
   }
 
   /*.fixed {*/
-    /*position: fixed;*/
-    /*left: 0;*/
-    /*right: 0;*/
-    /*top: 44px;*/
+  /*position: fixed;*/
+  /*left: 0;*/
+  /*right: 0;*/
+  /*top: 44px;*/
   /*}*/
 </style>
