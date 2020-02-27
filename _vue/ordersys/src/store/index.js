@@ -8,6 +8,15 @@ export default new Vuex.Store({
     token: null
   },
   mutations: {
+    setToken(state, token) {
+      state.token = token
+      sessionStorage.setItem("token", token);
+    },
+
+    clearToken(state) {
+      state.token = null
+      sessionStorage.removeItem('token')
+    }
   },
   actions: {
   },

@@ -6,7 +6,10 @@
 
 <script>
   export default {
-    name: "HomePage"
+    name: "HomePage",
+    created() {
+      console.log(this.$store.state.token)
+    }
   }
 </script>
 

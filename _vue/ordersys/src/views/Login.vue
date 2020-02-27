@@ -54,7 +54,9 @@
             console.log('发送登陆请求')
             loginIn(this.ruleForm.username, this.ruleForm.password).then(res => {
               if(res.data.resopnseCode === 200){
-                console.log('登陆成功')
+                console.log(res.data.access_token)
+                let token = res.data.access_token
+                this.setToken(token)
                 this.$router.push('/homepage')
               }else {
                 console.log('登陆失败')
@@ -65,6 +67,12 @@
             return false
           }
         })
+      },
+      setToken(token) {
+        this.$store.commit('setToken', token)
+      },
+      clearToken(){
+        this.$store.commit('clearToken')
       }
     }
   }
