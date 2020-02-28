@@ -18,7 +18,7 @@ export function request(config) {
   // 请求发出前 拦截检查是否有token, 没有则直接跳到/login
   instance.interceptors.request.use(config => {
     const token = config.headers.Authorization.split(' ')[1]
-    if (token === 'null' && config.url !== '/login') {
+    if (token === 'null' && config.url !== '/authentication') {
       console.log('跳转到login')
       sessionStorage.removeItem('token')
       router.push('/login')
@@ -30,13 +30,13 @@ export function request(config) {
   })
 
   instance.interceptors.response.use(res => {
-    const reCode = res.data.resopnseCode
+    const reCode = res.data.responseCode
+    console.log(res)
     if (reCode === 401){
       console.log('登陆失败或失效')
       router.push('/login')
       return res.data
     }
-
     return res.data
   })
 

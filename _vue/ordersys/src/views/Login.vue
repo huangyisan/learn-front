@@ -47,6 +47,11 @@
         }
       }
     },
+    created(){
+      if(sessionStorage.getItem('token')){
+        // pass
+      }
+    },
 
     methods: {
       submitForm(formName) {
@@ -54,10 +59,9 @@
           if (valid) {
             console.log('发送登陆请求')
             authentication(this.ruleForm.username, this.ruleForm.password).then(res => {
-              if(res.data.resopnseCode === 200){
-                console.log(res.data)
-                console.log(res.data.access_token)
-                let token = res.data.access_token
+              console.log(res)
+              if(res.responseCode === 200){
+                let token = res.access_token
                 this.setToken(token)
                 setTimeout(() => {
                   this.$router.push('/homepage')
