@@ -1,4 +1,5 @@
 <template>
+  <!--<div>111</div>-->
     <div class="login">
       <el-form class="login-form" label-width="80px" :rules="rules" ref="ruleForm" :model="ruleForm">
         <el-form-item label="用户名"  prop="username">
@@ -14,7 +15,7 @@
 
 <script>
 
-  import {loginIn} from "../network/login";
+  import {authentication} from "../network/authentication";
 
 
   export default {
@@ -52,8 +53,9 @@
         this.$refs[formName].validate((valid) => {
           if (valid) {
             console.log('发送登陆请求')
-            loginIn(this.ruleForm.username, this.ruleForm.password).then(res => {
+            authentication(this.ruleForm.username, this.ruleForm.password).then(res => {
               if(res.data.resopnseCode === 200){
+                console.log(res.data)
                 console.log(res.data.access_token)
                 let token = res.data.access_token
                 this.setToken(token)
@@ -69,10 +71,12 @@
         })
       },
       setToken(token) {
-        this.$store.commit('setToken', token)
+        sessionStorage.setItem('token', token)
+        // this.$store.commit('setToken', token)
       },
       clearToken(){
-        this.$store.commit('clearToken')
+        sessionStorage.removeItem('token')
+        // this.$store.commit('clearToken')
       }
     }
   }

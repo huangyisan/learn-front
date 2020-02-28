@@ -1,14 +1,40 @@
 <template>
   <div>
-    这是首页
+    {{info}}
+    <span>info</span>
+    <div>
+      <el-button type="primary" class="btn-login" @click="submitForm('logOut')">退出</el-button>
+    </div>
   </div>
 </template>
 
 <script>
+
+  import {homePage} from "../network/homepage";
+
+
   export default {
     name: "HomePage",
+    data() {
+      return {
+        info: {
+          type: String,
+          default: 'abc'
+        }
+      }
+    },
     created() {
-      console.log(this.$store.state.token)
+      homePage().then((res) => {
+        this.info = res.data
+        console.log(res)
+      })
+      // console.log(this.$store.state.token)
+    },
+    methods: {
+      logOut() {
+        sessionStorage.removeItem('token')
+        this.$router.push('/login')
+      }
     }
   }
 </script>

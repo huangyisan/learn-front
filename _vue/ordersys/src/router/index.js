@@ -4,9 +4,11 @@ import VueRouter from 'vue-router'
 import store from '../store/index'
 
 
-const HomePage = () => import('../views/HomePage')
+// const HomePage = () => import('../views/HomePage')
+import HomePage from '../views/HomePage'
+import login from '../views/login'
+import test from '../views/Test'
 
-import Login from '../views/Login'
 
 Vue.use(VueRouter)
 
@@ -21,7 +23,11 @@ const routes = [
   },
   {
     path: '/login',
-    component: Login
+    component: login
+  },
+  {
+    path: '/test',
+    component: test
   }
 
 ]

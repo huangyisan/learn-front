@@ -3,7 +3,7 @@
 </template>
 
 <script>
-  import Login from 'views/Login'
+  import Login from 'views/login'
 
 export default {
   name: 'app',
