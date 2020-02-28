@@ -59,7 +59,10 @@
                 console.log(res.data.access_token)
                 let token = res.data.access_token
                 this.setToken(token)
-                this.$router.push('/homepage')
+                setTimeout(() => {
+                  this.$router.push('/homepage')
+                },2000)
+
               }else {
                 console.log('登陆失败')
               }

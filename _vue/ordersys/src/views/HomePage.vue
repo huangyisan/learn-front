@@ -3,7 +3,7 @@
     {{info}}
     <span>info</span>
     <div>
-      <el-button type="primary" class="btn-login" @click="submitForm('logOut')">退出</el-button>
+      <el-button type="primary" class="btn-login" @click='logOut'>退出</el-button>
     </div>
   </div>
 </template>

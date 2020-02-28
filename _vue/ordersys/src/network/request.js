@@ -16,16 +16,29 @@ export function request(config) {
   })
 
   // 请求发出前 拦截检查是否有token, 没有则直接跳到/login
-  // instance.interceptors.request.use(config => {
-  //   console.log(config.headers.Authorization.split(' ')[1])
-  //   if (config.headers.Authorization.split(' ')[1] === null && config.url !== '/login') {
-  //     console.log('跳转到login')
-  //     router.push('/login')
-  //     return config
-  //   }
-  //   // 有. 则直接return config
-  //   return config
-  // })
+  instance.interceptors.request.use(config => {
+    const token = config.headers.Authorization.split(' ')[1]
+    if (token === 'null' && config.url !== '/login') {
+      console.log('跳转到login')
+      sessionStorage.removeItem('token')
+      router.push('/login')
+
+      return config
+    }
+    // 有. 则直接return config
+    return config
+  })
+
+  instance.interceptors.response.use(res => {
+    const reCode = res.data.resopnseCode
+    if (reCode === 401){
+      console.log('登陆失败或失效')
+      router.push('/login')
+      return res.data
+    }
+
+    return res.data
+  })
 
   return instance(config)
 }
