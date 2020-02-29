@@ -1,7 +1,7 @@
 <template>
   <div>
-    {{info}}
-    <span>info</span>
+    <span>首页信息</span>
+    <div>{{info}}</div>
     <div>
       <el-button type="primary" class="btn-login" @click='logOut'>退出</el-button>
     </div>
@@ -10,26 +10,29 @@
 
 <script>
 
-  import {homePage} from "../network/homepage";
+  import {homeinfo} from "../network/homeinfo";
 
 
   export default {
     name: "HomePage",
     data() {
       return {
-        info: {
-          type: String,
-          default: 'abc'
-        }
+        info:null,
+        // cloakState: true
+
       }
     },
     created() {
-      homePage().then((res) => {
-        this.info = res.data
+      homeinfo().then((res) => {
+        this.info = res
+        // this.cloakState = false
         console.log(res)
+      }).catch(err => {
+        console.log(err)
       })
       // console.log(this.$store.state.token)
     },
+
     methods: {
       logOut() {
         sessionStorage.removeItem('token')

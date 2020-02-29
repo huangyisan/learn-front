@@ -8,6 +8,8 @@ import store from '../store/index'
 import HomePage from '../views/HomePage'
 import Login from '../views/Login'
 
+import {tokenCheck} from '../network/tokenCheck'
+
 
 
 Vue.use(VueRouter)
@@ -33,41 +35,30 @@ const router = new VueRouter({
   mode: 'history'
 })
 
-// router.beforeEach((to, from, next) => {
-//   const token = sessionStorage.getItem('token')
-//   console.log(store.state.token)
-//   if (token === null){
-//     console.log('toke is null')
-//     next({
-//       path: '/login'
-//     })
-//
-//   }
-  // if (token === null && to.path !== '/login') {
-  //   next({
-  //     path: '/login'
-  //   })
-  // } else {
-  //   if (to.path === '/login') {
-  //     if (token === store.state.token) {
-  //       next({
-  //         path: '/homepage'
-  //       })
-  //     } else {
-  //       next()
-  //     }
-  //   } else {
-  //     if (token !== store.state.token) {
-  //       store.commit('clearToken')
-  //       next({
-  //         path: '/login',
-  //
-  //       })
-  //     } else {
-  //       next()
-  //     }
-  //   }
-  // }
-// })
+// 如果访问为login页面, 则判断token的合法性, 如果是则跳转到homepage, 反之,则将token remove
+router.beforeEach((to, from, next) => {
+  const token = sessionStorage.getItem('token')
+  if (token === null && to.path !== '/login'){
+    console.log('toke is null')
+    next({
+      path: '/login'
+    })
+  }else if(token !== 'null' && to.path === '/login'){
+    tokenCheck(token).then( res =>{
+      console.log(res)
+      if (res.code === 200){
+        next({
+          path: '/homepage'
+        })
+      }else {
+        sessionStorage.removeItem('token')
+        next()
+      }
+    })
+  }else(
+      next()
+  )
+})
+
 
 export default router

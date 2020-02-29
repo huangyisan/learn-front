@@ -1,6 +1,6 @@
 import {request} from './request'
 
-export function homePage() {
+export function homeinfo() {
   return request({
     url: '/homeinfo',
     method: 'GET',

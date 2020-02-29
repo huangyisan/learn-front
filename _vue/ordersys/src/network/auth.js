@@ -1,8 +1,8 @@
 import {request} from './request'
 
-export function authentication(username, password) {
+export function auth(username, password) {
   return request({
-    url: '/authentication',
+    url: '/auth',
     method: 'POST',
     data: {
       username: username,

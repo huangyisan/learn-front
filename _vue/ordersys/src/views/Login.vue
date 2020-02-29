@@ -15,7 +15,7 @@
 
 <script>
 
-  import {authentication} from "../network/authentication";
+  import {auth} from "../network/auth";
 
 
   export default {
@@ -47,20 +47,21 @@
         }
       }
     },
-    created(){
-      if(sessionStorage.getItem('token')){
-        // pass
-      }
-    },
+    // created(){
+    //   if(sessionStorage.getItem('token')){
+    //     // pass
+    //   }
+    // },
 
     methods: {
       submitForm(formName) {
+        console.log('111')
         this.$refs[formName].validate((valid) => {
           if (valid) {
             console.log('发送登陆请求')
-            authentication(this.ruleForm.username, this.ruleForm.password).then(res => {
+            auth(this.ruleForm.username, this.ruleForm.password).then(res => {
               console.log(res)
-              if(res.responseCode === 200){
+              if(res.code === 200){
                 let token = res.access_token
                 this.setToken(token)
                 setTimeout(() => {
