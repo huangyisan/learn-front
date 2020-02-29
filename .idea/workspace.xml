@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c578ced9-fa7d-4095-885f-544be977a9ea" name="Default" comment="" />
+    <list default="true" id="c578ced9-fa7d-4095-885f-544be977a9ea" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/huangyisan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/huangyisan.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_vue/ordersys/src/network/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vue/ordersys/src/network/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_vue/ordersys/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vue/ordersys/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_vue/ordersys/src/views/HomePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/_vue/ordersys/src/views/HomePage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_vue/ordersys/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/_vue/ordersys/src/views/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/20.项目实战/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vue/20.项目实战/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/Detail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/Detail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/childComps/DetailNavBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/childComps/DetailNavBar.vue" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -15,40 +25,72 @@
     <session id="-1521519511">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="12" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="2" />
-          <entry key="html" value="36" />
-          <entry key="js" value="2" />
+          <entry key="babelrc" value="1" />
+          <entry key="browserslistrc" value="1" />
+          <entry key="css" value="11" />
+          <entry key="gitignore" value="1" />
+          <entry key="html" value="96" />
+          <entry key="ico" value="1" />
+          <entry key="js" value="73" />
+          <entry key="json" value="2" />
+          <entry key="md" value="27" />
+          <entry key="npm命令打包" value="1" />
+          <entry key="png" value="2" />
           <entry key="ts" value="1" />
-          <entry key="vue" value="1" />
+          <entry key="vue" value="112" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="2" />
-          <entry key="HTML" value="36" />
-          <entry key="JavaScript" value="2" />
+          <entry key="CSS" value="11" />
+          <entry key="HTML" value="96" />
+          <entry key="Image" value="3" />
+          <entry key="JSON" value="3" />
+          <entry key="JavaScript" value="73" />
+          <entry key="PLAIN_TEXT" value="30" />
           <entry key="TypeScript" value="1" />
-          <entry key="Vue.js" value="1" />
+          <entry key="Vue.js" value="112" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="237" />
-          <entry key="html" value="7117" />
-          <entry key="js" value="1671" />
+          <entry key="browserslistrc" value="1" />
+          <entry key="css" value="281" />
+          <entry key="html" value="21429" />
+          <entry key="js" value="12463" />
+          <entry key="md" value="9271" />
+          <entry key="vue" value="22408" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="237" />
-          <entry key="HTML" value="7117" />
-          <entry key="JavaScript" value="1671" />
+          <entry key="CSS" value="281" />
+          <entry key="HTML" value="21429" />
+          <entry key="JavaScript" value="12463" />
+          <entry key="PLAIN_TEXT" value="9272" />
+          <entry key="Vue.js" value="22408" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="TypeScriptServerServiceImpl" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -86,75 +128,96 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/08.数据购物车案例/index.html">
+        <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/views/Login.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+            <state relative-caret-position="338">
+              <caret line="98" selection-start-line="98" selection-end-line="98" />
+              <folding>
+                <element signature="e#612#649#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/08.数据购物车案例/style.css">
+        <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/network/tokenCheck.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            <state relative-caret-position="120">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/08.数据购物车案例/main.js">
+        <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/router/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="65" column="22" lean-forward="true" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+            <state relative-caret-position="525">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+                <element signature="e#188#228#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/09.高阶函数/01.filter函数的使用.html">
+        <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/views/HomePage.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+            <state relative-caret-position="225">
+              <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/09.高阶函数/02.map函数的使用.html">
+        <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/network/homeinfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/09.高阶函数/03.reduce函数的用法.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/10.v-model的使用/04.v-model结合checkbox单选框的使用.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="120">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vue/10.v-model的使用/05.v-model结合checkbox多选框的使用.html">
+        <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/network/request.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="405">
+              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue/02.插值的操作/06.v-cloak.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/home/childComps/RecommendView.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="16" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/network/auth.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue/02.插值的操作/01.mustache语法.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -162,17 +225,50 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Single File Component" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ho</find>
+      <find>addFiveSpe</find>
+      <find>components</find>
+      <find>itemclick</find>
+      <find>click</find>
+      <find>scroll</find>
+      <find>consloe</find>
+      <find>console</find>
+      <find>tabcl</find>
+      <find>startTimer</find>
+      <find>detail-swiper</find>
+      <find>back</find>
+      <find>img</find>
+      <find>score-better</find>
+      <find>length</find>
+      <find>3333</find>
+      <find>bus</find>
+      <find>currentIndex</find>
+      <find>addFive</find>
+      <find>/homepage</find>
+      <find>/login</find>
+      <find>authentication</find>
+      <find>responseCode</find>
+      <find>ruleForm</find>
+      <find>item</find>
+      <find>recommends</find>
+      <find>submitForm</find>
+      <find>banners</find>
+      <find>setTime</find>
+      <find>toke</find>
+      <find>auth</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/_vue/ordersys</dir>
+      <dir>$PROJECT_DIR$/_vue/ordersys/src</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -180,57 +276,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vue/01-Vue初体验/01-hellovuejs.html" />
-        <option value="$PROJECT_DIR$/vue/01-Vue列表展示/01-hellovuejs.html" />
-        <option value="$PROJECT_DIR$/vue/01-Vue初体验/02-Vue实例-计算器.html" />
-        <option value="$PROJECT_DIR$/vue/02-插值的操作/01.mustache语法.html" />
-        <option value="$PROJECT_DIR$/vue/02-插值的操作/v-cloak.html" />
-        <option value="$PROJECT_DIR$/vue/02-插值的操作/05.v-pre指令的使用.html" />
-        <option value="$PROJECT_DIR$/vue/02-插值的操作/04.v-text指令的使用.html" />
-        <option value="$PROJECT_DIR$/vue/02-插值的操作/03.v-html指令的使用.html" />
-        <option value="$PROJECT_DIR$/vue/02-插值的操作/02.v-once指令的使用.html" />
-        <option value="$PROJECT_DIR$/vue/02-插值的操作/06.v-cloak.html" />
-        <option value="$PROJECT_DIR$/vue/02-插值的操作/111.vue" />
-        <option value="$PROJECT_DIR$/vue/03-动态绑定属性/v-bind的基本使用.html" />
-        <option value="$PROJECT_DIR$/vue/03-动态绑定属性/02.v-bind绑定class属性-01.html" />
-        <option value="$PROJECT_DIR$/vue/03-动态绑定属性/02.v-bind动态绑定class属性-01.html" />
-        <option value="$PROJECT_DIR$/vue/03-动态绑定属性/03.v-bind动态绑定class属性(数组语法).html" />
-        <option value="$PROJECT_DIR$/vue/03-动态绑定属性/04.v-bind动态绑定style(对象语法).html" />
-        <option value="$PROJECT_DIR$/vue/03-动态绑定属性/05.v-bind动态绑定style(数组语法).html" />
-        <option value="$PROJECT_DIR$/vue/04-计算属性/01.计算属性的基本使用.html" />
-        <option value="$PROJECT_DIR$/vue/04-计算属性/02.计算属性的复杂操作.html" />
-        <option value="$PROJECT_DIR$/vue/04-计算属性/01.计算属性的setter和getter.html" />
-        <option value="$PROJECT_DIR$/vue/04-计算属性/03.计算属性的setter和getter.html" />
-        <option value="$PROJECT_DIR$/vue/04-计算属性/04.计算属性和methods的对比.html" />
-        <option value="$PROJECT_DIR$/vue/00-ES6补充/01.块级作用域.html" />
-        <option value="$PROJECT_DIR$/vue/00-ES6补充/02.const的使用.html" />
-        <option value="$PROJECT_DIR$/vue/00-ES6补充/03.对象字面量的增强写法.html" />
-        <option value="$PROJECT_DIR$/vue/06.事件监听/01.v-on的基本使用.html" />
-        <option value="$PROJECT_DIR$/vue/06.事件监听/02.v-on的参数问题.html" />
-        <option value="$PROJECT_DIR$/vue/06.事件监听/03.v-on修饰符.html" />
-        <option value="$PROJECT_DIR$/vue/06.事件监听/03.v-on的修饰符.html" />
-        <option value="$PROJECT_DIR$/vue/06.条件判断/01.v-if的使用.html" />
-        <option value="$PROJECT_DIR$/vue/06.条件判断/02.v-if和v-else的结合使用.html" />
-        <option value="$PROJECT_DIR$/vue/06.条件判断/03.v-if和v-else-if的结合使用.html" />
-        <option value="$PROJECT_DIR$/vue/06.条件判断/04.用户登录切换的小案例.html" />
-        <option value="$PROJECT_DIR$/vue/06.条件判断/05.用户登录切换的小案例(小问题).html" />
-        <option value="$PROJECT_DIR$/vue/06.条件判断/06.v-show的使用.html" />
-        <option value="$PROJECT_DIR$/vue/07.循环遍历/01.v-for遍历对象.html" />
-        <option value="$PROJECT_DIR$/vue/07.循环遍历/02.v-for遍历对象.html" />
-        <option value="$PROJECT_DIR$/vue/07.循环遍历/03.v-key使用过程添加key.html" />
-        <option value="$PROJECT_DIR$/vue/07.循环遍历/04.哪些数组的方法是响应式的.html" />
-        <option value="$PROJECT_DIR$/vue/08.数据购物车案例/style.css" />
-        <option value="$PROJECT_DIR$/vue/08.数据购物车案例/index.html" />
-        <option value="$PROJECT_DIR$/vue/08.数据购物车案例/main.js" />
-        <option value="$PROJECT_DIR$/vue/09.高阶函数/01.filter函数的使用.html" />
-        <option value="$PROJECT_DIR$/vue/09.高阶函数/02.map函数的使用.html" />
-        <option value="$PROJECT_DIR$/vue/09.高阶函数/03.reduce的用法.html" />
-        <option value="$PROJECT_DIR$/vue/09.高阶函数/03.reduce函数的用法.html" />
-        <option value="$PROJECT_DIR$/vue/10.v-model的使用/01.v-model的基本使用.html" />
-        <option value="$PROJECT_DIR$/vue/10.v-model的使用/02.v-model的实现原理.html" />
-        <option value="$PROJECT_DIR$/vue/10.v-model的使用/03.v-model结合radio类型.html" />
-        <option value="$PROJECT_DIR$/vue/10.v-model的使用/04.v-model结合checkbox单选框的使用.html" />
-        <option value="$PROJECT_DIR$/vue/10.v-model的使用/05.v-model结合checkbox多选框的使用.html" />
+        <option value="$PROJECT_DIR$/vue/16.创建一个tabbar/tabbar/src/components/tabbar/TabBarItem.vue" />
+        <option value="$PROJECT_DIR$/vue/16.创建一个tabbar/tabbar/src/App.vue" />
+        <option value="$PROJECT_DIR$/vue/16.创建一个tabbar/tabbar/src/components/MainTabBar.vue" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/components/content/mainTabbar/MainTabBar.vue" />
+        <option value="$PROJECT_DIR$/vue/16.创建一个tabbar/tabbar/src/router/index.js" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/assets/css/base.css" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/vue.config.js" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/home/childComps/RecommandView.vue" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/home/childComps/RecommendView.vue" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/home/childComps/FeatureView.vue" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/components/content/goods/GoodsList.vue" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/network/home.js" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/network/request.js" />
+        <option value="$PROJECT_DIR$/vue/21.BScroll的使用/01-BScroll的基本使用.html" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/category/Category.vue" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/components/common/tabbar/TabBar.vue" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/components/content/backTop/backTop.vue" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/components/content/backTop/BackTop.vue" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/main.js" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/common/utils.js" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/home/childComps/HomeSwiper.vue" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/components/common/scroll/Scroll.vue" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/components/content/goods/GoodsListItem.vue" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/router/index.js" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/ChildComponent/DetailNavBar.vue" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/components/content/tabControl/TabControl.vue" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/App.vue" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/components/common/swiper/Swiper.vue" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/childComps/DetailSwiper.vue" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/childComps/DetailBaseInfo.vue" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/network/detail.js" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/childComps/DetailShopInfo.vue" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/components/common/navbar/NavBar.vue" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/childComps/DetailGoodsInfo.vue" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/childComps/DetailParamsInfo.vue" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/common/mixin.js" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/home/Home.vue" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/childComps/DetailNavBar.vue" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/README.md" />
+        <option value="$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/Detail.vue" />
+        <option value="$PROJECT_DIR$/_vue/ordersys/src/store/index.js" />
+        <option value="$PROJECT_DIR$/_vue/ordersys/src/network/homepage.js" />
+        <option value="$PROJECT_DIR$/_vue/ordersys/src/network/authentication.js" />
+        <option value="$PROJECT_DIR$/_vue/ordersys/src/network/homeinfo.js" />
+        <option value="$PROJECT_DIR$/_vue/ordersys/src/network/auth.js" />
+        <option value="$PROJECT_DIR$/_vue/ordersys/src/network/check.js" />
+        <option value="$PROJECT_DIR$/_vue/ordersys/src/network/tokenCheck.js" />
+        <option value="$PROJECT_DIR$/_vue/ordersys/src/views/Login.vue" />
+        <option value="$PROJECT_DIR$/_vue/ordersys/src/router/index.js" />
+        <option value="$PROJECT_DIR$/_vue/ordersys/src/views/HomePage.vue" />
+        <option value="$PROJECT_DIR$/_vue/ordersys/src/network/request.js" />
       </list>
     </option>
   </component>
@@ -240,8 +336,86 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/_vue/ordersys/node_modules" />
+    <handled-path value="$PROJECT_DIR$/vue/14.前端脚手架/01.vuecli2test/node_modules" />
+    <handled-path value="$PROJECT_DIR$/vue/14.前端脚手架/02.vuecli3test/node_modules" />
+    <handled-path value="$PROJECT_DIR$/vue/15.前端路由-cli2/learnvuerouter/node_modules" />
+    <handled-path value="$PROJECT_DIR$/vue/16.创建一个tabbar/tabbar/node_modules" />
+    <handled-path value="$PROJECT_DIR$/vue/18.Vuex/learnvuex/node_modules" />
+    <handled-path value="$PROJECT_DIR$/vue/19.axios/axios_project/node_modules" />
+    <handled-path value="$PROJECT_DIR$/vue/20.项目实战/supermall/node_modules" />
+    <handled-path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/03.webpack的loader/node_modules" />
+    <handled-path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/04.webpack配置vue/node_modules" />
+    <handled-path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/05.webpack终极使用方案(开始)/node_modules" />
+    <handled-path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/06.webpack终极使用方案(继续)/node_modules" />
+    <handled-path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/07.webpack终极使用方案(完结+插件安装使用)/node_modules" />
+    <handled-path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/08.webpack-node服务器安装/node_modules" />
+    <handled-path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/09.webpack配置文件分离/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/_vue/node_modules/axios/package.json" />
+      <path value="$PROJECT_DIR$/_vue/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/_vue/node_modules/follow-redirects/package.json" />
+      <path value="$PROJECT_DIR$/_vue/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/_vue/node_modules/vuex/package.json" />
+      <path value="$PROJECT_DIR$/_vue/ordersys/package.json" />
+      <path value="$PROJECT_DIR$/vue/14.前端脚手架/01.vuecli2test/package.json" />
+      <path value="$PROJECT_DIR$/vue/14.前端脚手架/02.vuecli3test/package.json" />
+      <path value="$PROJECT_DIR$/vue/15.前端路由-cli2/learnvuerouter/package.json" />
+      <path value="$PROJECT_DIR$/vue/16.创建一个tabbar/tabbar/package.json" />
+      <path value="$PROJECT_DIR$/vue/18.Vuex/learnvuex/package.json" />
+      <path value="$PROJECT_DIR$/vue/19.axios/axios_project/package.json" />
+      <path value="$PROJECT_DIR$/vue/20.项目实战/supermall/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/ajv-keywords/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/ajv/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/ansi-styles/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/big.js/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/camelcase/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/chalk/node_modules/supports-color/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/chalk/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/color-convert/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/color-name/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/css-loader/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/cssesc/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/emojis-list/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/escape-string-regexp/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/fast-deep-equal/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/fast-json-stable-stringify/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/has-flag/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/icss-utils/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/indexes-of/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/json-schema-traverse/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/json5/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/loader-utils/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/minimist/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/normalize-path/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/postcss-modules-extract-imports/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/postcss-modules-local-by-default/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/postcss-modules-scope/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/postcss-modules-values/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/postcss-selector-parser/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/postcss-value-parser/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/postcss/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/punycode/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/schema-utils/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/supports-color/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/uniq/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/01.webpack的起步/node_modules/uri-js/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/02.webpack的配置/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/03.webpack的loader/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/04.webpack配置vue/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/05.webpack终极使用方案(开始)/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/06.webpack终极使用方案(继续)/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/07.webpack终极使用方案(完结+插件安装使用)/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/08.webpack-node服务器安装/package.json" />
+      <path value="$PROJECT_DIR$/vue/project/LearnVuejs04-v2/01.webpack的使用/09.webpack配置文件分离/package.json" />
+    </packageJsonPaths>
+  </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="638" />
+    <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -252,7 +426,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -263,18 +436,75 @@
             <path>
               <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
               <item name="learn-front" type="462c0819:PsiDirectoryNode" />
+              <item name="_vue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn-front" type="462c0819:PsiDirectoryNode" />
+              <item name="_vue" type="462c0819:PsiDirectoryNode" />
+              <item name="ordersys" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn-front" type="462c0819:PsiDirectoryNode" />
+              <item name="_vue" type="462c0819:PsiDirectoryNode" />
+              <item name="ordersys" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn-front" type="462c0819:PsiDirectoryNode" />
+              <item name="_vue" type="462c0819:PsiDirectoryNode" />
+              <item name="ordersys" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn-front" type="462c0819:PsiDirectoryNode" />
+              <item name="_vue" type="462c0819:PsiDirectoryNode" />
+              <item name="ordersys" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn-front" type="462c0819:PsiDirectoryNode" />
+              <item name="_vue" type="462c0819:PsiDirectoryNode" />
+              <item name="ordersys" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="router" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn-front" type="462c0819:PsiDirectoryNode" />
+              <item name="_vue" type="462c0819:PsiDirectoryNode" />
+              <item name="ordersys" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn-front" type="462c0819:PsiDirectoryNode" />
               <item name="vue" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
               <item name="learn-front" type="462c0819:PsiDirectoryNode" />
               <item name="vue" type="462c0819:PsiDirectoryNode" />
-              <item name="10.v-model的使用" type="462c0819:PsiDirectoryNode" />
+              <item name="02.插值的操作" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn-front" type="462c0819:PsiDirectoryNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
+              <item name="03.动态绑定属性" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,18 +514,21 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vue/20.项目实战/supermall/src/components/common" />
+      <recent name="$PROJECT_DIR$/vue/20.项目实战/supermall/src/components/content/mainTabbar" />
       <recent name="$PROJECT_DIR$/html/lesson3" />
       <recent name="$PROJECT_DIR$/html" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/vue/10.v-model的使用" />
-      <recent name="C:\Users\huangyisan\Desktop\github\learn-front\vue\06.条件判断" />
-      <recent name="$PROJECT_DIR$/vue/03-动态绑定属性" />
-      <recent name="$PROJECT_DIR$/html/lesson4" />
+      <recent name="$PROJECT_DIR$/vue/21.BScroll的使用" />
+      <recent name="$PROJECT_DIR$/vue/20.项目实战/supermall/src/network" />
+      <recent name="$PROJECT_DIR$/vue/20.项目实战/supermall/src/views" />
+      <recent name="$PROJECT_DIR$/vue/20.项目实战/supermall/src/assets/img" />
+      <recent name="$PROJECT_DIR$/vue/20.项目实战/supermall/src/components/content" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -334,30 +567,51 @@
       <workItem from="1580989812248" duration="74000" />
       <workItem from="1580990246021" duration="12807000" />
       <workItem from="1581046093309" duration="16730000" />
+      <workItem from="1581221522995" duration="2335000" />
+      <workItem from="1581225757135" duration="14702000" />
+      <workItem from="1581353366331" duration="72754000" />
+      <workItem from="1581996491546" duration="102000" />
+      <workItem from="1581996844967" duration="9920000" />
+      <workItem from="1582041770259" duration="3065000" />
+      <workItem from="1582178719351" duration="6419000" />
+      <workItem from="1582255656862" duration="18329000" />
+      <workItem from="1582398880697" duration="56023000" />
+      <workItem from="1582631915522" duration="28798000" />
+      <workItem from="1582904846780" duration="12372000" />
+      <workItem from="1582967452891" duration="5160000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96826000" />
+    <option name="totallyTimeSpent" value="343241000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="634" height="800" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.6313214" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17474186" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32924962" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329927" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.11643836" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32771823" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -372,331 +626,331 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/vue/15.前端路由-cli2/learnvuerouter/src/App.vue</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/vue/16.创建一个tabbar/tabbar/src/components/MainTabBar.vue</url>
+          <line>32</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vue/todolist.html" />
-    <entry file="file://$PROJECT_DIR$/vue/bind-model.html" />
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/components/content/goods/GoodsListItem.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="240">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/01-Vue初体验/02-Vue实例-计算器.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/node_modules/swiper/dist/css/swiper.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/01-Vue初体验/01-Vue列表展示.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/02-插值的操作/05.v-pre指令的使用.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/02-插值的操作/03.v-html指令的使用.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/02-插值的操作/02.v-once指令的使用.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/02-插值的操作/01.mustache语法.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/02-插值的操作/111.vue" />
-    <entry file="file://$PROJECT_DIR$/vue/02-插值的操作/06.v-cloak.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="26" column="15" lean-forward="true" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/02-插值的操作/04.v-text指令的使用.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/03-动态绑定属性/04.v-bind动态绑定style(对象语法1).html" />
-    <entry file="file://$PROJECT_DIR$/vue/04-计算属性/02.计算属性的复杂操作.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/04-计算属性/01.计算属性的基本使用.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/03-动态绑定属性/04.v-bind动态绑定style(对象语法).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/03-动态绑定属性/05.v-bind动态绑定style(数组语法).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/03-动态绑定属性/01.v-bind的基本使用.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/04-计算属性/03.计算属性的setter和getter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="17" selection-start-line="17" selection-end-line="20" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/04-计算属性/04.计算属性和methods的对比.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="76" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/00-ES6补充/01.块级作用域.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/00-ES6补充/02.const的使用.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/00-ES6补充/03.对象字面量的增强写法.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/05.事件监听/01.v-on的基本使用.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/05.事件监听/02.v-on的参数问题.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/06.条件判断/01-v-if的使用" />
-    <entry file="file://$PROJECT_DIR$/vue/05.事件监听/03.v-on的修饰符.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/06.条件判断/01.v-if的使用.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="18" lean-forward="true" selection-end-line="28" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/06.条件判断/02.v-if和v-else的结合使用.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="28" selection-start-line="12" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/06.条件判断/03.v-if和v-else-if的结合使用.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/06.条件判断/04.用户登录切换的小案例.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/06.条件判断/05.用户登录切换的小案例(小问题).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/06.条件判断/06.v-show的使用以及和v-show的区别.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/07.循环遍历/01.v-for遍历数组.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/07.循环遍历/02.v-for遍历对象.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/07.循环遍历/03.v-key使用过程添加key.html">
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <caret line="13" column="63" lean-forward="true" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/07.循环遍历/04.哪些数组的方法是响应式的.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/03-动态绑定属性/03.v-bind动态绑定class属性(数组语法).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/03-动态绑定属性/02.v-bind动态绑定class属性(对象语法).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="3335" column="13" selection-start-line="3335" selection-start-column="13" selection-end-line="3335" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/08.数据购物车案例/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/08.数据购物车案例/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/08.数据购物车案例/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="65" column="22" lean-forward="true" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/09.高阶函数/01.filter函数的使用.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/09.高阶函数/02.map函数的使用.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/10.v-model的使用/03.v-model结合radio类型.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/10.v-model的使用/02.v-model的实现原理.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/10.v-model的使用/01.v-model的基本使用.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/09.高阶函数/03.reduce函数的用法.html">
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/childComps/DetailSwiper.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/10.v-model的使用/04.v-model结合checkbox单选框的使用.html">
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/components/content/tabControl/TabControl.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="75">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/10.v-model的使用/05.v-model结合checkbox多选框的使用.html">
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/components/content/mainTabbar/MainTabBar.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="120">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/network/detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/childComps/DetailShopInfo.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="108" column="22" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/childComps/DetailParamsInfo.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/childComps/DetailBaseInfo.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/common/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/childComps/DetailGoodsInfo.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="31" column="104" selection-start-line="31" selection-start-column="104" selection-end-line="31" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/11.组件化开发/09.父子组件之间的通信(父传子-props其他形式).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-912" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/11.组件化开发/15.父子组件相互访问(父访问子refs).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-310" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/11.组件化开发/14.父子组件相互访问(父访问子children).html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/11.组件化开发/08.父子组件之间的通信(父传子-props数组形式).html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/Detail.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1418">
+          <caret line="123" column="8" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/14.前端脚手架/01.vuecli2test/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/components/common/navbar/NavBar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/14.前端脚手架/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/14.前端脚手架/02.vuecli3test/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/childComps/DetailNavBar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="103" selection-start-line="7" selection-start-column="91" selection-end-line="7" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="661">
+          <caret line="97" column="32" selection-start-line="97" selection-start-column="32" selection-end-line="97" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/common/mixin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/18.Vuex/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/18.Vuex/learnvuex/src/store/mutation-types.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/18.Vuex/learnvuex/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/15.前端路由-cli2/learnvuerouter/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/network/login.js" />
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/components/common/swiper/SwiperItem.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/components/common/swiper/Swiper.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2466">
+          <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/components/common/scroll/Scroll.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/18.Vuex/learnvuex/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/03.动态绑定属性/01.v-bind的基本使用.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/home/childComps/FeatureView.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/02.插值的操作/05.v-pre指令的使用.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/home/childComps/HomeSwiper.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/home/Home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="57" column="15" selection-start-line="57" selection-start-column="15" selection-end-line="57" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/02.插值的操作/06.v-cloak.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/home/childComps/RecommendView.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/02.插值的操作/01.mustache语法.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/components/common/swiper/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/network/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/network/tokenCheck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/views/Login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+          <folding>
+            <element signature="e#612#649#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#188#228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/views/HomePage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/network/homeinfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/network/request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
         </state>
       </provider>
     </entry>

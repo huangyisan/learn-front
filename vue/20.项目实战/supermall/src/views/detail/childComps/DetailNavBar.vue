@@ -32,6 +32,8 @@
     methods: {
       titleClick(index){
         this.currentIndex = index
+      //  将点击事件发送, 让
+        this.$emit('titleClick', index)
       },
       backClick() {
         this.$router.back()
