@@ -19,8 +19,7 @@ export function request(config) {
   instance.interceptors.request.use(config => {
     let CancelToken = axios.CancelToken
     const token = config.headers.Authorization.split(' ')[1]
-    console.log(config)
-    if (token === 'null' && config.url !== '/auth') {
+    if (token === 'null' && config.url !== '/tokencheck') {
       console.log('跳转到login')
       // sessionStorage.removeItem('token')
       router.push('/login')
