@@ -121,7 +121,9 @@
         console.log(position)
         //  比较y和this.themeTopY[i]和this.themeTopY[i+1]判断采用哪个index
         // 这边i需要转换
-        if (pos)
+        if (pos) {
+          
+        }
       }
     }
   }

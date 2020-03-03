@@ -11,7 +11,7 @@ export function getHomeMultidata() {
 // 首页流行最新等数据接口请求
 export function getHomeGoods(type, page) {
   return request({
-    url: '/api/hy/home/data',
+    url: 'api/wh/home/data',
     params: {
       type,
       page

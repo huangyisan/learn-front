@@ -2,7 +2,7 @@ import {request} from './request'
 
 export function getDetail(iid) {
   return request({
-    url: 'api/hy/detail',
+    url: 'api/wh/detail',
     params: {
       iid
     }
