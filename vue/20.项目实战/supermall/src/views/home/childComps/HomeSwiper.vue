@@ -40,6 +40,11 @@
           this.isLoad = true
         }
       }
+    },
+    created() {
+      console.log(11)
+      console.log(this.banners)
+      console.log(11)
     }
   }
 </script>

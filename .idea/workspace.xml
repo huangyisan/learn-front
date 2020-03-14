@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c578ced9-fa7d-4095-885f-544be977a9ea" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/huangyisan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/huangyisan.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_vue/ordersys/src/network/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vue/ordersys/src/network/request.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_vue/ordersys/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vue/ordersys/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_vue/ordersys/src/views/HomePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/_vue/ordersys/src/views/HomePage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_vue/ordersys/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/_vue/ordersys/src/views/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/20.项目实战/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vue/20.项目实战/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/Detail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/Detail.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/childComps/DetailNavBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/childComps/DetailNavBar.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,11 +17,12 @@
     <session id="-1521519511">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
@@ -37,7 +30,7 @@
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -54,7 +47,7 @@
           <entry key="npm命令打包" value="1" />
           <entry key="png" value="2" />
           <entry key="ts" value="1" />
-          <entry key="vue" value="112" />
+          <entry key="vue" value="113" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -66,7 +59,7 @@
           <entry key="JavaScript" value="73" />
           <entry key="PLAIN_TEXT" value="30" />
           <entry key="TypeScript" value="1" />
-          <entry key="Vue.js" value="112" />
+          <entry key="Vue.js" value="113" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -128,71 +121,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/views/Login.vue">
+        <entry file="file://$PROJECT_DIR$/vue/02.插值的操作/06.v-cloak.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="98" selection-start-line="98" selection-end-line="98" />
-              <folding>
-                <element signature="e#612#649#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/network/tokenCheck.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/router/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-                <element signature="e#188#228#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/views/HomePage.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/network/homeinfo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="90">
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/network/request.js">
+        <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/childComps/DetailBaseInfo.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/02.插值的操作/06.v-cloak.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="12" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="12" />
+            <state relative-caret-position="465">
+              <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -202,15 +143,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
               <caret line="16" column="16" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/network/auth.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -234,7 +166,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>addFiveSpe</find>
       <find>components</find>
       <find>itemclick</find>
       <find>click</find>
@@ -264,10 +195,13 @@
       <find>setTime</find>
       <find>toke</find>
       <find>auth</find>
+      <find>v-for</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/_vue/ordersys</dir>
       <dir>$PROJECT_DIR$/_vue/ordersys/src</dir>
+      <dir>$PROJECT_DIR$/vue/20.项目实战/supermall</dir>
+      <dir>$PROJECT_DIR$/vue/20.项目实战/supermall/src</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -337,7 +271,6 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/_vue/ordersys/node_modules" />
     <handled-path value="$PROJECT_DIR$/vue/14.前端脚手架/01.vuecli2test/node_modules" />
     <handled-path value="$PROJECT_DIR$/vue/14.前端脚手架/02.vuecli3test/node_modules" />
     <handled-path value="$PROJECT_DIR$/vue/15.前端路由-cli2/learnvuerouter/node_modules" />
@@ -355,12 +288,6 @@
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/_vue/node_modules/axios/package.json" />
-      <path value="$PROJECT_DIR$/_vue/node_modules/debug/package.json" />
-      <path value="$PROJECT_DIR$/_vue/node_modules/follow-redirects/package.json" />
-      <path value="$PROJECT_DIR$/_vue/node_modules/ms/package.json" />
-      <path value="$PROJECT_DIR$/_vue/node_modules/vuex/package.json" />
-      <path value="$PROJECT_DIR$/_vue/ordersys/package.json" />
       <path value="$PROJECT_DIR$/vue/14.前端脚手架/01.vuecli2test/package.json" />
       <path value="$PROJECT_DIR$/vue/14.前端脚手架/02.vuecli3test/package.json" />
       <path value="$PROJECT_DIR$/vue/15.前端路由-cli2/learnvuerouter/package.json" />
@@ -426,62 +353,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
               <item name="learn-front" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-front" type="462c0819:PsiDirectoryNode" />
-              <item name="_vue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-front" type="462c0819:PsiDirectoryNode" />
-              <item name="_vue" type="462c0819:PsiDirectoryNode" />
-              <item name="ordersys" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-front" type="462c0819:PsiDirectoryNode" />
-              <item name="_vue" type="462c0819:PsiDirectoryNode" />
-              <item name="ordersys" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-front" type="462c0819:PsiDirectoryNode" />
-              <item name="_vue" type="462c0819:PsiDirectoryNode" />
-              <item name="ordersys" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="network" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-front" type="462c0819:PsiDirectoryNode" />
-              <item name="_vue" type="462c0819:PsiDirectoryNode" />
-              <item name="ordersys" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-front" type="462c0819:PsiDirectoryNode" />
-              <item name="_vue" type="462c0819:PsiDirectoryNode" />
-              <item name="ordersys" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-front" type="462c0819:PsiDirectoryNode" />
-              <item name="_vue" type="462c0819:PsiDirectoryNode" />
-              <item name="ordersys" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
@@ -500,11 +378,23 @@
               <item name="vue" type="462c0819:PsiDirectoryNode" />
               <item name="03.动态绑定属性" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn-front" type="462c0819:PsiDirectoryNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
+              <item name="20.项目实战" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn-front" type="462c0819:PsiDirectoryNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
+              <item name="20.项目实战" type="462c0819:PsiDirectoryNode" />
+              <item name="supermall" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -578,12 +468,13 @@
       <workItem from="1582398880697" duration="56023000" />
       <workItem from="1582631915522" duration="28798000" />
       <workItem from="1582904846780" duration="12372000" />
-      <workItem from="1582967452891" duration="5160000" />
+      <workItem from="1582967452891" duration="5323000" />
+      <workItem from="1582995605429" duration="629000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="343241000" />
+    <option name="totallyTimeSpent" value="344033000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -596,6 +487,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17474186" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -699,13 +591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/childComps/DetailBaseInfo.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -814,16 +699,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/store/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/store/index.js" />
     <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/network/login.js" />
     <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/components/common/swiper/SwiperItem.vue">
       <provider selected="true" editor-type-id="text-editor" />
@@ -872,6 +748,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/components/common/swiper/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/network/auth.js" />
+    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/network/tokenCheck.js" />
+    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/views/Login.vue" />
+    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/router/index.js" />
+    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/views/HomePage.vue" />
+    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/network/homeinfo.js" />
+    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/network/request.js" />
     <entry file="file://$PROJECT_DIR$/vue/02.插值的操作/06.v-cloak.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -889,68 +781,10 @@
     <entry file="file://$PROJECT_DIR$/vue/02.插值的操作/01.mustache语法.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/components/common/swiper/index.js">
+    <entry file="file://$PROJECT_DIR$/vue/20.项目实战/supermall/src/views/detail/childComps/DetailBaseInfo.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/network/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/network/tokenCheck.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/views/Login.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
-          <folding>
-            <element signature="e#612#649#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-            <element signature="e#188#228#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/views/HomePage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/network/homeinfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_vue/ordersys/src/network/request.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        <state relative-caret-position="465">
+          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
         </state>
       </provider>
     </entry>
