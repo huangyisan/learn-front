@@ -27,5 +27,3 @@ let p = new Person("yisan")
 p.setName("zhangsan")
 console.log(p.getName())
 
-
-// ts中实现类的继承 extends, super

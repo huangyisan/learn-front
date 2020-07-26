@@ -19,4 +19,3 @@ var p = new Person("yisan");
 // 修改name
 p.setName("zhangsan");
 console.log(p.getName());
-// ts中实现类的继承 extends, super
