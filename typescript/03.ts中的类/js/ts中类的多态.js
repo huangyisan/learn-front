@@ -1,6 +1,6 @@
 "use strict";
 // 多态: 父类定义一个方法不去实现， 让继承他的子类去实现，每个子类有不同的表现
-// 多态属于继承
+// 多态属于继承， 让不同的子类实现不同的方法
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
