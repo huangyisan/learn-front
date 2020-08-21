@@ -1,5 +1,5 @@
 <template>
-  <q-item clickable to="/">
+  <q-item clickable :to="link" exact>
     <q-item-section
       v-if="icon"
       avatar
@@ -24,6 +24,10 @@ export default {
     icon: {
       type: String,
       default: ''
+    },
+    link: {
+      type: String,
+      default: '/'
     }
   }
 }

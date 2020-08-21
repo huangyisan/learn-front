@@ -1,5 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
+    
     <q-header elevated>
       <q-toolbar>
         <q-btn
@@ -18,6 +19,12 @@
         <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
+
+    <q-footer elevated>
+      <q-tabs>
+        <q-route-tab v-for="(item,index) in essentialLinks" :key="index" :icon="item.icon" :label="item.title" :to="item.link"></q-route-tab>
+      </q-tabs>
+    </q-footer>
 
     <q-drawer
       v-model="leftDrawerOpen"
@@ -53,8 +60,14 @@ const linksData = [
   {
     title: 'Todo',
     caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev'
+    icon: 'list',
+    link: '/'
+  },
+  {
+    title: 'Settings',
+    caption: 'quasar.dev',
+    icon: 'settings',
+    link: '/Settings'
   },
 ];
 
