@@ -36,6 +36,7 @@ const mutations = {
 }
 
 const actions = {
+  // 虽然updateTask操作是同步的,但建议先走action,让action调用mutations
   // 光actions还是无法改变state信息,需要使用commit方式地阿偶用mutations
   updateTask({ commit }, payload) {
     // 第一个参数为mutations的方法名称
