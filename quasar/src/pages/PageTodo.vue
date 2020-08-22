@@ -1,6 +1,12 @@
 <template>
   <q-page class="q-pa-md">
     <q-list separator bordered>
+      <task v-for="(item, index) in tasks" 
+        :key="index"
+        :item='item'
+      >
+      </task>
+      <!--
       <q-item v-for="(item, index) in tasks" 
         :key="index" 
         @click="item.complate = !item.complate" 
@@ -11,7 +17,8 @@
           <q-checkbox v-model="item.complate" />
         </q-item-section>
         <q-item-section>
-          <!-- 自定义一个text-strikethrough的class, 然后去App.vue里面全局定义 -->
+           自定义一个text-strikethrough的class, 然后去App.vue里面全局定义 -->
+          <!--
           <q-item-label :class="{ 'text-strikethrough' : item.complate }">{{item.name}}</q-item-label>
         </q-item-section>
         <q-item-section side>
@@ -31,6 +38,7 @@
 
         </q-item-section>
       </q-item>
+      -->
     </q-list>
   </q-page>
 </template>
@@ -53,6 +61,9 @@ export default {
     // tasks为mudulename, 数组中的tasks为getters中的方法
     ...mapGetters('tasks',['tasks'])
 
+  },
+  components: {
+    'task' : require('components/Tasks/task').default
   }
 }
 </script>
