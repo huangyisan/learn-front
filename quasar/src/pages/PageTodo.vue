@@ -36,33 +36,23 @@
 </template>
 
 <script>
+import {mapGetters} from 'vuex'
 export default {
   data() {
     return {
-      tasks: [
-        {
-          id: 1,
-          name: "go to shop",
-          complate: false,
-          dueDate: '2020/01/01',
-          dueTime: '22:22:33'
-        },
-        {
-          id: 2,
-          name: "go to home",
-          complate: false,
-          dueDate: '2020/01/02',
-          dueTime: '12:22:33'
-        },
-        {
-          id: 3,
-          name: "go to school",
-          complate: true,
-          dueDate: '2020/01/03',
-          dueTime: '02:22:33'
-        }
-      ]
+     
     }
+  },
+  computed: {
+    // store的内容在computed里面获取
+    // tasks() {
+    //   // 因为store-tasks.js用了namespaced:true,所以getters需要mudulename/方法
+    //   return this.$store.getters['tasks/tasks']
+    // }
+    //还可以使用mapGetters来获取而无需定义tasks()函数
+    // tasks为mudulename, 数组中的tasks为getters中的方法
+    ...mapGetters('tasks',['tasks'])
+
   }
 }
 </script>
