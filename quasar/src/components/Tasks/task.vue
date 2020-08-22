@@ -1,6 +1,6 @@
 <template>
   <q-item 
-        @click="updateTask({ id:item.id, update:{ complate: !item.complate }})" 
+        @click="updateTask({ id:id, update:{ complate: !item.complate }})" 
         clickable 
         v-ripple
         :class="!item.complate ? 'bg-orange-1' : 'bg-green-1'">
@@ -25,7 +25,10 @@
               </q-item-label>
             </div>
           </div>
-
+        </q-item-section>
+        <!-- // 删除按钮 -->
+        <q-item-section side>
+          <q-btn flat round dense color="primary" icon="delete" @click.stop="promoteToDelete(id)" />
         </q-item-section>
       </q-item>
 </template>
@@ -38,9 +41,24 @@ export default {
       type: Object,
       default : []
     },
+    id: {
+      type: String,
+      default: ''
+    }
   },
   methods: {
-    ...mapActions('tasks', ['updateTask'])
+    ...mapActions('tasks', ['updateTask','deleteTask']),
+    promoteToDelete(id) {
+      this.$q.dialog({
+        title: 'Confirm',
+        message: 'Really delete ?',
+        cancel: true,
+        persistent: true
+      }).onOk(() => {
+        this.deleteTask(id)
+        // console.log('>>>> OK')
+      })
+    }
   }
   
 }

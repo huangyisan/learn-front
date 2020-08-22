@@ -4,6 +4,7 @@
       <task v-for="(item, index) in tasks" 
         :key="index"
         :item='item'
+        :id='index'
       >
       </task>
       <!--
