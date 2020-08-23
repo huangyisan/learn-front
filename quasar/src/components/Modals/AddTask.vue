@@ -1,12 +1,6 @@
 <template>
   <q-card>
-    <q-card-section class="row">
-      <div class="text-h6">Add Task</div>
-      <q-space />
-      <!-- v-close-popup 是一个可以用来控制qdialog关闭的组件,在官方的vue directive -> close popup的api中 -->
-      <q-btn flat round dense icon="close" v-close-popup />
-
-    </q-card-section>
+    <modal-header></modal-header>
 
     <!-- 放入form元素里面  submit.prevent阻止提交后页面reload大刷新,但这个版本貌似不加.prevent也不会reload大刷新页面了 -->
     <form @submit.prevent="submitForm">
@@ -96,6 +90,9 @@ export default {
       this.taskToSubmit.dueDate = ''
       this.taskToSubmit.dueTime = ''
     }
+  },
+  components: {
+    modalHeader: require('components/Modals/Shared/ModalHeader').default
   }
   
 }
