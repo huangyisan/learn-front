@@ -1,6 +1,6 @@
 <template>
   <q-page class="q-pa-md">
-    <q-list separator bordered>
+    <q-list separator bordered v-if="Object.keys(tasks).length">
       <task v-for="(item, index) in tasks" 
         :key="index"
         :item='item'
@@ -14,8 +14,8 @@
     </div>
 
     <!-- v-model控制是否展现dialog -->
-    <q-dialog v-model="showAddTask">
-      <add-task></add-task>
+    <q-dialog v-model="showAddTask" no-backdrop-dismiss>
+      <add-task @close="showAddTask = false"></add-task>
     </q-dialog>
   </q-page>
 </template>

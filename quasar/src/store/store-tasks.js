@@ -1,29 +1,17 @@
 import Vue from 'vue'
+import { uid } from 'quasar'
+
 
 const state = {
   tasks: 
   {
-    id0:
-      {
-        name: "go to shop",
-        complate: false,
-        dueDate: '2020/01/01',
-        dueTime: '22:22:33'
-      },
-    id1:
-      {
-        name: "go to home",
-        complate: false,
-        dueDate: '2020/01/02',
-        dueTime: '12:22:33'
-      },
-    id2:
-      {
-        name: "go to school",
-        complate: true,
-        dueDate: '2020/01/03',
-        dueTime: '02:22:33'
-      }
+    // uid0:
+    //   {
+    //     name: "go to shop",
+    //     complate: false,
+    //     dueDate: '2020/01/01',
+    //     dueTime: '22:22:33'
+    //   },
   }
 }
 
@@ -41,6 +29,12 @@ const mutations = {
     console.log(state)
     console.log(id)
     Vue.delete(state.tasks, id)
+  },
+  addTask(state, payload) {
+    //也是得用Vue.set()来触发响应式添加
+    // 三个参数, 第一个是state, 第二个是key, 第三个是value
+    Vue.set(state.tasks, payload.id, payload.task)
+
   }
 
 }
@@ -54,6 +48,14 @@ const actions = {
   },
   deleteTask({ commit }, id){
     commit('deleteTask', id)
+  },
+  addTask({ commit }, task) {
+    let taskId = uid()
+    let payload = {
+      id: taskId,
+      task: task
+    }
+    commit('addTask', payload)
   }
 }
 
