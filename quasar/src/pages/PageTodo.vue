@@ -7,40 +7,16 @@
         :id='index'
       >
       </task>
-      <!--
-      <q-item v-for="(item, index) in tasks" 
-        :key="index" 
-        @click="item.complate = !item.complate" 
-        clickable 
-        v-ripple
-        :class="!item.complate ? 'bg-orange-1' : 'bg-green-1'">
-        <q-item-section side top>
-          <q-checkbox v-model="item.complate" />
-        </q-item-section>
-        <q-item-section>
-           自定义一个text-strikethrough的class, 然后去App.vue里面全局定义 -->
-          <!--
-          <q-item-label :class="{ 'text-strikethrough' : item.complate }">{{item.name}}</q-item-label>
-        </q-item-section>
-        <q-item-section side>
-          <div class="row">
-            <q-icon name="event" color="" size="18px" class="q-mr-xs" />
-            <div class="column">
-              <q-item-label caption class="row justify-end">
-                {{item.dueDate}}
-              </q-item-label>
-              <q-item-label caption class="row justify-end">
-                <small>
-                  {{item.dueTime}}
-                </small>
-              </q-item-label>
-            </div>
-          </div>
-
-        </q-item-section>
-      </q-item>
-      -->
     </q-list>
+    <!-- 添加task list按钮 -->
+    <div class="absolute-bottom q-mb-lg text-center">
+      <q-btn round color="primary" icon="add" size="md" @click="showAddTask = true"/>
+    </div>
+
+    <!-- v-model控制是否展现dialog -->
+    <q-dialog v-model="showAddTask">
+      <add-task></add-task>
+    </q-dialog>
   </q-page>
 </template>
 
@@ -49,7 +25,7 @@ import {mapGetters} from 'vuex'
 export default {
   data() {
     return {
-     
+     showAddTask: true
     }
   },
   computed: {
@@ -64,7 +40,8 @@ export default {
 
   },
   components: {
-    'task' : require('components/Tasks/task').default
+    'task' : require('components/Tasks/task').default,
+    'addTask' : require('components/Modals/AddTask').default
   }
 }
 </script>
