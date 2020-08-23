@@ -34,7 +34,7 @@
                   <q-date v-model="taskToSubmit.dueDate" @input="() => $refs.qDateProxy.hide()" />
                 </q-popup-proxy>
               </q-icon>
-                <q-icon name="close" @click="taskToSubmit.dueDate = ''" class="cursor-pointer" v-if="taskToSubmit.dueDate" />
+                <q-icon name="close" @click="cleanDueDate" class="cursor-pointer" v-if="taskToSubmit.dueDate" />
             </template>
           </q-input>
         </div>
@@ -91,6 +91,10 @@ export default {
       this.addTask(this.taskToSubmit)
       // 发射一个事件 让父组件监听, 用于 关闭addTask dialog
       this.$emit('close')
+    },
+    cleanDueDate() {
+      this.taskToSubmit.dueDate = ''
+      this.taskToSubmit.dueTime = ''
     }
   }
   
