@@ -1,6 +1,6 @@
 <template>
   <q-card>
-    <modal-header></modal-header>
+    <modal-header>Add Task</modal-header>
 
     <!-- 放入form元素里面  submit.prevent阻止提交后页面reload大刷新,但这个版本貌似不加.prevent也不会reload大刷新页面了 -->
     <form @submit.prevent="submitForm">
