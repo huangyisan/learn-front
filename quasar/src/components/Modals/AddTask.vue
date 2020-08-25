@@ -10,7 +10,7 @@
           ref="modalTaskName"
         ></modal-task-name>
         <modal-due-date :dueDate.sync="taskToSubmit.dueDate" @clear='cleanDueDate'></modal-due-date>
-        <modal-due-time :dueTime.sync="taskToSubmit.dueTime" :dueDate="taskToSubmit.dueDate"></modal-due-time>
+        <modal-due-time :dueTime.sync="taskToSubmit.dueTime" :dueDate="taskToSubmit.dueDate" v-if="taskToSubmit.dueDate"></modal-due-time>
         
       </q-card-section>
 
