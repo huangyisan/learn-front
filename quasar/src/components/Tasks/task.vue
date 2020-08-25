@@ -28,12 +28,18 @@
     </q-item-section>
     <!-- // 删除按钮 -->
     <q-item-section side>
+      <q-btn flat round dense color="green" icon="edit" @click.stop="showEditTask = true" />
+    </q-item-section>
+    <q-item-section side>
       <q-btn flat round dense color="primary" icon="delete" @click.stop="promoteToDelete(id)" />
     </q-item-section>
+
+    <!-- 编辑task -->
+    <q-dialog v-model="showEditTask" no-backdrop-dismiss>
+      <edit-task @close="showEditTask = false" :task="item" :id="id"></edit-task>
+    </q-dialog>
+
   </q-item>
-
-
-
 
 </template>
 
@@ -50,6 +56,12 @@ export default {
       default: ''
     }
   },
+  data() {
+    return {
+      showEditTask: false,
+
+    }
+  },
   methods: {
     ...mapActions('tasks', ['updateTask','deleteTask']),
     promoteToDelete(id) {
@@ -63,6 +75,9 @@ export default {
         // console.log('>>>> OK')
       })
     }
+  },
+  components: {
+    'editTask' : require('components/Modals/editTask').default
   }
   
 }

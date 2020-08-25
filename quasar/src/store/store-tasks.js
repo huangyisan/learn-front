@@ -17,10 +17,8 @@ const state = {
 
 const mutations = {
   updateTask(state, payload) {
-    // 修改state中的complate
-    state.tasks[payload.id].complate = payload.update.complate
-    // 或者用Object.assign方法
-    // Object.assign(state.tasks[payload.id], payload.update)
+    // 用Object.assign方法
+    Object.assign(state.tasks[payload.id], payload.updates)
   },
   deleteTask(state, id) {
     // delete删除后,没有更新dom, 该操作和向响应式对象添加属性, 使用数组的索引设置值, 直接修改数组长度三种情况, 都不会触发响应式更新.
