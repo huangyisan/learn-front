@@ -1,7 +1,7 @@
 <template>
   <q-page class="q-pa-md">
-    <q-list separator bordered v-if="Object.keys(tasks).length">
-      <task v-for="(item, index) in tasks" 
+    <q-list separator bordered v-if="Object.keys(tasksTodo).length">
+      <task v-for="(item, index) in tasksTodo" 
         :key="index"
         :item='item'
         :id='index'
@@ -25,7 +25,7 @@ import {mapGetters} from 'vuex'
 export default {
   data() {
     return {
-     showAddTask: true
+     showAddTask: false
     }
   },
   computed: {
@@ -36,7 +36,7 @@ export default {
     // }
     //还可以使用mapGetters来获取而无需定义tasks()函数
     // tasks为mudulename, 数组中的tasks为getters中的方法
-    ...mapGetters('tasks',['tasks'])
+    ...mapGetters('tasks',['tasksTodo'])
 
   },
   components: {
