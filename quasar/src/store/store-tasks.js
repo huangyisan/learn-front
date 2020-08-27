@@ -18,7 +18,7 @@ const state = {
 const mutations = {
   updateTask(state, payload) {
     // 用Object.assign方法
-    Object.assign(state.tasks[payload.id], payload.updates)
+    Object.assign(state.tasks[payload.id], payload.update)
   },
   deleteTask(state, id) {
     // delete删除后,没有更新dom, 该操作和向响应式对象添加属性, 使用数组的索引设置值, 直接修改数组长度三种情况, 都不会触发响应式更新.
@@ -59,7 +59,14 @@ const actions = {
 
 const getters = {
   tasksTodo: (state) => {
-    return state.tasks
+    let tasks={}
+    Object.keys(state.tasks).forEach(function(key) {
+      let task = state.tasks[key]
+      if (!task.complate) {
+        tasks[key] = task
+      }
+    })
+    return tasks
   }
 }
 
