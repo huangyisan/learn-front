@@ -35,6 +35,7 @@ export default {
      showAddTask: false
     }
   },
+  
   computed: {
     // store的内容在computed里面获取
     // tasks() {
