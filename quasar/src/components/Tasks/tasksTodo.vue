@@ -14,13 +14,14 @@ export default {
   props: {
     tasksTodo: {
       type: Object,
-    },
+    }
+  },
     components: {
       'task' : require('components/Tasks/task').default,
     }
   }
 
-}
+
 </script>
 
 <style>

@@ -11,16 +11,14 @@
     <tasks-todo
       :tasksTodo="tasksTodo"
       ></tasks-todo>
+
     <hr>
 
-    <q-list separator bordered v-if="Object.keys(tasksComplated).length">
-      <task v-for="(item, index) in tasksComplated" 
-        :key="index"
-        :item='item'
-        :id='index'
-      >
-      </task>
-    </q-list>
+    <tasks-complated
+      :tasksComplated="tasksComplated"
+      ></tasks-complated>
+
+    
 
     <!-- 添加task list按钮 -->
     <div class="absolute-bottom q-mb-lg text-center">
@@ -57,6 +55,7 @@ export default {
     'task' : require('components/Tasks/task').default,
     'addTask' : require('components/Modals/AddTask').default,
     'tasksTodo' : require('components/Tasks/tasksTodo').default,
+    'tasksComplated' : require('components/Tasks/tasksComplated').default,
   }
 }
 </script>
