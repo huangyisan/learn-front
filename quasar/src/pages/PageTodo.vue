@@ -1,18 +1,12 @@
 <template>
   <q-page class="q-pa-md">
-    <!-- <q-list separator bordered v-if="Object.keys(tasksTodo).length">
-      <task v-for="(item, index) in tasksTodo" 
-        :key="index"
-        :item='item'
-        :id='index'
-      >
-      </task>
-    </q-list> -->
     <tasks-todo
+      v-if="Object.keys(tasksTodo).length"
       :tasksTodo="tasksTodo"
       ></tasks-todo>
 
     <tasks-complated
+      v-if="Object.keys(tasksComplated).length"
       :tasksComplated="tasksComplated"
       ></tasks-complated>
 
