@@ -1,13 +1,27 @@
 <template>
   <q-page class="q-pa-md">
-    <q-list separator bordered v-if="Object.keys(tasksTodo).length">
+    <!-- <q-list separator bordered v-if="Object.keys(tasksTodo).length">
       <task v-for="(item, index) in tasksTodo" 
         :key="index"
         :item='item'
         :id='index'
       >
       </task>
+    </q-list> -->
+    <tasks-todo
+      :tasksTodo="tasksTodo"
+      ></tasks-todo>
+    <hr>
+
+    <q-list separator bordered v-if="Object.keys(tasksComplated).length">
+      <task v-for="(item, index) in tasksComplated" 
+        :key="index"
+        :item='item'
+        :id='index'
+      >
+      </task>
     </q-list>
+
     <!-- 添加task list按钮 -->
     <div class="absolute-bottom q-mb-lg text-center">
       <q-btn round color="primary" icon="add" size="md" @click="showAddTask = true"/>
@@ -36,12 +50,13 @@ export default {
     // }
     //还可以使用mapGetters来获取而无需定义tasks()函数
     // tasks为mudulename, 数组中的tasks为getters中的方法
-    ...mapGetters('tasks',['tasksTodo'])
+    ...mapGetters('tasks',['tasksTodo', 'tasksComplated'])
 
   },
   components: {
     'task' : require('components/Tasks/task').default,
-    'addTask' : require('components/Modals/AddTask').default
+    'addTask' : require('components/Modals/AddTask').default,
+    'tasksTodo' : require('components/Tasks/tasksTodo').default,
   }
 }
 </script>
