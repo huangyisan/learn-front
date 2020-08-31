@@ -5,7 +5,12 @@
     </template>
     No tasks to do.
     <template v-slot:action>
-      <q-btn flat color="primary" label="Add a Task" />
+      <!-- 定义global bus event -->
+      <q-btn
+        @click="$root.$emit('showAddTask')"
+        flat color="primary" 
+        label="Add a Task" 
+      />
     </template>
   </q-banner>
 </template>

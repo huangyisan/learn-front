@@ -46,6 +46,18 @@ export default {
     ...mapGetters('tasks',['tasksTodo', 'tasksComplated'])
 
   },
+  created() {
+    // 在created或者mounted生命周期获取global bus event
+    // 这不是最优的方法去处理 showAddTask, 可以在vuex里面赋予变量进行解决。
+    this.$root.$on('showAddTask', () => {
+      this.showAddTask = true
+    })
+  },
+  beforeDestroy() {
+    this.$root.$off('showAddTask', () => {
+      this.showAddTask = true
+    })
+  },
   components: {
     'task' : require('components/Tasks/task').default,
     'addTask' : require('components/Modals/AddTask').default,
