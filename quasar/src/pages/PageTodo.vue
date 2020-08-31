@@ -1,7 +1,12 @@
 <template>
   <q-page class="q-pa-md">
+
+    <no-tasks
+      v-if="!Object.keys(tasksTodo).length"
+      ></no-tasks>
+
     <tasks-todo
-      v-if="Object.keys(tasksTodo).length"
+      v-else
       :tasksTodo="tasksTodo"
       ></tasks-todo>
 
@@ -9,8 +14,6 @@
       v-if="Object.keys(tasksComplated).length"
       :tasksComplated="tasksComplated"
       ></tasks-complated>
-
-    
 
     <!-- 添加task list按钮 -->
     <div class="absolute-bottom q-mb-lg text-center">
@@ -48,6 +51,7 @@ export default {
     'addTask' : require('components/Modals/AddTask').default,
     'tasksTodo' : require('components/Tasks/tasksTodo').default,
     'tasksComplated' : require('components/Tasks/tasksComplated').default,
+    'noTasks' : require('components/Tasks/noTasks').default,
   }
 }
 </script>
