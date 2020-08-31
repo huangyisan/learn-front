@@ -1,6 +1,8 @@
 <template>
   <div>
-    <list-header>Tasks To Do</list-header>
+    <list-header
+      :bgColor='bgColor'
+      >Tasks To Do</list-header>
     <q-list separator bordered v-if="Object.keys(tasksTodo).length">
       <task v-for="(item, index) in tasksTodo" 
         :key="index"
@@ -14,6 +16,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      bgColor: 'bg-orange-4'
+    }
+  },
   props: {
     tasksTodo: {
       type: Object,

@@ -1,5 +1,8 @@
 <template>
-  <q-banner inline-actions class="list-header text-white bg-orange-4 text-center">
+  <q-banner 
+    inline-actions
+    :class="bgColor"
+    class="list-header text-white text-center">
     <span class="text-bold text-subtitle1">
       <slot></slot>
     </span>
@@ -8,7 +11,11 @@
 
 <script>
 export default {
-
+  props: {
+    bgColor: {
+      type: String,
+    }
+  }
 }
 </script>
 

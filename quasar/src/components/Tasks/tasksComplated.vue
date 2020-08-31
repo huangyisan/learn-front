@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <list-header>Tasks Complated</list-header>
+  <div class="q-mt-lg">
+    <list-header
+      :bgColor='bgcolor'
+      >Tasks Complated</list-header>
     <q-list separator bordered v-if="Object.keys(tasksComplated).length">
         <task v-for="(item, index) in tasksComplated" 
           :key="index"
@@ -14,6 +16,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      bgcolor: 'bg-green',
+    }
+  },
   props: {
     tasksComplated: {
       type: Object,

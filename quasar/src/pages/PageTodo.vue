@@ -12,8 +12,6 @@
       :tasksTodo="tasksTodo"
       ></tasks-todo>
 
-    <hr>
-
     <tasks-complated
       :tasksComplated="tasksComplated"
       ></tasks-complated>
