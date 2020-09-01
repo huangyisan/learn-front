@@ -5,14 +5,15 @@ import { uid } from 'quasar'
 const state = {
   tasks: 
   {
-    // uid0:
-    //   {
-    //     name: "go to shop",
-    //     complate: false,
-    //     dueDate: '2020/01/01',
-    //     dueTime: '22:22:33'
-    //   },
-  }
+    uid0:
+      {
+        name: "go to shop",
+        complate: false,
+        dueDate: '2020/01/01',
+        dueTime: '22:22:33'
+      },
+  },
+  search: 'cccc',
 }
 
 const mutations = {

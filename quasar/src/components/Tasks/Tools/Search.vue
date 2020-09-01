@@ -10,11 +10,14 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
-  data() {
-    return {
-      searchField: 'test'
+  computed: {
+    ...mapState('tasks', ['search']),
+    searchField() {
+      return this.search
     }
+
   }
 };
 </script>
