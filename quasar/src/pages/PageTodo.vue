@@ -61,7 +61,7 @@ export default {
   },
   components: {
     'task' : require('components/Tasks/task').default,
-    'addTask' : require('components/Modals/AddTask').default,
+    'addTask' : require('components/Tasks/Modals/AddTask').default,
     'tasksTodo' : require('components/Tasks/tasksTodo').default,
     'tasksComplated' : require('components/Tasks/tasksComplated').default,
     'noTasks' : require('components/Tasks/noTasks').default,

@@ -77,7 +77,7 @@ export default {
     }
   },
   components: {
-    'editTask' : require('components/Modals/editTask').default
+    'editTask' : require('components/Tasks/Modals/editTask').default
   }
   
 }

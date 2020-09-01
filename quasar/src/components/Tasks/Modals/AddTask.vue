@@ -57,11 +57,11 @@ export default {
     }
   },
   components: {
-    modalHeader: require('components/Modals/Shared/ModalHeader').default,
-    modalTaskName: require('components/Modals/Shared/ModalTaskName').default,
-    modalDueDate: require('components/Modals/Shared/ModalDueDate').default,
-    modalDueTime: require('components/Modals/Shared/ModalDueTime').default,
-    modalButtons: require('components/Modals/Shared/ModalButtons').default,
+    modalHeader: require('components/Tasks/Modals/Shared/ModalHeader').default,
+    modalTaskName: require('components/Tasks/Modals/Shared/ModalTaskName').default,
+    modalDueDate: require('components/Tasks/Modals/Shared/ModalDueDate').default,
+    modalDueTime: require('components/Tasks/Modals/Shared/ModalDueTime').default,
+    modalButtons: require('components/Tasks/Modals/Shared/ModalButtons').default,
   }
   
 }
