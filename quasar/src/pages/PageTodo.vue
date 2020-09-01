@@ -1,5 +1,9 @@
 <template>
   <q-page class="q-pa-md">
+    <div class="row q-mb-lg">
+      <!-- 搜索栏 -->
+      <search></search>
+    </div>
 
     <no-tasks
       v-if="!Object.keys(tasksTodo).length"
@@ -65,6 +69,7 @@ export default {
     'tasksTodo' : require('components/Tasks/tasksTodo').default,
     'tasksComplated' : require('components/Tasks/tasksComplated').default,
     'noTasks' : require('components/Tasks/noTasks').default,
+    'search' : require('components/Tasks/Tools/Search').default,
   }
 }
 </script>
