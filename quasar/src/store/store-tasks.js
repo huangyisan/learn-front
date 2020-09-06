@@ -34,6 +34,9 @@ const mutations = {
     // 三个参数, 第一个是state, 第二个是key, 第三个是value
     Vue.set(state.tasks, payload.id, payload.task)
 
+  },
+  setSearch(state, value) {
+    state.search = value
   }
 
 }
@@ -55,6 +58,10 @@ const actions = {
       task: task
     }
     commit('addTask', payload)
+  },
+  setSearch( { commit}, value) {
+    commit('setSearch', value)
+
   }
 }
 

@@ -11,14 +11,28 @@
 
 <script>
 import { mapState } from 'vuex'
+import { mapActions } from 'vuex'
 export default {
   computed: {
     // 这里使用mapState而不使用mapGetter是因为不需要做一些处理，该数据直接从State中获取即可。
     ...mapState('tasks', ['search']),
-    searchField() {
-      return this.search
+    // 将searchField方法割裂成get和set方法(内置方法)
+    // searchField() {
+    //   return this.search
+    // }
+    searchField: {
+      set(value) {
+        this.setSearch(value)
+      },
+
+      get() {
+        return this.search
+      }
     }
 
+  },
+  methods: {
+    ...mapActions('tasks', ['setSearch'])
   }
 };
 </script>
