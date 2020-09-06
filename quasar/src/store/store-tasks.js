@@ -12,8 +12,22 @@ const state = {
         dueDate: '2020/01/01',
         dueTime: '22:22:33'
       },
+    uid1:
+      {
+        name: "go to home",
+        complate: false,
+        dueDate: '2020/02/01',
+        dueTime: '23:22:33'
+      },    
+    uid2:
+      {
+        name: "go to park",
+        complate: false,
+        dueDate: '2020/03/01',
+        dueTime: '13:22:33'
+      },
   },
-  search: 'cccc',
+  search: '',
 }
 
 const mutations = {
@@ -25,8 +39,8 @@ const mutations = {
     // delete删除后,没有更新dom, 该操作和向响应式对象添加属性, 使用数组的索引设置值, 直接修改数组长度三种情况, 都不会触发响应式更新.
     // delete state.tasks[id]
     // 使用Vue.delete方法来响应式更新.
-    console.log(state)
-    console.log(id)
+    // console.log(state)
+    // console.log(id)
     Vue.delete(state.tasks, id)
   },
   addTask(state, payload) {
@@ -66,13 +80,34 @@ const actions = {
 }
 
 const getters = {
-  // 根据search bar过滤tasks
-  tasksFiltered: (state) => {
+  // 对tasks进行排序
+  tasksSorted: (state) => {
+    let tasksSorted = {}
+    // 获取tasks的key
+    let keysOrdered = Object.keys(state.tasks)
+    // 对name进行排序
+    // 如果要让a排在b前面，则返回负值，反之返回正值，如果不动，则返回0
+    keysOrdered.sort((a,b) => {
+      let taskAprop = state.tasks[a].name.toLowerCase()
+      let taskBprop = state.tasks[b].name.toLowerCase()
+
+      if (taskAprop > taskBprop) return 1
+      else if (taskAprop < taskBprop) return -1
+      else return 0
+    })
+    keysOrdered.forEach((key) => {
+      tasksSorted[key] = state.tasks[key]
+    })
+    return tasksSorted
+  },
+  // 根据search bar过滤tasks, 传入tasksSorted
+  tasksFiltered: (state, getters) => {
     let tasksFiltered = {}
+    let tasksSorted = getters.tasksSorted
     // 如果有内容，则执行过滤
     if (state.search) {
-      Object.keys(state.tasks).forEach( (key) => {
-        let task = state.tasks[key]
+      Object.keys(tasksSorted).forEach( (key) => {
+        let task = tasksSorted[key]
         
         //搜索不分大小写
         let taskNameLowerCase = task.name.toLowerCase()
@@ -83,8 +118,8 @@ const getters = {
       })
       return tasksFiltered
     }
-    // 默认情况返回state.tasks
-    return state.tasks
+    // 默认情况返回tasksSorted
+    return tasksSorted
   },
 
   // 传入getters变量，引入tasksFiltered
