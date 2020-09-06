@@ -66,20 +66,46 @@ const actions = {
 }
 
 const getters = {
-  tasksTodo: (state) => {
+  // 根据search bar过滤tasks
+  tasksFiltered: (state) => {
+    let tasksFiltered = {}
+    // 如果有内容，则执行过滤
+    if (state.search) {
+      Object.keys(state.tasks).forEach( (key) => {
+        let task = state.tasks[key]
+        
+        //搜索不分大小写
+        let taskNameLowerCase = task.name.toLowerCase()
+        let searchNameLowerCase = state.search.toLowerCase()
+        if (taskNameLowerCase.includes(searchNameLowerCase)) {
+          tasksFiltered[key] = task
+        }
+      })
+      return tasksFiltered
+    }
+    // 默认情况返回state.tasks
+    return state.tasks
+  },
+
+  // 传入getters变量，引入tasksFiltered
+  tasksTodo: (state, getters) => {
+    let tasksFiltered = getters.tasksFiltered
     let tasks={}
-    Object.keys(state.tasks).forEach(function(key) {
-      let task = state.tasks[key]
+    // 将tasksFiltered作为内容替换原本的state.tasks
+    // Object.keys(state.tasks).forEach(function(key) {
+    Object.keys(tasksFiltered).forEach(function(key) {
+      let task = tasksFiltered[key]
       if (!task.complate) {
         tasks[key] = task
       }
     })
     return tasks
   },
-  tasksComplated: (state) => {
+  tasksComplated: (state, getters) => {
+    let tasksFiltered = getters.tasksFiltered
     let tasks={}
-    Object.keys(state.tasks).forEach(function(key) {
-      let task = state.tasks[key]
+    Object.keys(tasksFiltered).forEach(function(key) {
+      let task = tasksFiltered[key]
       if (task.complate) {
         tasks[key] = task
       }
