@@ -3,6 +3,7 @@
     <div class="row q-mb-lg">
       <!-- 搜索栏 -->
       <search></search>
+      <sort></sort>
     </div>
 
 
@@ -81,6 +82,7 @@ export default {
     'tasksComplated' : require('components/Tasks/tasksComplated').default,
     'noTasks' : require('components/Tasks/noTasks').default,
     'search' : require('components/Tasks/Tools/Search').default,
+    'sort' : require('components/Tasks/Tools/Sort').default,
   }
 }
 </script>

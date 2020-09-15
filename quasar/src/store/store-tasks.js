@@ -28,6 +28,7 @@ const state = {
       },
   },
   search: '',
+  sort: 'name'
 }
 
 const mutations = {
@@ -88,8 +89,9 @@ const getters = {
     // 对name进行排序
     // 如果要让a排在b前面，则返回负值，反之返回正值，如果不动，则返回0
     keysOrdered.sort((a,b) => {
-      let taskAprop = state.tasks[a].name.toLowerCase()
-      let taskBprop = state.tasks[b].name.toLowerCase()
+      // 根据state.sort定义的内容来排序，这边原先是硬编码，写了.name，现在修改成[state.sort]，而不是.[state.sort],是因为js的字典实现其实是基于数组的
+      let taskAprop = state.tasks[a][state.sort].toLowerCase()
+      let taskBprop = state.tasks[b][state.sort].toLowerCase()
 
       if (taskAprop > taskBprop) return 1
       else if (taskAprop < taskBprop) return -1
