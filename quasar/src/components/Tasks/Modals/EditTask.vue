@@ -46,7 +46,7 @@ export default {
     },
     submitTask() {
       this.updateTask({id:this.id, updates:this.taskToSubmit})
-// 发射一个事件 让父组件监听, 用于 关闭addTask dialog
+    // 发射一个事件 让父组件监听, 用于 关闭addTask dialog
       this.$emit('close')
     },
     cleanDueDate() {
