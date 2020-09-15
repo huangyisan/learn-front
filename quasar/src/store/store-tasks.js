@@ -28,7 +28,7 @@ const state = {
       },
   },
   search: '',
-  sort: 'name'
+  sort: 'dueDate'
 }
 
 const mutations = {
@@ -52,8 +52,10 @@ const mutations = {
   },
   setSearch(state, value) {
     state.search = value
+  },
+  setSort(state, value) {
+    state.sort = value
   }
-
 }
 
 const actions = {
@@ -74,9 +76,12 @@ const actions = {
     }
     commit('addTask', payload)
   },
-  setSearch( { commit}, value) {
+  setSearch( { commit }, value) {
     commit('setSearch', value)
+  },
 
+  setSort( { commit }, value) {
+    commit('setSort', value)
   }
 }
 
