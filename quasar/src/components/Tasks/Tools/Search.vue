@@ -1,5 +1,5 @@
 <template>
-  <q-input outlined v-model="searchField" label="Search" class="col">
+  <q-input outlined v-select-all v-model="searchField" label="Search" class="col">
 
     <template v-slot:append>
       <q-icon v-if="searchField !== ''" name="close" @click="searchField = ''" class="cursor-pointer" />
@@ -12,7 +12,11 @@
 <script>
 import { mapState } from 'vuex'
 import { mapActions } from 'vuex'
+import { selectAll } from 'src/directives/directive-select-all'
 export default {
+  directives: {
+    selectAll
+  },
   computed: {
     // 这里使用mapState而不使用mapGetter是因为不需要做一些处理，该数据直接从State中获取即可。
     ...mapState('tasks', ['search']),
