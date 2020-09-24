@@ -3,6 +3,7 @@
     @click="updateTask({ id:id, update:{ complate: !item.complate }})" 
     clickable 
     v-ripple
+    v-touch-hold:1000.mouse="showEditTaskModal"
     :class="!item.complate ? 'bg-orange-1' : 'bg-green-1'">
     <q-item-section side top>
       <q-checkbox v-model="item.complate" />
@@ -28,7 +29,7 @@
     </q-item-section>
     <!-- // 删除按钮 -->
     <q-item-section side>
-      <q-btn flat round dense color="green" icon="edit" @click.stop="showEditTask = true" />
+      <q-btn flat round dense color="green" icon="edit" @click.stop="showEditTaskModal" />
     </q-item-section>
     <q-item-section side>
       <q-btn flat round dense color="primary" icon="delete" @click.stop="promoteToDelete(id)" />
@@ -63,6 +64,9 @@ export default {
     }
   },
   methods: {
+    showEditTaskModal() {
+      this.showEditTask = true
+    },
     ...mapActions('tasks', ['updateTask','deleteTask']),
     promoteToDelete(id) {
       this.$q.dialog({
