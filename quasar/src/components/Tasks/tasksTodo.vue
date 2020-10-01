@@ -1,17 +1,24 @@
 <template>
-  <div>
-    <list-header
-      :bgColor='bgColor'
-      >Tasks To Do</list-header>
-    <q-list separator bordered >
-      <task v-for="(item, index) in tasksTodo" 
-        :key="index"
-        :item='item'
-        :id='index'
-      >
-      </task>
-    </q-list>
-  </div>
+  <!-- 添加动画效果 给定一个absolute-top，让其永远在顶部显示动画，这样当没有task的时候，No tasks to do doday不会很突兀-->
+  <transition
+    appear
+    enter-active-class="animated zoomIn"
+    leave-active-class="animated zoomOut absolute-top"
+  >
+    <div>
+      <list-header
+        :bgColor='bgColor'
+        >Tasks To Do</list-header>
+      <q-list separator bordered >
+        <task v-for="(item, index) in tasksTodo" 
+          :key="index"
+          :item='item'
+          :id='index'
+        >
+        </task>
+      </q-list>
+    </div>
+  </transition>
 </template>
 
 <script>
