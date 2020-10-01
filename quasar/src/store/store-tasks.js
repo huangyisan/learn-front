@@ -26,6 +26,48 @@ const state = {
         dueDate: '2020/03/01',
         dueTime: '13:22:33'
       },
+    uid3:
+      {
+        name: "go to shop",
+        complate: false,
+        dueDate: '2020/01/01',
+        dueTime: '22:22:33'
+      },
+    uid4:
+      {
+        name: "go to home",
+        complate: false,
+        dueDate: '2020/02/01',
+        dueTime: '23:22:33'
+      },    
+    uid5:
+      {
+        name: "go to park",
+        complate: false,
+        dueDate: '2020/03/01',
+        dueTime: '13:22:33'
+      },
+    uid6:
+      {
+        name: "go to shop",
+        complate: false,
+        dueDate: '2020/01/01',
+        dueTime: '22:22:33'
+      },
+    uid7:
+      {
+        name: "go to home",
+        complate: false,
+        dueDate: '2020/02/01',
+        dueTime: '23:22:33'
+      },    
+    uid8:
+      {
+        name: "go to park",
+        complate: false,
+        dueDate: '2020/03/01',
+        dueTime: '13:22:33'
+      },
   },
   search: '',
   sort: 'dueDate'

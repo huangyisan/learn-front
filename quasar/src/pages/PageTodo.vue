@@ -1,40 +1,51 @@
 <template>
-  <q-page class="q-pa-md">
-    <div class="row q-mb-lg">
-      <!-- 搜索栏 -->
-      <search></search>
-      <sort></sort>
+  <q-page>
+
+    <div class="q-pa-md absolute full-width full-height column">
+      <div class="row q-mb-lg">
+        <!-- 搜索栏 -->
+        <search></search>
+        <sort></sort>
+      </div>
+
+
+      <!-- 将展现内容包裹到一个div，使得动画更加自然。 -->
+      <q-scroll-area class="q-scroll-area-tasks">
+        <!-- todo内容或者搜索栏不存在字符串的时候 -->
+        <no-tasks
+          v-if="!Object.keys(tasksTodo).length && !search"
+          ></no-tasks>
+
+        <tasks-todo
+          v-if="Object.keys(tasksTodo).length"
+          :tasksTodo="tasksTodo"
+          class="q-mb-xl"
+          ></tasks-todo>
+
+        <tasks-complated
+          v-if="Object.keys(tasksComplated).length"
+          :tasksComplated="tasksComplated"
+          class="q-mb-xl"
+          ></tasks-complated>
+      </q-scroll-area>
+
+      <!-- 当搜索不到内容的时候 -->
+      <!-- 因为tasksComplated和tasksTodo的方法已经对filter进行了过滤，所以这边是过滤后还得不到对应的tasks内容的情况 -->
+      <p v-if="search && !Object.keys(tasksComplated).length && !Object.keys(tasksTodo).length">
+        No search result.
+      </p>
+
+      <!-- 添加task list按钮 -->
+      <!-- 设置no-pointer-events和all-pointer-events使其不遮挡task list -->
+      <!-- no-pointer-events: DOM element does not become a target of mouse events - clicks, hover and so on -->
+      <div class="absolute-bottom q-mb-lg text-center no-pointer-events">
+        <!-- all-pointer-events: The opposite of no-pointer-events -->
+        <q-btn round color="primary" icon="add" size="md" @click="showAddTask = true" class="all-pointer-events"/>
+      </div>
+
     </div>
 
 
-    <!-- 将展现内容包裹到一个div，使得动画更加自然。 -->
-    <div class="relative-position">
-      <!-- todo内容或者搜索栏不存在字符串的时候 -->
-      <no-tasks
-        v-if="!Object.keys(tasksTodo).length && !search"
-        ></no-tasks>
-
-      <tasks-todo
-        v-if="Object.keys(tasksTodo).length"
-        :tasksTodo="tasksTodo"
-        ></tasks-todo>
-
-      <tasks-complated
-        v-if="Object.keys(tasksComplated).length"
-        :tasksComplated="tasksComplated"
-        ></tasks-complated>
-    </div>
-
-    <!-- 当搜索不到内容的时候 -->
-    <!-- 因为tasksComplated和tasksTodo的方法已经对filter进行了过滤，所以这边是过滤后还得不到对应的tasks内容的情况 -->
-    <p v-if="search && !Object.keys(tasksComplated).length && !Object.keys(tasksTodo).length">
-      No search result.
-    </p>
-
-    <!-- 添加task list按钮 -->
-    <div class="absolute-bottom q-mb-lg text-center">
-      <q-btn round color="primary" icon="add" size="md" @click="showAddTask = true"/>
-    </div>
 
     <!-- v-model控制是否展现dialog -->
     <q-dialog v-model="showAddTask" no-backdrop-dismiss>
@@ -89,3 +100,9 @@ export default {
 }
 </script>
  
+<style>
+  .q-scroll-area-tasks {
+    display: flex;
+    flex-grow: 1;
+  }
+</style>
