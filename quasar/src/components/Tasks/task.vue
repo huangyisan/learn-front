@@ -17,7 +17,7 @@
         <q-icon name="event" color="" size="18px" class="q-mr-xs" />
         <div class="column">
           <q-item-label caption class="row justify-end">
-            {{item.dueDate}}
+            {{item.dueDate | niceDate}}
           </q-item-label>
           <q-item-label caption class="row justify-end">
             <small>
@@ -46,6 +46,11 @@
 
 <script>
 import { mapActions } from 'vuex'
+import { date }  from 'quasar'
+
+// 单独提取formatDate方法
+const { formatDate } = date
+
 export default {
   props: {
     item: {
@@ -61,6 +66,11 @@ export default {
     return {
       showEditTask: false,
 
+    }
+  },
+  filters: {
+    niceDate(dateValue) {
+      return formatDate(dateValue, "MMM DD YYYY")
     }
   },
   methods: {
