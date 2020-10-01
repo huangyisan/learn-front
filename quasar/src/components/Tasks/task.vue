@@ -10,7 +10,14 @@
     </q-item-section>
     <q-item-section>
       <!-- 自定义一个text-strikethrough的class, 然后去App.vue里面全局定义 -->
-      <q-item-label :class="{ 'text-strikethrough' : item.complate }">{{item.name}}</q-item-label>
+      <!-- 因为searchHighlight存在html语句，所以使用v-html进行解析 -->
+      <!-- $options.filters是当filter配合v-html时候的语法 -->
+      <!-- https://stackoverflow.com/questions/41688899/vuejs2-v-html-with-filter -->
+      <q-item-label 
+        :class="{ 'text-strikethrough' : item.complate }"
+        v-html = "$options.filters.searchHighlight(item.name, search)"
+        >
+      </q-item-label>
     </q-item-section>
     <q-item-section side v-if="item.dueDate">
       <div class="row">
@@ -45,7 +52,7 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapActions, mapState } from 'vuex'
 import { date }  from 'quasar'
 
 // 单独提取formatDate方法
@@ -68,9 +75,25 @@ export default {
 
     }
   },
+  computed: {
+    ...mapState('tasks', ['search'])
+  },
   filters: {
     niceDate(dateValue) {
       return formatDate(dateValue, "MMM DD YYYY")
+    },
+    searchHighlight(value, search) {
+      if (search) {
+        // 正则表达式，无视大小写，全局匹配
+        let searchRegExp = new RegExp(search, "ig")
+        console.log("searchRegExp:", searchRegExp)
+        // replace如果第二个参数是函数，则该函数的第一个参数为匹配到的子字符串。比如下面的match参数就是匹配到的子字符串。
+        return value.replace(searchRegExp, (match) => {
+          console.log("match:", match)
+          return '<span class="bg-yellow-6">' + match + '</span>'
+        })
+      }
+      return value
     }
   },
   methods: {
