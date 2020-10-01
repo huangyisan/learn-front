@@ -24,7 +24,10 @@
 
 <script>
 import { mapActions } from 'vuex'
+import mixinAddEditTask from 'src/mixins/mixin-add-edit-task'
+
 export default {
+  mixins:[mixinAddEditTask],
   data() {
     return {
       taskToSubmit: {
@@ -37,31 +40,11 @@ export default {
   },
   methods: {
     ...mapActions('tasks',['addTask']),
-
-    submitForm() {
-      // 先进行提交验证, 如果通过后,则更新store. 
-      // 先调用封装好的ref,再调用封装好里面的ref
-      this.$refs.modalTaskName.$refs.taskName.validate() // 如果验证异常, 则无法提交通过
-      if (!this.$refs.modalTaskName.$refs.taskName.hasError) {
-        this.submitTask()
-      }
-    },
     submitTask() {
       this.addTask(this.taskToSubmit)
       // 发射一个事件 让父组件监听, 用于 关闭addTask dialog
       this.$emit('close')
     },
-    cleanDueDate() {
-      this.taskToSubmit.dueDate = ''
-      this.taskToSubmit.dueTime = ''
-    }
-  },
-  components: {
-    modalHeader: require('components/Tasks/Modals/Shared/ModalHeader').default,
-    modalTaskName: require('components/Tasks/Modals/Shared/ModalTaskName').default,
-    modalDueDate: require('components/Tasks/Modals/Shared/ModalDueDate').default,
-    modalDueTime: require('components/Tasks/Modals/Shared/ModalDueTime').default,
-    modalButtons: require('components/Tasks/Modals/Shared/ModalButtons').default,
   }
   
 }

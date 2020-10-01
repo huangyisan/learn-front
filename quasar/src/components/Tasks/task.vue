@@ -88,6 +88,7 @@ export default {
         let searchRegExp = new RegExp(search, "ig")
         console.log("searchRegExp:", searchRegExp)
         // replace如果第二个参数是函数，则该函数的第一个参数为匹配到的子字符串。比如下面的match参数就是匹配到的子字符串。
+        // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Specifying_a_function_as_a_parameter
         return value.replace(searchRegExp, (match) => {
           console.log("match:", match)
           return '<span class="bg-yellow-6">' + match + '</span>'
