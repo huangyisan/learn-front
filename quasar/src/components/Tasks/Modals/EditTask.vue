@@ -39,7 +39,7 @@ export default {
   methods: {
     ...mapActions('tasks',['updateTask']),
     submitTask() {
-      this.updateTask({id:this.id, updates:this.taskToSubmit})
+      this.updateTask({id:this.id, update:this.taskToSubmit})
     // 发射一个事件 让父组件监听, 用于 关闭addTask dialog
       this.$emit('close')
     },
