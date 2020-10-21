@@ -28,7 +28,7 @@
           </q-item-label>
           <q-item-label caption class="row justify-end">
             <small>
-              {{item.dueTime}}
+              {{taskDueTime}}
             </small>
           </q-item-label>
         </div>
@@ -52,7 +52,7 @@
 </template>
 
 <script>
-import { mapActions, mapState } from 'vuex'
+import { mapActions, mapState, mapGetters} from 'vuex'
 import { date }  from 'quasar'
 
 // 单独提取formatDate方法
@@ -76,7 +76,16 @@ export default {
     }
   },
   computed: {
-    ...mapState('tasks', ['search'])
+    ...mapState('tasks', ['search']),
+    ...mapGetters('settings',['settings']),
+    taskDueTime() {
+      // 如果12小时开关打开，则使用十二小时制
+      if (this.settings.show12HourTimeFormat) {
+        // 这边需要拼接是因为formatDate函数只支持 2020/01/01 09:02:11 这种格式
+        return formatDate(this.item.dueDate + ' ' + this.item.dueTime, "h:mmA")
+      }
+      return this.item.dueTime
+    }
   },
   filters: {
     niceDate(dateValue) {

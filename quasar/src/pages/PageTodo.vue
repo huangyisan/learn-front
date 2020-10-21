@@ -89,7 +89,7 @@ export default {
     })
   },
   components: {
-    'task' : require('components/Tasks/task').default,
+    // 'task' : require('components/Tasks/task').default,
     'addTask' : require('components/Tasks/Modals/AddTask').default,
     'tasksTodo' : require('components/Tasks/tasksTodo').default,
     'tasksComplated' : require('components/Tasks/tasksComplated').default,
