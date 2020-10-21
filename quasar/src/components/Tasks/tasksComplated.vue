@@ -5,8 +5,8 @@
     enter-active-class="animated zoomIn"
     leave-active-class="animated zoomOut"
   >
-    <div class="q-mt-lg">
-      <list-header
+    <div :class="{ 'q-mt-lg' : !settings.showTasksInOneList}">
+      <list-header v-if="!settings.showTasksInOneList"
         :bgColor='bgcolor'
         >Tasks Complated</list-header>
       <q-list separator bordered>
@@ -22,6 +22,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
   data() {
     return {
@@ -33,7 +34,10 @@ export default {
       type: Object,
     }
   },
-    components: {
+  computed: {
+    ...mapGetters('settings', ['settings'])
+  },
+  components: {
       'task' : require('components/Tasks/task').default,
       'listHeader' : require('components/Shared/ListHeader').default,
     }

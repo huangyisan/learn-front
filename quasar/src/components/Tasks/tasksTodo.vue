@@ -6,7 +6,7 @@
     leave-active-class="animated zoomOut absolute-top"
   >
     <div>
-      <list-header
+      <list-header v-if="!settings.showTasksInOneList"
         :bgColor='bgColor'
         >Tasks To Do</list-header>
       <q-list separator bordered >
@@ -22,6 +22,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
   data() {
     return {
@@ -33,7 +34,10 @@ export default {
       type: Object,
     }
   },
-    components: {
+  computed: {
+    ...mapGetters('settings', ['settings'])
+  },
+  components: {
       'task' : require('components/Tasks/task').default,
       'listHeader' : require('components/Shared/ListHeader').default,
     }

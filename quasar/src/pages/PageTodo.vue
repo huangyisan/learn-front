@@ -13,25 +13,23 @@
       <q-scroll-area class="q-scroll-area-tasks">
         <!-- todo内容或者搜索栏不存在字符串的时候 -->
         <no-tasks
-          v-if="!Object.keys(tasksTodo).length && !search"
+          v-if="!Object.keys(tasksTodo).length && !search && !settings.showTasksInOneList"
           ></no-tasks>
 
         <tasks-todo
           v-if="Object.keys(tasksTodo).length"
           :tasksTodo="tasksTodo"
-          class="q-mb-xl"
           ></tasks-todo>
 
         <tasks-complated
           v-if="Object.keys(tasksComplated).length"
           :tasksComplated="tasksComplated"
-          class="q-mb-xl"
           ></tasks-complated>
       </q-scroll-area>
 
       <!-- 当搜索不到内容的时候 -->
       <!-- 因为tasksComplated和tasksTodo的方法已经对filter进行了过滤，所以这边是过滤后还得不到对应的tasks内容的情况 -->
-      <p v-if="search && !Object.keys(tasksComplated).length && !Object.keys(tasksTodo).length">
+      <p v-if="search && !Object.keys(tasksComplated).length && !Object.keys(tasksTodo).length && !settings.showTasksInOneList">
         No search result.
       </p>
 
@@ -73,6 +71,7 @@ export default {
     //还可以使用mapGetters来获取而无需定义tasks()函数
     // tasks为mudulename, 数组中的tasks为getters中的方法
     ...mapGetters('tasks',['tasksTodo', 'tasksComplated']),
+    ...mapGetters('settings',['settings']),
     ...mapState('tasks',['search'])
 
   },
