@@ -9,6 +9,9 @@ const state = {
 const mutations = {
   setShow12HourTimeFormat(state, value) {
     state.settings.show12HourTimeFormat = value
+  },
+  setSettings(state, settings) {
+    Object.assign(state.settings, settings)
   }
 }
 
@@ -23,6 +26,13 @@ const actions = {
   saveSettings({ state }){
     LocalStorage.set('settings', state.settings)
     // localStorage.set('settings', state.settings)
+  },
+  // 从localstorage中获取settings, 并修改state.settings
+  getSettings( {commit} ){
+    let settings = LocalStorage.getItem('settings')
+    if (settings) {
+      commit('setSettings', settings)
+    }
   }
 }
 

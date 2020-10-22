@@ -12,8 +12,8 @@
               v-model="show12HourTimeFormat" 
               />
           </q-item-section>
-        </q-item>
-        </q-list>
+      </q-item>
+    </q-list>
   </q-page>
 </template>
 
