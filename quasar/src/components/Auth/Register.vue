@@ -1,5 +1,6 @@
 <template>
-<form>
+<!-- prevent 提交后不刷新页面 -->
+<form @submit.prevent="submitForm">
   <div class="row q-mb-md">
     <q-banner class="bg-grey-3 col">
       <template v-slot:avatar>
@@ -14,8 +15,10 @@
       class="col"
       outlined 
       v-model="formData.email" 
-      label="Email" 
-      stack-label 
+      label="Email"
+      :rules="[ val => isValidEmailAddress(val) || 'Invaild email address']"
+      stack-label
+      lazy-rules
       />
   </div>
 
@@ -27,15 +30,19 @@
       label="Password" 
       stack-label
       type="password"
+      :rules="[ val => val.length >= 6 || 'Please use at least 6 characters']"
+      lazy-rules
       />
   </div>
 
   <div class="row">
     <!-- 靠右 -->
     <q-space></q-space>
+    <!-- 指定submit属性 -->
     <q-btn 
       color="primary"
       label="Register"
+      type="submit"
     />
   </div>
 
@@ -50,6 +57,15 @@ export default {
         email: "",
         password: ""
       }
+    }
+  },
+  methods:{
+    submitForm() {
+      console.log('submit form')
+    },
+    isValidEmailAddress(email) {
+      const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(String(email).toLowerCase());
     }
   }
 };
