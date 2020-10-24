@@ -6,7 +6,7 @@
       <template v-slot:avatar>
         <q-icon name="account_circle" color="primary" />
       </template>
-      Register to access your todos anywhere
+      {{ tab | titleCase }} to access your todos anywhere
     </q-banner>
   </div>
 
@@ -43,7 +43,7 @@
     <!-- 指定submit属性 -->
     <q-btn 
       color="primary"
-      label="Register"
+      :label="tab"
       type="submit"
     />
   </div>
@@ -80,6 +80,11 @@ export default {
     isValidEmailAddress(email) {
       const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return re.test(String(email).toLowerCase());
+    }
+  },
+  filters: {
+    titleCase(value){
+      return value.charAt(0).toUpperCase() + value.slice(1)
     }
   }
 };
