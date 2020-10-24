@@ -13,6 +13,10 @@ const routes = [
         component: () => import('pages/PageHelp.vue') 
       },
       { 
+        path: '/auth', 
+        component: () => import('pages/PageAuth.vue') 
+      },
+      { 
         path: '/', 
         component: () => import('pages/PageTodo.vue') 
       }
