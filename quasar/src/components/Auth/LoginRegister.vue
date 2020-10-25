@@ -65,7 +65,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions('auth',['registerUser']),
+    ...mapActions('auth',['registerUser', 'loginUser']),
     submitForm() {
       this.$refs.email.validate()
       this.$refs.password.validate()
@@ -74,7 +74,7 @@ export default {
         if (this.tab == 'register') {
           this.registerUser(this.formData)
         } else {
-          console.log('login');
+          this.loginUser(this.formData)
 
         }
       }
