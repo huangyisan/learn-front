@@ -52,6 +52,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 export default {
   // 父级传入tab
   props: ['tab'],
@@ -64,15 +65,16 @@ export default {
     }
   },
   methods: {
+    ...mapActions('auth',['registerUser']),
     submitForm() {
       this.$refs.email.validate()
       this.$refs.password.validate()
       if (!this.$refs.email.hasError && !this.$refs.email.hasError) {
         // 根据父级传入的tab判断是注册还是登陆
         if (this.tab == 'register') {
-          console.log("register user")
+          this.registerUser(this.formData)
         } else {
-          console.log("login user")
+          console.log('login');
 
         }
       }
