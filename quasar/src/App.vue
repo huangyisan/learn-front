@@ -8,11 +8,14 @@
 import { mapActions } from 'vuex';
 export default {
   methods: {
-    ...mapActions("settings", ['getSettings'])
+    ...mapActions("settings", ['getSettings']),
+    // 启动的时候调用handleAuthStateChange
+    ...mapActions("auth", ['handleAuthStateChange'])
   },
   // 在页面渲染html后开始执行getSettings函数。目前该函数就是获取localstorage的内容
   mounted() {
     this.getSettings()
+    this.handleAuthStateChange()
   }
 }
 </script>
