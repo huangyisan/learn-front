@@ -1,3 +1,4 @@
+import { LocalStorage } from 'quasar'
 import { firebaseAuth } from 'boot/firebase'
 
 const state = {
@@ -31,19 +32,19 @@ const actions = {
   },
   logoutUser(){
     firebaseAuth.signOut()
-    // 为什么不把这条代码写在logoutUser函数中，是因为写在这边当setLoggedIn为false的时候还是能够进入主页面的
     // this.$router.replace('/auth')
   },
   handleAuthStateChange({ commit }) {
     firebaseAuth.onAuthStateChanged(user => {
       if (user) {
         commit('setLoggedIn', true)
+        LocalStorage.set('loggedIn', true)
         // 登陆成功跳转到任务页面
-        this.$router.push('/')
+        this.$router.push('/').catch(err => {})
       }else{
         commit('setLoggedIn', false)
-        // 只要setLoggedIn为false都被跳转到auth界面
-        this.$router.replace('/auth')
+        LocalStorage.set('loggedIn', false)
+        this.$router.replace('/auth').catch(err => {})
       }
     })
   }
