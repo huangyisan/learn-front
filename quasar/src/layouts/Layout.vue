@@ -27,6 +27,7 @@
 
         <q-btn
           v-else
+          @click="logoutUser"
           flat
           icon-right="account_circle"
           label="Logout"
@@ -70,7 +71,7 @@
 
 <script>
 import EssentialLink from 'components/EssentialLink.vue'
-import { mapState } from 'vuex';
+import { mapState, mapActions } from 'vuex';
 
 const linksData = [
   {
@@ -96,8 +97,12 @@ export default {
       essentialLinks: linksData
     }
   },
+  methods:{
+    ...mapActions('auth', ['logoutUser'])
+
+  },
   computed: {
-    ...mapState('auth', ['loggedIn'])
+    ...mapState('auth', ['loggedIn']),
   }
 }
 </script>
