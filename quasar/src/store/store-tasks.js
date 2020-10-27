@@ -5,27 +5,27 @@ import { uid } from 'quasar'
 const state = {
   tasks: 
   {
-    uid0:
-      {
-        name: "go to shop",
-        complate: false,
-        dueDate: '2020/01/01',
-        dueTime: '22:22:33'
-      },
-    uid1:
-      {
-        name: "go to home",
-        complate: false,
-        dueDate: '2020/02/01',
-        dueTime: '23:22:33'
-      },    
-    uid2:
-      {
-        name: "go to park",
-        complate: false,
-        dueDate: '2020/03/01',
-        dueTime: '13:22:33'
-      },
+    // uid0:
+    //   {
+    //     name: "go to shop",
+    //     complate: false,
+    //     dueDate: '2020/01/01',
+    //     dueTime: '22:22:33'
+    //   },
+    // uid1:
+    //   {
+    //     name: "go to home",
+    //     complate: false,
+    //     dueDate: '2020/02/01',
+    //     dueTime: '23:22:33'
+    //   },    
+    // uid2:
+    //   {
+    //     name: "go to park",
+    //     complate: false,
+    //     dueDate: '2020/03/01',
+    //     dueTime: '13:22:33'
+    //   },
 
   },
   search: '',
@@ -61,7 +61,7 @@ const mutations = {
 
 const actions = {
   // 虽然updateTask操作是同步的,但建议先走action,让action调用mutations
-  // 光actions还是无法改变state信息,需要使用commit方式地阿偶用mutations
+  // 光actions还是无法改变state信息,需要使用commit方式调用mutations
   updateTask({ commit }, payload) {
     // 第一个参数为mutations的方法名称
     commit('updateTask', payload)
@@ -83,6 +83,11 @@ const actions = {
 
   setSort( { commit }, value) {
     commit('setSort', value)
+  },
+
+  // reading data from firebase
+  fbReadData( { commit } ) {
+    console.log('start reading data from firebase')
   }
 }
 
