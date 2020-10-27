@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import { uid } from 'quasar'
+import { firebaseDb, firebaseAuth } from 'boot/firebase'
 
 
 const state = {
@@ -87,7 +88,25 @@ const actions = {
 
   // reading data from firebase
   fbReadData( { commit } ) {
-    console.log('start reading data from firebase')
+    // get current user id
+    let userId = firebaseAuth.currentUser.uid
+    let userTasks = firebaseDb.ref('tasks/' + userId)
+    // 监听child节点添加事件。1.当连接数据库的时候会被触发，2. 当有child被添加的时候也会触发。
+    userTasks.on('child_added', snapshot => {
+      // 获取child节点的value
+      let task = snapshot.val()
+      
+      //拼装payload用于mutation提交
+      let payload = {
+        id: snapshot.key,
+        task: task,
+
+      }
+
+      // 将payload作用在名称为addTask的mutation上
+      commit('addTask', payload)
+    })
+
   }
 }
 
