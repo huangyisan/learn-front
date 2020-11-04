@@ -37,6 +37,7 @@ const mutations = {
   updateTask(state, payload) {
     // 用Object.assign方法
     Object.assign(state.tasks[payload.id], payload.update)
+    console.log(state)
   },
   deleteTask(state, id) {
     // delete删除后,没有更新dom, 该操作和向响应式对象添加属性, 使用数组的索引设置值, 直接修改数组长度三种情况, 都不会触发响应式更新.
@@ -109,33 +110,23 @@ const actions = {
     // child change
     userTasks.on('child_changed', snapshot => {
       // 获取child节点的value
+      console.log('child changed')
       let task = snapshot.val()
       
       //拼装payload用于mutation提交
       let payload = {
         id: snapshot.key,
-        task: task,
-
+        update: task,
       }
-
       // 将payload作用在名称为updateTask的mutation上
       commit('updateTask', payload)
     })
     
     // child remove
     userTasks.on('child_removed', snapshot => {
-      // 获取child节点的value
-      let task = snapshot.val()
-      
-      //拼装payload用于mutation提交
-      let payload = {
-        id: snapshot.key,
-        task: task,
-
-      }
-
-      // 将payload作用在名称为deleteTask的mutation上
-      commit('deleteTask', payload)
+      let taskId = snapshot.key
+      // 传入taskId进行删除
+      commit('deleteTask', taskId)
     })
   },
 
