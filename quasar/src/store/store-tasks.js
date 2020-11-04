@@ -107,6 +107,23 @@ const actions = {
       commit('addTask', payload)
     })
 
+    // child change
+    userTasks.on('child_changed', snapshot => {
+      // 获取child节点的value
+      let task = snapshot.val()
+      
+      //拼装payload用于mutation提交
+      let payload = {
+        id: snapshot.key,
+        task: task,
+
+      }
+
+      // 将payload作用在名称为updateTask的mutation上
+      commit('updateTask', payload)
+    })
+
+
   }
 }
 
