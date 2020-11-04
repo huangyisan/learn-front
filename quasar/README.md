@@ -55,4 +55,3 @@ See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
 } 
 ```
 
-### 貌似是因为墙的问题，child_xx等回调无法正常执行。
