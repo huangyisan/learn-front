@@ -50,7 +50,6 @@ const mutations = {
     //也是得用Vue.set()来触发响应式添加
     // 三个参数, 第一个是state, 第二个是key, 第三个是value
     Vue.set(state.tasks, payload.id, payload.task)
-
   },
   setSearch(state, value) {
     state.search = value
@@ -61,22 +60,22 @@ const mutations = {
 }
 
 const actions = {
-  // 虽然updateTask操作是同步的,但建议先走action,让action调用mutations
-  // 光actions还是无法改变state信息,需要使用commit方式调用mutations
-  updateTask({ commit }, payload) {
-    // 第一个参数为mutations的方法名称
-    commit('updateTask', payload)
+  updateTask({ dispatch }, payload) {
+    dispatch('fbUpdateTask', payload)
   },
-  deleteTask({ commit }, id){
-    commit('deleteTask', id)
+
+  deleteTask({ dispatch }, id){
+    dispatch('fbDeleteTask', id)
   },
-  addTask({ commit }, task) {
+
+  // dispatch fbAddTask方法直接更新firebase数据
+  addTask({ dispatch }, task) {
     let taskId = uid()
     let payload = {
       id: taskId,
       task: task
     }
-    commit('addTask', payload)
+    dispatch('fbAddTask', payload)
   },
   setSearch( { commit }, value) {
     commit('setSearch', value)
@@ -138,10 +137,31 @@ const actions = {
       // 将payload作用在名称为deleteTask的mutation上
       commit('deleteTask', payload)
     })
-    
+  },
 
+  fbAddTask( {}, payload ) {
+    // console.log(payload)
+    let userId = firebaseAuth.currentUser.uid
+    // 获取到payload.id层级，然后对该层级设置对应的task内容。
+    let taskRef = firebaseDb.ref('tasks/' + userId + '/' + payload.id)
+    taskRef.set(payload.task)
+  },
 
-  }
+  fbUpdateTask( {}, payload ) {
+    // console.log(payload)
+    let userId = firebaseAuth.currentUser.uid
+    // 获取到payload.id层级，然后对该层级设置对应的task内容。
+    let taskRef = firebaseDb.ref('tasks/' + userId + '/' + payload.id)
+    taskRef.update(payload.update)
+  },
+
+  fbDeleteTask( {}, taskId ) {
+    console.log(taskId)
+    let userId = firebaseAuth.currentUser.uid
+    let taskRef = firebaseDb.ref('tasks/' + userId + '/' + taskId)
+    taskRef.remove()
+  },
+
 }
 
 const getters = {

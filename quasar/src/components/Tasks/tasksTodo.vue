@@ -26,7 +26,7 @@ import { mapGetters } from 'vuex'
 export default {
   data() {
     return {
-      bgColor: 'bg-orange-4'
+      bgcolor: 'bg-orange-4'
     }
   },
   props: {
