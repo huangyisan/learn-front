@@ -6,7 +6,9 @@
     v-touch-hold:1000.mouse="showEditTaskModal"
     :class="!item.complate ? 'bg-orange-1' : 'bg-green-1'">
     <q-item-section side top>
-      <q-checkbox v-model="item.complate" />
+      <!-- <q-checkbox v-model="item.complate" /> -->
+      <!-- 将原本的v-model 拆成:value和@input方法，如果直接v-model操作同一个数据，则会报错Do not mutate vuex store state outside mutation handlers -->
+      <q-checkbox :value="item.complate" @input="updateTask({ id:id, update:{ complate: !item.complate }})" />
     </q-item-section>
     <q-item-section>
       <!-- 自定义一个text-strikethrough的class, 然后去App.vue里面全局定义 -->
