@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-    /* n: 表示自然数 0 1 2 3 4 5 6 7.... */
-    /* 2n 则表示所有偶数 */
-    /* 2n-1 则是奇数 */
-    p:nth-child(2n-1) {
-        color:yellow;
-    }
+        /* n: 表示自然数 0 1 2 3 4 5 6 7.... */
+        /* 2n 则表示所有偶数 */
+        /* 2n-1 则是奇数 */
+        p:nth-child(2n-1) {
+            color: yellow;
+        }
 
-    /* 也可以用even表示偶数 */
-    /* p:nth-child(even){
+        /* 也可以用even表示偶数 */
+        /* p:nth-child(even){
         color: red;
     } */
 
-    /* -n+5 则表示前五个 */
-    p:nth-child(-n+5) {
-        font-size: 20px;
-    }
+        /* -n+5 则表示前五个 */
+        p:nth-child(-n+5) {
+            font-size: 20px;
+        }
 
-    /* 必须是p的后代,且第一个子元素为span的元素 */
-    /* 因为strong为第一个子元素,所以我是span1不会变成红色 */
-    p span:nth-child(1) {
-        color: red;
-    }
-
+        /* 必须是p的后代,且第一个子元素为span的元素 */
+        /* 因为strong为第一个子元素,所以我是span1不会变成红色 */
+        p span:nth-child(1) {
+            color: red;
+        }
     </style>
 </head>
+
 <body>
     <div>
         <p>我是p元素1</p>
@@ -60,4 +61,5 @@
 
     </p>
 </body>
+
 </html>
