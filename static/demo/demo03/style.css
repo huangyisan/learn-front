@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tb-promo {
+    position: relative;
+    width: 520px;
+    height: 280px;
+    background-color: pink;
+    margin: 100px auto;
+
+}
+
+.tb-promo img {
+    width: 520px;
+    height: 280px;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 20px;
+    height: 30px;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.prev {
+    left: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.next {
+    right: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.promo-nav {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    width: 70px;
+    height: 13px;
+    background-color: rgba(255, 255, 255, .3);
+    margin-left: -35px;
+    border-radius: 7px;
+
+}
+
+.promo-nav li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 3px;
+    line-height: 8px;
+}
+
+/* 选定为红色 */
+.promo-nav .selected {
+    background-color: #ff5000;
+}
